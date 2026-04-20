@@ -1,0 +1,164 @@
+{% extends "main.njk" %}
+{% set title = "知的財産権啓蒙ポータル" %}
+
+{# 記事カード用のマクロ定義 #}
+{% macro articleCard(url, fileId, tag, title, description) %}
+    <a href="{{ url }}" class="glass article-card">
+        <span class="file-tag">FILE {{ fileId }}: [{{ tag }}]</span>
+        <h3>{{ title }}</h3>
+        <p>{{ description }}</p>
+        <span class="read-link">READ ARTICLE &rarr;</span>
+    </a>
+{% endmacro %}
+
+{# 記事データの定義 #}
+{% set torrentArticles = [
+    { url: "/articles/torrent/article-01/", id: "01", tag: "ARREST CASE", title: "【逮捕】音楽を共有した大学生", desc: "午前7時の家宅捜索。音楽共有ソフトを利用し、意図せず「加害者」となった若者の代償。" },
+    { url: "/articles/torrent/article-02/", id: "02", tag: "ARREST CASE 02", title: "【損害】映画 1 本が数百万の賠償に", desc: "たった 1 回のクリック。開示請求の通知から始まった、逃げ場のない民事賠償の現実。" },
+    { url: "/articles/torrent/article-03/", id: "03", tag: "PC GAME", title: "【逮捕】ゲーム違法配布の果て", desc: "世界初の摘発事例。31歳会社員が「遊び」のつもりのアップロードで失ったもの。" },
+    { url: "/articles/torrent/article-04/", id: "04", tag: "COMMERCIAL", title: "【逮捕】アニメ動画の不正販売", desc: "「小遣い稼ぎ」という一線。14万円の利益のために背負った懲役刑のリスク。" },
+    { url: "/articles/torrent/article-05/", id: "05", tag: "CIVIL TRIAL", title: "【民事】逃げ場のない損害賠償", desc: "17億円、5億円。企業が「本気」で動き出した、個人の預金や給料の差し押さえの実態。" },
+    { url: "/articles/torrent/article-06/", id: "06", tag: "LAW 01", title: "【刑罰】著作権法 第119条の衝撃", desc: "著作権法。万引きよりも遥かに重い「罰金1000万円」という刑罰が突きつける現実。" },
+    { url: "/articles/torrent/article-07/", id: "07", tag: "LAW 02", title: "【解説】改正による規制範囲の拡大", desc: "漫画や書籍も。令和3年の法改正が一般ユーザーの「うっかり」を容赦なく犯罪に変えた理由。" },
+    { url: "/articles/torrent/article-08/", id: "08", tag: "PRACTICE", title: "【実務】開示請求への対応とデマ", desc: "届いた「意見照会書」。ネットのデマを信じて無視した結果、最悪の朝を迎えるまでのカウントダウン。" },
+    { url: "/articles/torrent/article-09/", id: "09", tag: "CORPORATE", title: "【警告】会社回線での利用リスク", desc: "社内LANからの使用。懲戒解雇だけでなく、会社への損害賠償も加わる社会人としての死刑宣告。" },
+    { url: "/articles/torrent/article-10/", id: "10", tag: "SUMMARY", title: "【総括】知的社会を生き抜く新常識", desc: "正規サービスの選択肢。クリエイターを守ることが、巡り巡ってあなた自身の未来を守ることに繋がる。" }
+] %}
+
+{% set fastVideoArticles = [
+    { url: "/articles/fast-video/incident/", id: "01", tag: "MAJOR CASE", title: "【実録】ファスト動画で 5 億円の賠償", desc: "国内最大級の賠償判決。物語を要約して配信する行為が、なぜこれほどまでに重い責任を伴うのか。" },
+    { url: "/articles/fast-video/anime-clips/", id: "02", tag: "CLIPS RISK", title: "【警告】アニメ切り抜きの危うい境界", desc: "宣伝のつもりが犯罪に。公式の「黙認」を「許可」と誤解したことで始まる法的措置の恐怖。" }
+] %}
+
+{% set piracyArticles = [
+    { url: "/articles/piracy/manga-mura/", id: "01", tag: "INFAMOUS CASE", title: "【実録】漫画村事件・海賊版サイトの終焉", desc: "史上最大の海賊版サイト。運営者の逮捕と17億円の賠償判決が示した、業界の「本気」の対抗策。" },
+    { url: "/articles/piracy/others/", id: "02", tag: "DIVERSIFIED", title: "【多層】ネタバレサイト・不正アプリの罠", desc: "画像がなくても。文字だけの「ネタバレ」すらも権利侵害となる、現代の高度な著作権保護の現実。" }
+] %}
+
+{% block content %}
+
+    <!-- View 01: Category Selection (Home) -->
+    <div id="home-view" class="view-container">
+        <section class="hero">
+            <span class="series-badge">Intellectual Property Awareness</span>
+            <h1>Digital Literacy Project</h1>
+            <p>正しい知識を身につけ、自分と未来を守るために</p>
+        </section>
+
+        <div class="panel-grid">
+            <div class="glass category-panel" onclick="showCategory('torrent')">
+                <span class="cat-label">CATEGORY 01: [P2P]</span>
+                <h3>トレント</h3>
+                <p>ファイル共有ソフトに潜む<br>自動アップロードの罠</p>
+            </div>
+            <div class="glass category-panel" onclick="showCategory('fast-video')">
+                <span class="cat-label">CATEGORY 02: [CLIPS]</span>
+                <h3>ファスト動画</h3>
+                <p>「要約」や「切り抜き」が招く<br>莫大な損害賠償判決</p>
+            </div>
+            <div class="glass category-panel" onclick="showCategory('piracy')">
+                <span class="cat-label">CATEGORY 03: [WEB]</span>
+                <h3>海賊版</h3>
+                <p>漫画村事件に学ぶ<br>史上最大級の著作権侵害</p>
+            </div>
+        </div>
+
+        <div class="wiki-nav-container">
+            <a href="/wiki/" class="wiki-btn">
+                <span>📘</span> 知財Wiki を見る &rarr;
+            </a>
+        </div>
+    </div>
+
+    <!-- View 02: Article Listing -->
+    <div id="listing-view" class="view-container view-hidden">
+        <div class="back-nav">
+            <a href="javascript:void(0)" class="back-btn" onclick="showHome()">&larr; BACK TO CATEGORIES</a>
+        </div>
+
+        <h2 id="category-title"></h2>
+
+        {# セクションのレンダリング #}
+        <div id="content-torrent" class="content-group view-hidden">
+            <div class="grid">
+                {% for art in torrentArticles %}
+                    {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="content-fast-video" class="content-group view-hidden">
+            <div class="grid">
+                {% for art in fastVideoArticles %}
+                    {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+                {% endfor %}
+            </div>
+        </div>
+
+        <div id="content-piracy" class="content-group view-hidden">
+            <div class="grid">
+                {% for art in piracyArticles %}
+                    {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const VIEWS = {
+            home: document.getElementById('home-view'),
+            listing: document.getElementById('listing-view'),
+            title: document.getElementById('category-title')
+        };
+
+        const CATEGORY_NAMES = {
+            'torrent': 'トレント',
+            'fast-video': 'ファスト動画',
+            'piracy': '海賊版'
+        };
+
+        // UI表示を切り替える共通関数
+        function updateUI(cat) {
+            if (cat && CATEGORY_NAMES[cat]) {
+                // 記事一覧を表示
+                VIEWS.home.classList.add('view-hidden');
+                VIEWS.title.innerText = CATEGORY_NAMES[cat];
+                document.querySelectorAll('.content-group').forEach(el => el.classList.add('view-hidden'));
+                const target = document.getElementById(`content-${cat}`);
+                if (target) target.classList.remove('view-hidden');
+                setTimeout(() => VIEWS.listing.classList.remove('view-hidden'), 50);
+            } else {
+                // トップページを表示
+                VIEWS.listing.classList.add('view-hidden');
+                setTimeout(() => VIEWS.home.classList.remove('view-hidden'), 50);
+            }
+        }
+
+        // カテゴリ選択（履歴追加あり）
+        function showCategory(cat) {
+            history.pushState({ category: cat }, '', '#' + cat);
+            updateUI(cat);
+        }
+
+        // ホームに戻る（履歴追加あり）
+        function showHome() {
+            history.pushState({ category: null }, '', window.location.pathname);
+            updateUI(null);
+        }
+
+        // ブラウザの戻る・進むを検知
+        window.addEventListener('popstate', (event) => {
+            const cat = (event.state && event.state.category) || null;
+            updateUI(cat);
+        });
+
+        // 初回読み込み時のハッシュ処理
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash && CATEGORY_NAMES[hash]) {
+                updateUI(hash);
+            }
+        });
+    </script>
+    
+{% endblock %}

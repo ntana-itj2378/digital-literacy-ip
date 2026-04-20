@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。「逮捕事例」「民事賠償」「最新の法改正」など、実例に基づいた正しい知識を身につけ、自分自身とクリエイティブな未来を守りましょう。">
+    <title>digital-literacy-ip | 知的財産権啓蒙ポータル</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <a href="index.html" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+        <nav class="header-nav">
+            <a href="wiki/index.html" class="nav-btn">知財Wiki &rarr;</a>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <section class="hero">
+            <span class="series-badge">Intellectual Property Awareness</span>
+            <h1>Digital Literacy Project</h1>
+            <p>～正しく知り、自分と未来を守るために～</p>
+        </section>
+
+        <div class="section-divider">
+            <span>Torrent リスク学習シリーズ</span>
+        </div>
+
+        <section class="grid">
+            <!-- Article Cards -->
+            <div class="category-group">
+                <a href="articles/torrent/article-01.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 01</span>
+                    <h3>【逮捕】音楽を共有した大学生</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">「ダウンロードだけのつもりが加害者に」。トレントの仕組みが招いた予想外の結末と法的責任。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-02.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 02</span>
+                    <h3>【損害】映画1本が数百万の賠償に</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">たった1回のクリック。開示請求の通知から始まった、逃げ場のない民事賠償の現実。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-03.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 03</span>
+                    <h3>【逮捕】ゲーム違法配布の果て</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">新作ソフトの無断共有。著作権法違反で人生が暗転した事例と、その後の社会的制裁。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-04.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 04</span>
+                    <h3>【逮捕】アニメ動画の不正販売</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">ネットで入手した動画を配布。警察のサイバーパトロールが特定するまでの記録。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-05.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 05</span>
+                    <h3>【賠償】逃げ場のない民事訴訟</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">自己破産でも免れない可能性がある損害賠償。一生をかけた返済の宣告。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-06.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 06</span>
+                    <h3>【刑罰】著作権法 第119条の衝撃</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">10年以下の懲役、1000万円以下の罰金。法が定める「犯罪」としての重さ。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-07.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 07</span>
+                    <h3>【解説】改正による規制範囲の拡大</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">音楽・映像以外も対象に。漫画や書籍の違法ダウンロードに対する厳罰化の理由。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-08.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 08</span>
+                    <h3>【実務】開示請求への対応とデマ</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">プロバイダから届く「意見照会書」。無視が招く最悪の事態と、正しい対処法。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-09.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 09</span>
+                    <h3>【警告】会社回線での利用リスク</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">業務中の出来心が招く「解雇」と「ブランド毀損」。個人の責任では済まない結末。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+
+            <div class="category-group">
+                <a href="articles/torrent/article-10.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Article 10</span>
+                    <h3>【総括】知的社会を生き抜く新常識</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">利便性の裏にある罠。ルールを守ることが、あなたとクリエイティブな未来を救う。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- New Category: Fast Movie -->
+        <div class="section-divider category-section">
+            <span>ファスト映画・切り抜きリスク</span>
+        </div>
+
+        <section class="grid">
+            <div class="category-group">
+                <a href="articles/fast-video/incident.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Fast Video</span>
+                    <h3>【実録】ファスト映画で5億円の賠償</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">「忙しい人のために善意で」という言い訳は通用しない。要約動画が招いた国内最大級の賠償判決。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+            <div class="category-group">
+                <a href="articles/fast-video/anime-clips.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Fair Use?</span>
+                    <h3>【警鐘】アニメ切り抜きの危うい境界</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">「宣伝になるから許される」は幻想。YouTubeでの黙認が法的措置に変わる瞬間。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- New Category: Piracy etc -->
+        <div class="section-divider category-section">
+            <span>海賊版サイト・広域侵害</span>
+        </div>
+
+        <section class="grid">
+            <div class="category-group">
+                <a href="articles/piracy/manga-mura.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Case Study</span>
+                    <h3>【実録】漫画村事件：海賊版サイトの終焉</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">推定被害3,200億円。史上最大の海賊版サイト運営者の逮捕と、突きつけられた17億円の現実。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+            <div class="category-group">
+                <a href="articles/piracy/others.html" class="glass article-card" style="text-decoration: none;">
+                    <span class="series-badge">Diversified Risks</span>
+                    <h3>【多層】ネタバレサイト・不正アプリの罠</h3>
+                    <p style="margin: 0; font-size: 0.9rem;">画像がなくても、文字だけでも罪になる。現代の巧妙な侵害行為と、無自覚な加担へのリスク。</p>
+                    <div style="margin-top: 1.5rem; color: var(--accent-gold); font-weight: bold; font-size: 0.9rem;">READ ARTICLE &rarr;</div>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer
+        style="margin-top: 8rem; padding: 4rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary);">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 1rem; font-size: 0.8rem;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+</body>
+</html>

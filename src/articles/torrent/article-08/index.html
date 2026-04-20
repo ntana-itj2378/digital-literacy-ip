@@ -1,0 +1,71 @@
+{% extends "main.njk" %}
+{% set title = "実務：意見照会書への対応とNG行動" %}
+{% block content %}
+
+        <article>
+            <nav style="margin-bottom: 2rem;">
+                <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+            </nav>
+
+            <h1>実務：意見照会書への対応とNG行動</h1>
+            <p class="subtitle" style="color: var(--text-secondary); margin-bottom: 2rem;">～プロバイダから届く「最後通牒」の意味と正しい対処～</p>
+
+            <section style="margin-bottom: 3rem;">
+                <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概容</h2>
+                <p>
+                    ある日、自宅にプロバイダから届く「発信者情報開示請求に関する意見照会書」。これは、著作権者があなたのトレント利用による侵害行為を特定し、損害賠償請求のためにあなたの氏名・住所を教えるようプロバイダに迫っている状態です。
+                </p>
+                <p>
+                    多くの人が陥る最大の罠は「無視」です。ネット上の「無視すればいい」という無責任なデマを信じ、回答期限を過ぎれば、プロバイダはあなたの情報を著作権者に開示します。そうなれば、逃げ場のない民事裁判や巨額の示談交渉が即座に始まります。
+                </p>
+            </section>
+
+            <section class="glass article-card">
+                <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">法規と摘発の現実</h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #fff; margin-bottom: 1rem;">プロバイダ責任制限法（発信者情報開示請求）</h3>
+                    <p>
+                        この法律に基づき、権利侵害が明白である場合、プロバイダは契約者の個人情報を開示する義務を負います。「プライバシーの保護」も、著作権侵害という違法行為の前には原則として無力です。
+                    </p>
+                    <p>
+                        裁判所も近年、トレント利用における権利侵害の明白性を広く認める傾向にあり、情報の開示を免れることは極めて困難なのが現状です。
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 1.5rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">国内プロバイダを介した「トレント関連」情報開示請求</p>
+                    <p style="font-size: 2.5rem; font-weight: bold; color: var(--accent-danger); margin: 0;">年間 数千件（推計）</p>
+                    <p style="font-size: 0.8rem; margin-top: 0.5rem;">（※トレント案件を扱う主要法律事務所の公表データをベース）</p>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    この数千件の通知は氷山の一角です。特定の法律事務所がシステム的にトレント利用者を24時間監視しており、侵害が確認されれば自動的に開示手続きが開始されます。一度この通知が届いたら、もはや「知らない」では済まされない段階です。
+                </p>
+            </section>
+
+            <section style="margin-top: 3rem;">
+                <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">締めの言葉</h2>
+                <p>
+                    意見照会書が届いたなら、「証拠隠滅」や「事実に反する回答」は事態をさらに悪化させるだけです。それよりも、即座に専門家（弁護士等）に相談し、適切な示談交渉の道を検討してください。
+                </p>
+                <p style="font-weight: bold; color: #fff;">
+                    この通知はあなたに与えられた「最後の猶予」かもしれません。現実を直視し、誠実に対応することが、取り返しのつかない被害を最小限に抑えるための唯一の方法です。
+                </p>
+            </section>
+
+            <section class="references">
+                <h4>Sources & References</h4>
+                <ul>
+                    <li><a href="https://haruta-lo.com/column/torrent-kaiji-seikyu/" target="_blank">春田法律事務所：トレントの開示請求にお悩みの方へ</a></li>
+                    <li><a href="https://kakehashi-torrent.com/post-361/" target="_blank">岡山香川架け橋法律事務所：プロバイダからの意見照会書への対処法</a></li>
+                </ul>
+            </section>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="article-09.html" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">
+                    次の記事：会社のネットワーク利用によるリスク &rarr;
+                </a>
+            </div>
+        </article>
+    
+{% endblock %}

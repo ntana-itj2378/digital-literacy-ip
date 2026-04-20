@@ -1,0 +1,71 @@
+{% extends "main.njk" %}
+{% set title = "逮捕事例：音楽を共有した大学生" %}
+{% block content %}
+
+        <article>
+            <nav style="margin-bottom: 2rem;">
+                <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+            </nav>
+
+            <h1>逮捕事例：音楽を共有した大学生</h1>
+            <p class="subtitle" style="color: var(--text-secondary); margin-bottom: 2rem;">～「ダウンロードだけのつもり」が人生を暗転させる～</p>
+
+            <section style="margin-bottom: 3rem;">
+                <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概容</h2>
+                <p>
+                    2023年、都内の大学に通う男子学生が著作権法違反の疑いで警察に逮捕されました。彼は、大好きなアーティストの新曲を無料で手に入れるため、インターネットで見つけた「BitTorrent（ビットトレント）」というソフトを利用しました。
+                </p>
+                <p>
+                    学生は「みんなやっているから大丈夫」「ダウンロードするだけなら罪にならないと思った」と供述しました。しかし、トレントの仕組みは「ダウンロードと同時に、自分のPCからも不特定多数へデータを送信（アップロード）する」というものです。知らぬうちに彼は数千人への「違法配信者」となっていました。
+                </p>
+            </section>
+
+            <section class="glass article-card">
+                <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">法規と摘発の現実</h2>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h3 style="color: #fff; margin-bottom: 1rem;">著作権法 第119条 第1項</h3>
+                    <p>
+                        著作権を侵害した者は、10年以下の懲役もしくは1000万円以下の罰金に処され、またはこれを併科されます。
+                    </p>
+                    <p>
+                        トレントの利用は、この「公衆送信権」の侵害に直結します。たとえ悪意がなくても、技術的にアップロードが行われる以上、法的には「送信可能化」の責任を問われます。一度逮捕されれば、就職活動の道は断たれ、多額の賠償金が将来を縛り付けることになります。
+                    </p>
+                </div>
+
+                <div style="text-align: center; padding: 1.5rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+                    <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">令和5年中の警察庁発表：知的財産権侵害事犯 全検挙状況</p>
+                    <p style="font-size: 2.5rem; font-weight: bold; color: var(--accent-danger); margin: 0;">年間 385 件</p>
+                    <p style="font-size: 0.8rem; margin-top: 0.5rem;">（※インターネット利用の検挙者に絞った数字）</p>
+                </div>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">
+                    検挙されるのは氷山の一角です。しかし、警察はサイバーパトロールによって常に違法な通信を監視しています。「自分だけはバレない」という根拠のない自信が、最悪の朝を招くことになります。
+                </p>
+            </section>
+
+            <section style="margin-top: 3rem;">
+                <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">締めの言葉</h2>
+                <p>
+                    音楽一曲、数百円。その目先の「無料」のために、数千万の損害賠償と「前科」のリスクを背負う価値があるでしょうか。
+                </p>
+                <p style="font-weight: bold; color: #fff;">
+                    コンテンツには正当な対価を。それが、あなた自身の自由な未来を守るための唯一の答えです。
+                </p>
+            </section>
+
+            <section class="references">
+                <h4>Sources & References</h4>
+                <ul>
+                    <li><a href="https://www.npa.go.jp/cyber/crime/copyright.html" target="_blank">警察庁：サイバー犯罪対策（著作権侵害）</a></li>
+                    <li><a href="https://www.coda-cj.jp/news/1131/" target="_blank">CODA：著作権侵害の検挙事例について</a></li>
+                </ul>
+            </section>
+
+            <div style="margin-top: 3rem; text-align: center;">
+                <a href="article-02.html" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">
+                    次の記事：映画1本が数百万の賠償に &rarr;
+                </a>
+            </div>
+        </article>
+    
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ description or '知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。' }}">
+    <title>{{ title }} | digital-literacy-ip</title>
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    {% block head %}{% endblock %}
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+</body>
+</html>

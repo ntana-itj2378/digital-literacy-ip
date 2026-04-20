@@ -1,0 +1,24 @@
+{
+  "name": "intellectual_property",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node build.js && vite",
+    "build": "node build.js",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "glob": "^13.0.6",
+    "resolve": "^1.22.12",
+    "vite": "^8.0.8",
+    "vite-plugin-nunjucks": "^0.2.0"
+  },
+  "dependencies": {
+    "fs-extra": "^11.3.4"
+  }
+}

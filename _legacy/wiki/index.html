@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="知的財産権に関する用語集と事件アーカイブ。著作権法、公衆送信権、翻案権などの専門用語や、漫画村、ファスト映画などの重大事件を分かりやすく解説します。">
+    <title>知財Wiki：事件・法律事典 | 知的財産権リスク啓蒙サイト</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .wiki-section { margin-bottom: 5rem; }
+        .wiki-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .wiki-card { padding: 2rem; border-radius: 16px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05); }
+        .tag { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; margin-bottom: 1rem; }
+        .law-tag { background: rgba(201, 169, 110, 0.2); color: var(--accent-gold); }
+        .case-tag { background: rgba(239, 68, 68, 0.2); color: var(--accent-danger); }
+    </style>
+</head>
+<body>
+    <header class="container">
+        <a href="../index.html" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+        <nav class="header-nav">
+            <a href="../index.html" class="nav-btn">PORTAL &rarr;</a>
+        </nav>
+    </header>
+
+    <main class="container fade-in">
+        <section class="hero" style="padding: 4rem 0;">
+            <span class="series-badge">Knowledge Base</span>
+            <h1 style="font-size: 3rem;">Intellectual Property Wiki</h1>
+            <p>用語解説と重要事件のデータベース</p>
+        </section>
+
+        <section class="wiki-section">
+            <div class="section-divider">
+                <span>重要用語（Law & Ethics）</span>
+            </div>
+            <div class="wiki-grid">
+                <div class="wiki-card" id="law-transmission">
+                    <span class="tag law-tag">Law</span>
+                    <h3>公衆送信権</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        著作者がその著作物を公衆送信する（インターネット上で送信可能にするなど）権利を独占する権利。トレントなどのファイル共有ソフトでのアップロードは、この権利の明確な侵害にあたります。
+                    </p>
+                </div>
+                <div class="wiki-card" id="law-adaptation">
+                    <span class="tag law-tag">Law</span>
+                    <h3>翻案権</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        著作物を翻訳、編曲、変形、脚色、映画化などして別の形にする権利。「ファスト映画」や「ネタバレサイトでのセリフ書き起こし」などは、この翻案権の侵害とみなされます。
+                    </p>
+                </div>
+                <div class="wiki-card" id="law-provider">
+                    <span class="tag law-tag">Law</span>
+                    <h3>プロバイダ責任制限法</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        ウェブ上で権利侵害があった際、プロバイダが負う責任の範囲を定めた法律。この法律に基づき、著作権者は侵害者の氏名や住所の開示をプロバイダに請求できます。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="wiki-section">
+            <div class="section-divider">
+                <span>歴史的事件（Case Archives）</span>
+            </div>
+            <div class="wiki-grid">
+                <div class="wiki-card" id="case-manga-mura">
+                    <span class="tag case-tag">Incident</span>
+                    <h3>漫画村事件</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        月間1億回以上のアクセスがあった史上最大の海賊版サイト。運営者はフィリピンで拘束・逮捕され、民事訴訟では17億円以上の損害賠償命令が確定しました。
+                    </p>
+                </div>
+                <div class="wiki-card" id="case-fast-movie">
+                    <span class="tag case-tag">Incident</span>
+                    <h3>ファスト映画摘発</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        映画のあらすじを短くまとめた動画を公開していた運営者が逮捕。個人の侵害行為に対し、異例の「5億円」という巨額の損害賠償支払いが命じられました。
+                    </p>
+                </div>
+                <div class="wiki-card" id="case-spoilers">
+                    <span class="tag case-tag">Incident</span>
+                    <h3>ネタバレサイト摘発</h3>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        人気漫画の内容を発売前にリークする「フラゲ」行為や、セリフの書き起こしサイトの運営者が逮捕された事例。2024年にも複数の大規模サイトが摘発されており、テキストベースの侵害も厳しく追及されています。
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="margin-top: 8rem; padding: 4rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: var(--text-secondary); font-size: 0.8rem;">
+        &copy; 2026 Intellectual Property Education Project. All Rights Reserved.
+    </footer>
+</body>
+</html>
