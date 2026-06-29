@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="デジタル・リテラシーと知的財産権（IP）を学ぶためのポータルサイト。ファイル共有ソフトのリスクや最新の摘発事例を分かりやすく解説。">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="Home | digital-literacy-ip">
+    <meta property="og:description" content="デジタル・リテラシーと知的財産権（IP）を学ぶためのポータルサイト。ファイル共有ソフトのリスクや最新の摘発事例を分かりやすく解説。">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="Home | digital-literacy-ip">
+    <meta property="twitter:description" content="デジタル・リテラシーと知的財産権（IP）を学ぶためのポータルサイト。ファイル共有ソフトのリスクや最新の摘発事例を分かりやすく解説。">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <title>Home | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        
+
+<!-- View 01: Category Selection (Home) -->
+<div id="home-view" class="view-container">
+    <section class="hero">
+        <span class="series-badge">Intellectual Property Awareness</span>
+        <h1>Digital Literacy Project</h1>
+        <p>正しい知識を身につけ、自分と未来を守るために</p>
+    </section>
+
+    <div class="panel-grid">
+        <div class="glass category-panel" onclick="showCategory('torrent')">
+            <span class="cat-label">CATEGORY 01: [P2P]</span>
+            <h3>トレント</h3>
+            <p>ファイル共有ソフトに潜む<br>自動アップロードの罠</p>
+        </div>
+        <div class="glass category-panel" onclick="showCategory('software')">
+            <span class="cat-label">CATEGORY 02: [APPS]</span>
+            <h3>ファイル共有ソフト</h3>
+            <p>WinnyやShareなど<br>歴史的ツールの摘発事例</p>
+        </div>
+        <div class="glass category-panel" onclick="showCategory('fast-video')">
+            <span class="cat-label">CATEGORY 03: [CLIPS]</span>
+            <h3>ファスト動画</h3>
+            <p>「要約」や「切り抜き」が招く<br>莫大な損害賠償判決</p>
+        </div>
+        <div class="glass category-panel" onclick="showCategory('piracy')">
+            <span class="cat-label">CATEGORY 04: [WEB]</span>
+            <h3>海賊版</h3>
+            <p>漫画村事件に学ぶ<br>史上最大級の著作権侵害</p>
+        </div>
+    </div>
+
+    <div class="wiki-nav-container">
+        <a href="/wiki/" class="wiki-btn">
+            <span>📘</span> 知財Wiki を見る &rarr;
+        </a>
+    </div>
+</div>
+
+<!-- View 02: Article Listing -->
+<div id="listing-view" class="view-container view-hidden">
+    <div class="back-nav">
+        <a href="javascript:void(0)" class="back-btn" onclick="showHome()">&larr; BACK TO CATEGORIES</a>
+    </div>
+
+    <h2 id="category-title"></h2>
+
+    
+    <div id="content-torrent" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>⚠️</span> トレント（P2P）の仕組みと落とし穴</h4>
+            <p>
+                トレントはファイルを効率的にダウンロードするための技術ですが、その仕組みには<strong>「自動アップロード」</strong>という重大な落とし穴があります。ダウンロードと同時に、あなたのパソコンも『配布元』としてインターネット上の不特定多数へデータを送信し続けます。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                たとえ悪意がなくても、この仕組みによってあなたは<strong>「違法アップロード者（送信者）」</strong>となり、著作権法違反の直接的な摘発対象や、巨額の損害賠償請求の対象となります。
+            </p>
+        </div>
+        <div class="grid">
+            
+            
+<a href="/articles/article-01/" class="glass article-card">
+    <span class="file-tag">FILE 01</span>
+    <h3>音楽を共有した大学生</h3>
+    <p>午前7時の家宅捜索。音楽共有ソフトを利用し、意図せず「加害者」となった若者の代償。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-02/" class="glass article-card">
+    <span class="file-tag">FILE 02</span>
+    <h3>映画 1 本が数百万の賠償に</h3>
+    <p>たった 1 回のクリック。開示請求の通知から始まった、逃げ場のない民事賠償の現実。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-03/" class="glass article-card">
+    <span class="file-tag">FILE 03</span>
+    <h3>ゲーム違法配布の果て</h3>
+    <p>世界初の摘発事例。31歳会社員が「遊び」のつもりのアップロードで失ったもの。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-04/" class="glass article-card">
+    <span class="file-tag">FILE 04</span>
+    <h3>アニメ動画の不正販売</h3>
+    <p>「小遣い稼ぎ」という一線。14万円の利益のために背負った懲役刑のリスク。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-05/" class="glass article-card">
+    <span class="file-tag">FILE 05</span>
+    <h3>逃げ場のない損害賠償</h3>
+    <p>17億円、5億円。企業が「本気」で動き出した、個人の預金や給料の差し押さえの実態。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-06/" class="glass article-card">
+    <span class="file-tag">FILE 06</span>
+    <h3>著作権法 第119条の衝撃</h3>
+    <p>著作権法。万引きよりも遥かに重い「罰金1000万円」という刑罰が突きつける現実。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-07/" class="glass article-card">
+    <span class="file-tag">FILE 07</span>
+    <h3>改正による規制範囲の拡大</h3>
+    <p>漫画や書籍も。令和3年の法改正が一般ユーザーの「うっかり」を容赦なく犯罪に変えた理由。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-08/" class="glass article-card">
+    <span class="file-tag">FILE 08</span>
+    <h3>開示請求への対応とデマ</h3>
+    <p>届いた「意見照会書」。ネットのデマを信じて無視した結果、最悪の朝を迎えるまでのカウントダウン。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-09/" class="glass article-card">
+    <span class="file-tag">FILE 09</span>
+    <h3>会社回線での利用リスク</h3>
+    <p>社内LANからの使用。懲戒解雇だけでなく、会社への損害賠償も加わる社会人としての死刑宣告。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-10/" class="glass article-card">
+    <span class="file-tag">FILE 10</span>
+    <h3>知的社会を生き抜く新常識</h3>
+    <p>正規サービスの選択肢。クリエイターを守ることが、巡り巡ってあなた自身の未来を守ることに繋がる。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-20/" class="glass article-card">
+    <span class="file-tag">FILE 11</span>
+    <h3>アダルト動画の大量開示請求事件</h3>
+    <p>ファイル共有ソフト「BitTorrent（トレント）」を利用してアダルト動画を違法にダウンロードしたユーザーに対し、動画制作会社が...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-21/" class="glass article-card">
+    <span class="file-tag">FILE 12</span>
+    <h3>数千万円の要求も。高額解決金（示談金）の罠</h3>
+    <p>「逮捕されなければセーフ」「警察が来なければいい」と考えている人が直面する最大の絶望が、権利者からの「損害賠償請求（解決金）」です...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-22/" class="glass article-card">
+    <span class="file-tag">FILE 13</span>
+    <h3>8,300万円の賠償も。ビジネスソフトの違法アップロード</h3>
+    <p>映像や音楽だけでなく、高額なビジネス用ソフトウェア（設計用CADソフト、Adobe製品、Microsoft Officeなど）の「...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-26/" class="glass article-card">
+    <span class="file-tag">FILE 14</span>
+    <h3>家族の回線契約者へ迫る危機</h3>
+    <p>トレントの利用によってIPアドレスが特定され、プロバイダから発信者情報開示請求の「意見照会書」が届く場合、その宛先は「インターネッ...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-27/" class="glass article-card">
+    <span class="file-tag">FILE 15</span>
+    <h3>刑事告訴と逮捕へのカウントダウン</h3>
+    <p>「トレントでの違法アップロードは民事（お金で解決できる問題）にとどまる」という認識は甘すぎます。権利者側が「特に悪質である」と判断...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-29/" class="glass article-card">
+    <span class="file-tag">FILE 16</span>
+    <h3>監視ノードの罠（ハニーポット）</h3>
+    <p>あなたがダウンロードボタンを押した裏側で、調査会社のサーバーには接続情報が克明に記録されています。サイバーセキュリティの手法を用いた「おとり」の仕組みを解説。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+        </div>
+    </div>
+    <br>
+    <div id="content-fast-video" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>🎬</span> ファスト動画の罪と社会的代償</h4>
+            <p>
+                ファスト動画は、映画やアニメ等の映像を無断で短く編集し、ストーリーを要約して公開する行為です。『宣伝になる』といった安易な正当化は通用しません。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                近年では、たった数人の投稿者に対して<strong>5億円を超える巨額の損害賠償</strong>が命じられるなど、司法の判断は極めて厳格です。作品の価値を根底から破壊する重大な権利侵害です。
+            </p>
+        </div>
+        <div class="grid">
+            
+            
+<a href="/articles/article-11/" class="glass article-card">
+    <span class="file-tag">FILE 01</span>
+    <h3>ファスト動画で 5 億円の賠償</h3>
+    <p>国内最大級の賠償判決。物語を要約して配信する行為が、なぜこれほどまでに重い責任を伴うのか。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-12/" class="glass article-card">
+    <span class="file-tag">FILE 02</span>
+    <h3>アニメ切り抜きの危うい境界</h3>
+    <p>宣伝のつもりが犯罪に。公式の「黙認」を「許可」と誤解したことで始まる法的措置の恐怖。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-17/" class="glass article-card">
+    <span class="file-tag">FILE 03</span>
+    <h3>映画の「文字抜き出し」ネタバレサイトに有罪判決</h3>
+    <p>映画やアニメのストーリー展開を克明に文章でまとめ、関連画像とともに公開する「ネタバレサイト」が翻案権侵害で有罪判決を受けた事例。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-19/" class="glass article-card">
+    <span class="file-tag">FILE 04</span>
+    <h3>漫画雑誌の「早バレ」摘発事件</h3>
+    <p>発売前の漫画雑誌を不正に入手し、発売日前にネット上に公開する「早バレ」行為。国際的な拡散と大規模な摘発へと発展した事件。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-25/" class="glass article-card">
+    <span class="file-tag">FILE 05</span>
+    <h3>音楽アルバムのフライング公開</h3>
+    <p>CDの発売日前日やフラゲ日（フライングゲット日）に、音楽データを入手して即座にトレントで公開する行為。これは権利者やレコード会社に...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+        </div>
+    </div>
+
+    <div id="content-software" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>📂</span> ファイル共有ソフトの歴史と法的リスク</h4>
+            <p>
+                WinMX、Winny、Share、Perfect Dark、Cabosなど、かつて日本で猛威を振るったファイル共有ソフトの数々。これらは匿名性を謳っていましたが、いずれも警察の捜査網によって利用者が逮捕されています。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                ツールの名称が変わっても、権利者の許諾なくコンテンツを共有する行為は<strong>「著作権法違反」</strong>であり、重い刑罰と損害賠償が課される事実は変わりません。歴史的な摘発事例から、そのリスクを学びましょう。
+            </p>
+        </div>
+        <div class="grid">
+            
+            
+<a href="/articles/article-31/" class="glass article-card">
+    <span class="file-tag">FILE 01</span>
+    <h3>史上初のP2P逮捕事例</h3>
+    <p>2001年。日本で初めてファイル共有ソフト利用者が逮捕された瞬間。音楽共有の代償を歴史から学ぶ。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-32/" class="glass article-card">
+    <span class="file-tag">FILE 02</span>
+    <h3>Winny 初の利用者逮捕</h3>
+    <p>2003年。匿名性の幻想が崩れた日。ゲームや映画の違法アップロードで人生が暗転した実録。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-33/" class="glass article-card">
+    <span class="file-tag">FILE 03</span>
+    <h3>次世代ソフトへの捜査網</h3>
+    <p>2010年。より高度な匿名性を謳ったPerfect Darkでも、警察のサイバーパトロールからは逃れられなかった。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-34/" class="glass article-card">
+    <span class="file-tag">FILE 04</span>
+    <h3>音楽一括公開の代償</h3>
+    <p>2010年。「使いやすい」ソフトの裏側に潜む自動アップロードの罠。音楽ファイル大量公開での摘発例。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-35/" class="glass article-card">
+    <span class="file-tag">FILE 05</span>
+    <h3>「君の名は。」不正配信事件</h3>
+    <p>2016年。大ヒット作に便乗した身勝手な功名心の末路。人気作品を狙った侵害への厳格な対応。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-36/" class="glass article-card">
+    <span class="file-tag">FILE 06</span>
+    <h3>海外製ソフトの落とし穴</h3>
+    <p>2010年頃。世界基準の監視網から逃れる術はない。国境を越える著作権保護の現実を解説。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+        </div>
+    </div>
+
+    <div id="content-piracy" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>📖</span> 海賊版サイトの終焉と利用リスク</h4>
+            <p>
+                海賊版サイトは、漫画や書籍のデータを許可なく無料公開しているサイトです。2021年の法改正により、<strong>漫画や書籍の違法ダウンロードも刑事罰の対象</strong>となりました。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                『漫画村』運営者の逮捕と巨額賠償が示した通り、権利者側の監視体制はかつてないほど強固です。ウイルス感染や個人情報の流出など、単なる「タダ読み」では済まされない代償を伴います。
+            </p>
+        </div>
+        <div class="grid">
+            
+            
+<a href="/articles/article-13/" class="glass article-card">
+    <span class="file-tag">FILE 01</span>
+    <h3>漫画村事件・海賊版サイトの終焉</h3>
+    <p>史上最大の海賊版サイト。運営者の逮捕と17億円の賠償判決が示した、業界の「本気」の対抗策。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-14/" class="glass article-card">
+    <span class="file-tag">FILE 02</span>
+    <h3>ネタバレサイト・不正アプリの罠</h3>
+    <p>画像がなくても。文字だけの「ネタバレ」すらも権利侵害となる、現代の高度な著作権保護の現実。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-28/" class="glass article-card">
+    <span class="file-tag">FILE 03</span>
+    <h3>海賊版ゲーム（ROM）の共有</h3>
+    <p>PCやスマートフォンで過去のゲーム機を動かす「エミュレーター」自体の使用は合法でも、その中で動かすゲームソフトのデータ（ROM）を...</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-15/" class="glass article-card">
+    <span class="file-tag">FILE 04</span>
+    <h3>ディズニー・ユニバーサルがAI「Midjourney」を提訴</h3>
+    <p>ハリウッドメジャーが画像生成AIを提訴。AIの学習と出力が既存キャラに類似しているとして、著作権侵害の根幹を問う歴史的裁判。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-16/" class="glass article-card">
+    <span class="file-tag">FILE 05</span>
+    <h3>Telegram運営トップの逮捕と「秘匿性」の終焉</h3>
+    <p>匿名性を盾にした著作権侵害や犯罪行為への規制が、ついに巨大プラットフォーム運営トップの責任追及・逮捕へと発展した事件。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+            
+<a href="/articles/article-18/" class="glass article-card">
+    <span class="file-tag">FILE 06</span>
+    <h3>ソーシャルゲームの非公式サーバーと「保存」の罠</h3>
+    <p>サービス終了したソシャゲを遊ぶために有志が勝手に立ち上げた「エミュレーターサーバー」。保存目的であっても明らかな著作権法違反となる罠。</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
+
+            
+        </div>
+    </div>
+</div>
+
+<script>
+    const VIEWS = {
+        home: document.getElementById('home-view'),
+        listing: document.getElementById('listing-view'),
+        title: document.getElementById('category-title')
+    };
+
+    const CATEGORY_NAMES = {
+        'torrent': 'トレント',
+        'software': 'ファイル共有ソフト',
+        'fast-video': 'ファスト動画',
+        'piracy': '海賊版'
+    };
+
+    // UI表示を切り替える共通関数
+    function updateUI(cat) {
+        if (cat && CATEGORY_NAMES[cat]) {
+            // 記事一覧を表示
+            VIEWS.home.classList.add('view-hidden');
+            VIEWS.title.innerText = CATEGORY_NAMES[cat];
+            document.querySelectorAll('.content-group').forEach(el => el.classList.add('view-hidden'));
+            const target = document.getElementById(`content-${cat}`);
+            if (target) target.classList.remove('view-hidden');
+            setTimeout(() => VIEWS.listing.classList.remove('view-hidden'), 50);
+        } else {
+            // トップページを表示
+            VIEWS.listing.classList.add('view-hidden');
+            setTimeout(() => VIEWS.home.classList.remove('view-hidden'), 50);
+        }
+    }
+
+    // カテゴリ選択（履歴追加あり）
+    function showCategory(cat) {
+        history.pushState({ category: cat }, '', '#' + cat);
+        updateUI(cat);
+    }
+
+    // ホームに戻る（履歴追加あり）
+    function showHome() {
+        history.pushState({ category: null }, '', window.location.pathname);
+        updateUI(null);
+    }
+
+    // ブラウザの戻る・進むを検知
+    window.addEventListener('popstate', (event) => {
+        const cat = (event.state && event.state.category) || null;
+        updateUI(cat);
+    });
+
+    // 初回読み込み時のハッシュ処理
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.substring(1);
+        if (hash && CATEGORY_NAMES[hash]) {
+            updateUI(hash);
+        }
+    });
+</script>
+
+
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-02: Winny 初の利用者逮捕事件" %}
+{% block content %}
+
+<article>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-02: Winny 初の利用者逮捕事件</h1>
+    <p class="subtitle">～匿名性の幻想が崩れた日～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <p>
+            2003年11月、日本中で爆発的に普及していたファイル共有ソフト「Winny（ウィニー）」において、初の逮捕者が発表されました。逮捕されたのは、市販のゲームソフトやアニメ映画を無断でアップロードしていた愛媛県と群馬県の男性2人でした。
+        </p>
+        <p>
+            Winnyは開発者によって「匿名性を重視した設計」がなされており、多くのユーザーが「警察には絶対に捕まらない」と信じて違法行為を繰り返していました。しかし、警察は独自の手法でノードを追跡。この摘発は、Winnyコミュニティに凄まじい衝撃を与えました。
+        </p>
+    </section>
+
+    <section class="glass article-card">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">技術と法の対峙</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3 style="color: #fff; margin-bottom: 1rem;">「アップロード」の法的意味</h3>
+            <p>
+                Winnyはデータの断片をバケツリレーのように転送する仕組みでした。利用者は「ただ持っているだけ」のつもりでも、PCが起動している間に自動的に他者のリクエストに応答し、データを送信し続けます。
+            </p>
+            <p>
+                逮捕された2人は、数千回のダウンロードが発生した責任を問われました。警察の発表では、「匿名性を隠れ蓑にした大規模な著作権侵害を放置することはできない」と強く警告されました。この事件以降、開発者の逮捕へと至る大きな社会問題へと発展していきました。
+            </p>
+        </div>
+
+        <div style="text-align: center; padding: 1.5rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">2003年11月27日</p>
+            <p style="font-size: 2.2rem; font-weight: bold; color: var(--accent-danger); margin: 0;">Winny初の逮捕者</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">（※匿名性が否定された象徴的な摘発）</p>
+        </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <p>
+            「ソフトの設計上、捕まるはずがない」という技術的確信は、法的制裁の前では無力でした。一度、法執行機関が本気になれば、いかなる技術も絶対的な隠れ蓑にはなりません。
+        </p>
+        <p style="font-weight: bold; color: #fff;">
+            あなたのPC、誰かに使われていませんか？無自覚な「共犯者」にならないために。
+        </p>
+    </section>
+
+    <section class="references">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://www.itmedia.co.jp/news/0311/27/nj03.html" target="_blank">ITmedia：Winnyユーザー2人を逮捕、著作権法違反で初</a></li>
+            <li><a href="https://www.asahi.com/tech/news/TKY200311270275.html" target="_blank">朝日新聞：Winny利用者2人を逮捕（当時の記事アーカイブ）</a></li>
+        </ul>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="/articles/02_apps/article-02-01/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：WinMX 史上初のP2P逮捕事例</a>
+    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+    <a href="/articles/02_apps/article-02-03/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：Perfect Dark 初の利用者逮捕事件 &rarr;</a>
+</div>
+</article>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+{% extends "main.njk" %}
+{% set title = "知財Wiki：Cabosの詳細" %}
+{% set description = "Cabosの仕組みと法的リスク。使いやすいインターフェースの裏側に潜む「自動アップロードの罠」と音楽ファイル一括公開の代償について解説します。" %}
+{% block content %}
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">Cabos</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">「使いやすさ」の裏側に潜む自動アップロードの罠</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">手軽さが生んだ無意識の侵害</h2>
+        <p>
+            Cabos（カボス）は、Gnutella（グヌーテラ）ネットワークを利用したファイル共有ソフトで、日本国内で独自に開発されました。設定が非常に簡単で動作も軽く、スパイウェアも含まれていないクリーンなツールとして、特に音楽ファイル（MP3）をダウンロードしたい若い世代を中心に広まりました。
+        </p>
+        <p>
+            しかし、この「使いやすさ」こそが最大の落とし穴でした。多くのユーザーは、P2P（ピア・ツー・ピア）の根幹である「ダウンロードしたものは、同時に他のユーザーへアップロードされる」という仕組みを理解しないまま利用していました。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語・関連事項</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">Gnutella (グヌーテラ)</strong>:
+                中央サーバーを持たず、ユーザー同士が数珠つなぎになってファイルを検索・転送するオープンなP2Pプロトコル。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">共有フォルダ設定の罠</strong>:
+                ソフトウェアをインストールした際の初期設定により、ダウンロードしたファイルの保存先が、そのまま「世界中へ公開するフォルダ」に設定されてしまう構造。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">重大なリスク：意図せぬ大量送信と摘発</h2>
+        <p>
+            2010年代初頭、警察庁の全国的なサイバー一斉取締りにおいて、Cabosの利用者が多数逮捕されました。逮捕された人々の多くは「自分は音楽をダウンロードして楽しんでいただけ」と供述しました。
+        </p>
+        <p>
+            しかし、共有フォルダの設定により、パソコン内に保存されていた数千曲もの音楽ファイルが、本人の自覚のないまま24時間世界中へ向けて「送信（アップロード）」され続けていたのです。<b>著作権法において、権利者に無断で著作物を「送信可能化」する行為は、重い刑事罰（10年以下の懲役または1000万円以下の罰金）の対象となります。</b>「知らなかった」では済まされない法的責任が生じます。
+        </p>
+    </section>
+
+</article>
+
+<style>
+    .wiki-detail h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .detail-header { margin-bottom: 3rem; }
+    .relation-list { display: flex; flex-direction: column; gap: 1rem; }
+    .relation-item { padding: 1rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-gold); border-radius: 4px; }
+    .warning-section { padding: 2rem; background: rgba(239, 68, 68, 0.05) !important; }
+</style>
+
+{% endblock %}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Winny（ウィニー）の仕組みと法的リスク。バケツリレー型共有の特徴や、暴露ウイルスによる情報漏洩の脅威について解説します。">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="知財Wiki：Winny（ウィニー）の詳細 | digital-literacy-ip">
+    <meta property="og:description" content="Winny（ウィニー）の仕組みと法的リスク。バケツリレー型共有の特徴や、暴露ウイルスによる情報漏洩の脅威について解説します。">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="知財Wiki：Winny（ウィニー）の詳細 | digital-literacy-ip">
+    <meta property="twitter:description" content="Winny（ウィニー）の仕組みと法的リスク。バケツリレー型共有の特徴や、暴露ウイルスによる情報漏洩の脅威について解説します。">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <title>知財Wiki：Winny（ウィニー）の詳細 | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">Winny（ウィニー）</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">中央サーバーを持たない「純粋P2P」の先駆者とその光影</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">バケツリレー型共有の仕組み</h2>
+        <p>
+            Winnyは、2ちゃんねるのダウンロードソフト板で開発された純粋P2P型ファイル共有ソフトです。最大の特徴は、特定のサーバーが存在せず、ユーザー同士が網の目のように繋がってデータをリレーする仕組みにあります。
+        </p>
+
+        <div class="mechanism-diagram"
+            style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 12px; text-align: center;">
+            <img src="https://xtech.nikkei.com/it/article/COLUMN/20060420/235741/zu-q2.jpg" alt="Winnyのネットワーク構造図"
+                style="max-width: 100%; height: auto; border-radius: 8px; filter: brightness(0.9) contrast(1.1);">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem;">
+                図：公開されたファイルの情報がWinnyネットワークを介して広まる仕組み（出典：日経クロステック）
+            </p>
+        </div>
+
+        <p>
+            ファイルそのものを共有するのではなく、その所在を示す「キー」をネットワーク全体に広めます。実際のデータは「キャッシュ」として細切れになり、中継するユーザーのPC内に一時保存（自動転送）されます。
+        </p>
+
+        <p>
+            「誰が発信したか」を隠蔽するために、データは複数のノード（ユーザーPC）を経由して届けられます。また、似たようなファイルを欲しがるユーザー同士が「クラスタ」を形成し、効率的にデータをやり取りします。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">発信者 (Uploader)</strong>:
+                ファイルを最初に共有フォルダに入れ、ネットワークへ「キー」を放流します。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">中継ノード (Relay Nodes)</strong>:
+                ファイルの一部（キャッシュ）を預かり、他人のリクエストに応じて転送します。ファイルの転送主は、何を送っているか意識しません。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">取得者 (Downloader)</strong>:
+                キーワード検索で「キー」を見つけ、断片を集めて元のファイルを復元します。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">監視機関 (Police/Investigator)</strong>:
+                ネットワークに潜入し、パケットの挙動を解析して「リレーの起点（発信者）」を特定します。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">重大なリスク：暴露ウイルスの脅威</h2>
+        <p>
+            「Antinny（アンティニー）」などの暴露ウイルスに感染すると、デスクトップ上の重要書類や個人情報が勝手にWinnyの共有フォルダにコピーされます。一度流出した情報は、Winnyの強力なキャッシュ拡散機能により、<b>二度とインターネットから消去することは不可能になります。</b>
+        </p>
+    </section>
+
+    <section class="references" style="margin-top: 3rem;">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://xtech.nikkei.com/it/article/COLUMN/20060315/232609/"
+                    target="_blank">Winny（ウィニー）のしくみ（日経クロステック）</a></li>
+            <li><a href="https://xtech.nikkei.com/it/article/COLUMN/20060420/235741/"
+                    target="_blank">共有するファイルは誰がどのようにして登録するのですか（日経クロステック）</a></li>
+            <li><a href="https://www.npa.go.jp/cyber/policy/p2p.html" target="_blank">警察庁：ファイル共有ソフトを悪用した著作権侵害への対策</a>
+            </li>
+        </ul>
+    </section>
+</article>
+
+<style>
+    .wiki-detail h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .detail-header {
+        margin-bottom: 3rem;
+    }
+
+    .relation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .relation-item {
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 3px solid var(--accent-gold);
+        border-radius: 4px;
+    }
+
+    .warning-section {
+        padding: 2rem;
+        background: rgba(239, 68, 68, 0.05) !important;
+    }
+</style>
+
+
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
+</body>
+</html>

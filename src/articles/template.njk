@@ -1,0 +1,97 @@
+{# 
+  共通カードコンポーネントのデザイン雛形
+  UI Reference: Caution Mode
+#}
+
+<article class="card glass-effect">
+  <div class="card-header">
+    <span class="file-id">FILE XX</span>
+    <div class="tags">
+      <span class="tag">#タグ1</span>
+      <span class="tag">#タグ2</span>
+    </div>
+  </div>
+  
+  <div class="card-body">
+    <h3 class="article-title">記事のタイトル</h3>
+    <p class="article-summary">
+      記事の要約文をここに記述します。
+    </p>
+    <a href="#article-XX" class="read-article-btn">READ ARTICLE →</a>
+  </div>
+  
+  <div class="caution-stripe-overlay"></div>
+</article>
+
+<style>
+  /* Base styles to match existing Torrent UI */
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .glass-effect:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.3);
+  }
+
+  .file-id {
+    color: #FFD700;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .article-title {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+  }
+
+  .article-summary {
+    color: #CCCCCC;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .read-article-btn {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease;
+  }
+
+  .read-article-btn:hover {
+    border-bottom: 2px solid #FFD700;
+  }
+
+  .caution-stripe-overlay {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    width: 100px;
+    height: 100px;
+    background: repeating-linear-gradient(
+      45deg,
+      #FFD700,
+      #FFD700 10px,
+      #000000 10px,
+      #000000 20px
+    );
+    opacity: 0.1;
+    z-index: -1;
+    transform: rotate(-15deg);
+  }
+</style>

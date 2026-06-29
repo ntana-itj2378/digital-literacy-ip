@@ -1,0 +1,21 @@
+{% extends "main.njk" %}
+{% set title = "404 - Page Not Found" %}
+
+{% block content %}
+<section class="hero" style="padding: 6rem 0;">
+    <h1 style="font-size: 5rem; color: var(--accent-gold); margin-bottom: 1rem;">404</h1>
+    <p style="font-size: 1.5rem; margin-bottom: 2rem;">アクセスしたページは存在しないか、移動した可能性があります。</p>
+    <div style="margin-top: 3rem;">
+        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">
+            ポータルへ戻る
+        </a>
+    </div>
+</section>
+
+<style>
+    /* 404専用のアニメーション等があればここに追加 */
+    body {
+        /* 404の時だけ少し雰囲気を変えるなどの演出も可能 */
+    }
+</style>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-03: Perfect Dark 初の利用者逮捕事件" %}
+{% block content %}
+
+<article>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-03: Perfect Dark 初の利用者逮捕事件</h1>
+    <p class="subtitle">～「次世代」の盾も通用せず～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <p>
+            2010年1月、岡山県警はファイル共有ソフト「Perfect Dark（パーフェクトダーク）」を使用し、アニメ作品を無断で公開していたとして、同県の会社員の男性を逮捕しました。Perfect Darkにおける逮捕者は国内で初めてのことでした。
+        </p>
+        <p>
+            Perfect Darkは、WinnyやShareよりもさらに高度な暗号化と、巨大なキャッシュ容量（最低40GB以上）を必要とする仕組みを持っていました。これにより「より安全で、より見つかりにくい」とされていましたが、警察のサイバーパトロールは既にこの「次世代ソフト」にも対応していました。
+        </p>
+    </section>
+
+    <section class="glass article-card">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">キャッシュと送信可能化</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3 style="color: #fff; margin-bottom: 1rem;">自動的な侵害行為</h3>
+            <p>
+                Perfect Darkの大きな特徴は、ユーザーが意識的に共有しなくても、ソフトが自動的に「キャッシュ」としてデータを保持し、他者へ転送する点にあります。この仕組みにより、ソフトをインストールした時点で「大規模な著作権侵害ネットワークの一部」に組み込まれます。
+            </p>
+            <p>
+                逮捕された男性は、人気アニメ『鋼の錬金術師』などを公開していました。技術的にどれほど複雑な多層化を行っても、最終的に「誰がそのデータを公開元として保持しているか」を特定する捜査能力の進化を止めることはできませんでした。
+            </p>
+        </div>
+
+        <div style="text-align: center; padding: 1.5rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">2010年1月21日</p>
+            <p style="font-size: 2.2rem; font-weight: bold; color: var(--accent-danger); margin: 0;">PD初の逮捕者</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">（※次世代ソフトの神話が崩壊した瞬間）</p>
+        </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <p>
+            「パーフェクト（完璧）」という名前を冠していても、法的なリスクは決して完璧には防げません。むしろ、高度な技術に頼るほど、その責任は重くのしかかります。
+        </p>
+        <p style="font-weight: bold; color: #fff;">
+            匿名性を謳う言葉の裏側にある「代償」に気づいていますか？
+        </p>
+    </section>
+
+    <section class="references">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://www.accsjp.or.jp/activities/protection/cases/perfectdark.html" target="_blank">ACCS：ファイル共有ソフト「Perfect Dark」悪用事案</a></li>
+            <li><a href="https://internet.watch.impress.co.jp/docs/news/344018.html" target="_blank">INTERNET Watch：Perfect Dark初の逮捕、岡山県警がアニメ無断アップロードで</a></li>
+        </ul>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="/articles/02_apps/article-02-02/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：Winny 初の利用者逮捕事件</a>
+    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+    <a href="/articles/02_apps/article-02-04/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：Cabos 音楽ファイル大量公開事件 &rarr;</a>
+</div>
+</article>
+
+{% endblock %}

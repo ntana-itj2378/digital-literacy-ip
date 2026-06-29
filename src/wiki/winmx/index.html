@@ -1,0 +1,76 @@
+{% extends "main.njk" %}
+{% set title = "知財Wiki：WinMXの詳細" %}
+{% set description = "WinMXの仕組みと史上初のP2P逮捕事例。日本におけるファイル共有ソフトの著作権侵害問題の原点について解説します。" %}
+{% block content %}
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">WinMX</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">史上初のP2P逮捕事例。日本における著作権侵害問題の原点</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">ブロードバンド黎明期の寵児</h2>
+        <p>
+            WinMXは、2000年頃にカナダのFrontcode Technologies社によって開発されたファイル共有ソフトです。ADSLなどのブロードバンド回線が普及し始めた日本において、MP3などの音楽ファイルやソフトウェアの交換ツールとして爆発的に普及しました。
+        </p>
+
+        <div class="mechanism-diagram"
+            style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 12px; text-align: center;">
+            <img src="https://bb.watch.impress.co.jp/cda/static/image/2006/04/23/bw7602.jpg" alt="WinMXの構造図"
+                style="max-width: 100%; height: auto; border-radius: 8px; filter: brightness(0.9) contrast(1.1);">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem;">
+                図1：WinMXの構造（出典：Broadband Watch）
+            </p>
+        </div>
+
+        <p>
+            初期のP2Pソフトであり、Napsterのような中央サーバーを介する方式（OpenNap）と、ユーザー同士が直接接続してネットワークを形成する分散型方式（WPN: WinMX Peer Network）の両方をサポートしていました。この「誰でも簡単にファイルを検索してダウンロードできる」利便性が、後に大きな社会問題を引き起こすことになります。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語・関連事項</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">中央サーバー (Centralized Server)</strong>:
+                ユーザーの接続情報やファイルリストを管理するサーバー。ここを監視、または閉鎖されるとネットワークが機能不全に陥りやすいという弱点がありました。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">ピア・ツー・ピア (Peer to Peer)</strong>:
+                サーバーを介さず、ユーザーのパソコン（ピア）同士が直接通信を行う技術。通信経路を辿れば、誰がどのファイルを提供しているかのIPアドレスが容易に特定できました。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">重大なリスク：日本初のP2P摘発事例</h2>
+        <p>
+            2001年11月、京都府警はWinMXを通じてアドビシステムズなどの高額なソフトウェアや、人気アーティストの音楽ファイルを無断で送信できる状態にしていたユーザー2名（大学生と会社員）を著作権法違反の疑いで逮捕しました。<br><br>
+            これは<b>「ファイル共有ソフトを通じた著作権侵害に対する日本初の刑事摘発」</b>であり、「ネット上の匿名ツールを使えば捕まらない」という当時のユーザーの甘い認識を打ち砕く歴史的な事件となりました。この事件以降、警察機関によるサイバー空間の本格的な監視がスタートしています。
+        </p>
+    </section>
+    <section class="references" style="margin-top: 3rem;">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://bb.watch.impress.co.jp/cda/bbword/13682.html"
+                    target="_blank">BB用語辞典：WinMX（Broadband Watch）</a></li>
+        </ul>
+    </section>
+
+</article>
+
+<style>
+    .wiki-detail h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .detail-header { margin-bottom: 3rem; }
+    .relation-list { display: flex; flex-direction: column; gap: 1rem; }
+    .relation-item { padding: 1rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-gold); border-radius: 4px; }
+    .warning-section { padding: 2rem; background: rgba(239, 68, 68, 0.05) !important; }
+</style>
+
+{% endblock %}

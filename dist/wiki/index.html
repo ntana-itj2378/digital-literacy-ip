@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="知的財産権に関連する用語や重要事件を体系的に学べるWikiデータベース。Winny、BitTorrent、漫画村事件などの詳細を掲載しています。">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="知財Wiki：事件・法律事典 | digital-literacy-ip">
+    <meta property="og:description" content="知的財産権に関連する用語や重要事件を体系的に学べるWikiデータベース。Winny、BitTorrent、漫画村事件などの詳細を掲載しています。">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="知財Wiki：事件・法律事典 | digital-literacy-ip">
+    <meta property="twitter:description" content="知的財産権に関連する用語や重要事件を体系的に学べるWikiデータベース。Winny、BitTorrent、漫画村事件などの詳細を掲載しています。">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <title>知財Wiki：事件・法律事典 | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        
+<section class="hero" style="padding: 4rem 0;">
+    <nav style="text-align: left; margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    </nav>
+    <span class="series-badge">Knowledge Base</span>
+    <h1 style="font-size: 3rem; margin-top: 0.5rem;">Intellectual Property Wiki</h1>
+    <p>用語解説と重要事件のデータベース</p>
+    
+    <div class="jump-nav" style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="#section-laws" class="jump-btn">⚖️ 法律</a>
+        <a href="#section-tools" class="jump-btn">🛠️ ツール</a>
+        <a href="#section-cases" class="jump-btn">🚨 事件・事例</a>
+    </div>
+</section>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    .jump-btn {
+        padding: 0.6rem 1.5rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border-glass);
+        border-radius: 50px;
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.85rem;
+        font-weight: 700;
+        transition: all 0.3s ease;
+    }
+    .jump-btn:hover {
+        background: var(--accent-gold);
+        color: #000;
+        border-color: var(--accent-gold);
+        transform: translateY(-2px);
+    }
+    .wiki-section {
+        margin-bottom: 5rem;
+    }
+    .section-header {
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .section-header h2 {
+        font-size: 1.5rem;
+        color: var(--accent-gold);
+        letter-spacing: 0.1em;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    .section-header h2 span {
+        font-size: 0.8rem;
+        color: var(--text-secondary);
+        font-weight: normal;
+    }
+    .wiki-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    .wiki-card {
+        padding: 2rem;
+        border: 1px solid var(--border-glass);
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        display: flex;
+        flex-direction: column;
+    }
+    .wiki-card.is-linkable:hover {
+        transform: translateY(-5px);
+        background: rgba(255, 255, 255, 0.05);
+        border-color: rgba(255, 255, 255, 0.4);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+    .tag {
+        font-size: 0.65rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        margin-bottom: 1rem;
+        display: inline-block;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        width: fit-content;
+    }
+    .law-tag { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+    .tech-tag { background: rgba(16, 185, 129, 0.2); color: #34d399; }
+    .case-tag { background: rgba(248, 113, 113, 0.2); color: #fb7185; }
+
+    .wiki-card h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #fff;
+    }
+    .wiki-card p {
+        font-size: 0.9rem;
+        color: var(--text-secondary);
+        line-height: 1.7;
+    }
+
+    @media (max-width: 900px) {
+        .wiki-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+        .wiki-grid { grid-template-columns: 1fr; }
+    }
+</style>
+
+<div class="wiki-container">
+    <section class="wiki-section" id="section-laws">
+        <div class="section-header">
+            <h2>法律 <span>Laws & Regulations</span></h2>
+        </div>
+        <div class="wiki-grid">
+            
+                
+
+<div class="glass wiki-card law" style="display: flex; flex-direction: column;">
+    <span class="tag law-tag">Law</span>
+    <h3>公衆送信権</h3>
+    <p>著作者がその著作物を公衆送信する権利を独占する権利。トレントなどのファイル共有ソフトでのアップロードは、この権利の明確な侵害にあたります。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card law" style="display: flex; flex-direction: column;">
+    <span class="tag law-tag">Law</span>
+    <h3>著作権法 第119条</h3>
+    <p>著作権侵害に対する刑事罰を定めた条文。最大で10年以下の懲役または1000万円以下の罰金という重い刑罰が規定されています。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card law" style="display: flex; flex-direction: column;">
+    <span class="tag law-tag">Law</span>
+    <h3>翻案権</h3>
+    <p>著作物を要約、変形、映画化などして別の形にする権利。「ファスト映画」や「ネタバレサイト」でのセリフ書き起こしは、この権利の侵害にあたります。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card law" style="display: flex; flex-direction: column;">
+    <span class="tag law-tag">Law</span>
+    <h3>民法 第709条</h3>
+    <p>不法行為による損害賠償を定めた法律。故意または過失によって他人の権利を侵害した者は、賠償責任を負います。数億円単位の賠償請求の根拠となります。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card law" style="display: flex; flex-direction: column;">
+    <span class="tag law-tag">Law</span>
+    <h3>令和3年 著作権法改正</h3>
+    <p>違法にアップロードされたものと知りながら、漫画や書籍（静止画）をダウンロードする行為が新たに罰則の対象となりました。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card law" style="display: flex; flex-direction: column;">
+    <span class="tag law-tag">Law</span>
+    <h3>プロバイダ責任制限法</h3>
+    <p>情報の開示を求めるための法律。著作権者はこれに基づき、侵害者の氏名・住所をプロバイダに請求（発信者情報開示請求）できます。</p>
+</div>
+
+
+            
+        </div>
+    </section>
+
+    <section class="wiki-section" id="section-tools">
+        <div class="section-header">
+            <h2>ツール <span>Tools & Technology</span></h2>
+        </div>
+        <div class="wiki-grid">
+            
+                
+
+<a href="/wiki/winmx/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>WinMX</h3>
+    <p>日本で初めてファイル共有ソフト利用者が逮捕された事件の舞台。音楽共有の代償を歴史から学ぶ原点。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/winny/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>Winny</h3>
+    <p>日本で最も有名なP2Pソフト。中央サーバーを持たない『バケツリレー式』の共有が特徴。開発者の逮捕や情報漏洩ウイルスが社会問題となりました。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/share/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>Share</h3>
+    <p>Winnyの後継として登場。大ヒットアニメ映画の不正配信で即座に逮捕者が出たことで、監視の厳しさが証明されました。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/perfect-dark/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>Perfect Dark</h3>
+    <p>より高度な匿名性を謳った次世代ソフト。しかし警察のサイバーパトロールの解析技術からは逃れられませんでした。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/cabos/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>Cabos</h3>
+    <p>「使いやすい」ソフトの裏側に潜む自動アップロードの罠。大量の音楽ファイルを無意識に公開してしまう摘発例が相次ぎました。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/limewire/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>LimeWire</h3>
+    <p>海外製ソフトを利用しても世界基準の監視網からは逃れられない事実を示した、グローバルなP2Pソフトの終焉。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/bittorrent/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>BitTorrent</h3>
+    <p>効率的な共有プロトコルですが、「DLと同時にULも行われる」という特性があります。知らぬ間に「送信者」となる摘発の最大要因です。</p>
+</a>
+
+
+            
+                
+
+<a href="/wiki/vpn/" class="glass wiki-card tech is-linkable" style="text-decoration: none; display: flex; flex-direction: column;">
+    <span class="tag tech-tag">Tech</span>
+    <h3>VPN（仮想専用線）</h3>
+    <p>匿名性を高める技術として誤解されがちですが、通信記録やログの精査により、VPNを利用していても個人が特定されるケースは非常に多く存在します。</p>
+</a>
+
+
+            
+        </div>
+    </section>
+
+    <section class="wiki-section" id="section-cases">
+        <div class="section-header">
+            <h2>事件・事例 <span>Sites & Incidents</span></h2>
+        </div>
+        <div class="wiki-grid">
+            
+                
+
+<div class="glass wiki-card case" style="display: flex; flex-direction: column;">
+    <span class="tag case-tag">Site</span>
+    <h3>リーチサイト</h3>
+    <p>海賊版コンテンツへのリンクを整理して掲載するサイト。法改正により、リーチサイトへのリンク提供や運営も厳しく罰せられるようになっています。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card case" style="display: flex; flex-direction: column;">
+    <span class="tag case-tag">Incident</span>
+    <h3>漫画村事件</h3>
+    <p>月間1億回以上のアクセスがあった史上最大の海賊版サイト。運営者はフィリピンで拘束・逮捕され、17億円以上の損害賠償命令が確定しました。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card case" style="display: flex; flex-direction: column;">
+    <span class="tag case-tag">Incident</span>
+    <h3>ファスト映画摘発</h3>
+    <p>映画のあらすじを短くまとめた動画を公開していた運営者が逮捕。個人の侵害行為に対し、異例の「5億円」という巨額の損害賠償支払いが命じられました。</p>
+</div>
+
+
+            
+                
+
+<div class="glass wiki-card case" style="display: flex; flex-direction: column;">
+    <span class="tag case-tag">Incident</span>
+    <h3>ネタバレサイト摘発</h3>
+    <p>人気漫画の内容を発売前にリークする「フラゲ」行為や、セリフの書き起こしサイトの運営者が逮捕された事例。2024年にも複数の大規模サイトが摘発されています。</p>
+</div>
+
+
+            
+        </div>
+    </section>
+</div>
+
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+  "categories": [
+    {
+      "category_id": "01_p2p",
+      "category_name": "P2P・ファイル共有ソフト",
+      "description": "ビットトレント、ファイル共有ソフトウェア関連の記事",
+      "article_count": 16,
+      "order": 1
+    },
+    {
+      "category_id": "02_apps",
+      "category_name": "違法アプリケーション",
+      "description": "違法アプリ・ツール関連の記事",
+      "article_count": 6,
+      "order": 2
+    },
+    {
+      "category_id": "03_clips",
+      "category_name": "違法動画・クリップ",
+      "description": "違法動画配信・クリップ関連の記事",
+      "article_count": 5,
+      "order": 3
+    },
+    {
+      "category_id": "04_web",
+      "category_name": "Webサービス・ネットワーク",
+      "description": "Web・ネットワーク関連の違法行為",
+      "article_count": 4,
+      "order": 4
+    },
+    {
+      "category_id": "05_risk-awareness",
+      "category_name": "知的財産権リスク啓蒙",
+      "description": "著作権法・知的財産権の基礎知識と違法配布のリスク",
+      "article_count": 3,
+      "order": 5,
+      "color": "#FF6B6B",
+      "icon": "warning"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfect Darkの仕組みと法的リスク。高度な匿名性を謳った次世代ファイル共有ソフトの破綻と、サイバー警察による摘発について解説します。">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="知財Wiki：Perfect Darkの詳細 | digital-literacy-ip">
+    <meta property="og:description" content="Perfect Darkの仕組みと法的リスク。高度な匿名性を謳った次世代ファイル共有ソフトの破綻と、サイバー警察による摘発について解説します。">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="知財Wiki：Perfect Darkの詳細 | digital-literacy-ip">
+    <meta property="twitter:description" content="Perfect Darkの仕組みと法的リスク。高度な匿名性を謳った次世代ファイル共有ソフトの破綻と、サイバー警察による摘発について解説します。">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <title>知財Wiki：Perfect Darkの詳細 | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">Perfect Dark</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">「次世代の匿名性」の崩壊。高度な暗号化でも逃れられない捜査網</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">究極の匿名性を目指した技術</h2>
+        <p>
+            Perfect Dark（パーフェクトダーク）は、WinnyやShareに続く「第3世代」のファイル共有ソフトとして登場しました。暗号化技術をさらに複雑化し、分散ハッシュテーブル（DHT）と呼ばれる技術を用いて、ファイルの検索や転送の経路を高度に匿名化するよう設計されていました。
+        </p>
+        <p>
+            ネットワークを維持するため、ユーザーのパソコンに対して「数十ギガバイト以上のキャッシュ（一時保存領域）の提供」を強制するシステムを導入しており、ブロードバンド回線と大容量HDDを持つ限られたユーザーの間で、アニメやゲームなどの大容量ファイルの共有に悪用されました。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語・関連事項</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">暗号化・難読化</strong>:
+                通信パケットの内容を複雑な暗号で保護し、外部から何を転送しているか分からないようにする技術。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">分散ハッシュテーブル (DHT)</strong>:
+                中央サーバーを持たず、ユーザー全員のパソコンで手分けして検索用のインデックス情報を管理する仕組み。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">強制キャッシュシステム</strong>:
+                自分が欲しいファイルだけでなく、ネットワーク上を流通する無関係の暗号化されたファイル断片を自身のHDDに強制保存させる仕組み。これにより「自分は中継しているだけだ」という言い逃れを意図していました。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">重大なリスク：「完全な匿名」の破綻</h2>
+        <p>
+            開発者や利用者はその高度な暗号化により「絶対に特定されない」と信じていました。しかし2010年1月、京都府警ハイテク犯罪対策室の執念の捜査により、Perfect Darkを通じてアニメーション作品などを不正に公開していたユーザー3名が一斉に逮捕されました。<br><br>
+            警察のサイバーパトロール機関は、ソフトウェアの通信プロトコルを徹底的に解析する能力を有しています。<b>「ツールが高度だから捕まらない」という技術的過信は、警察の捜査能力の前には全くの無意味である</b>ことが証明された事件でした。
+        </p>
+    </section>
+
+</article>
+
+<style>
+    .wiki-detail h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .detail-header { margin-bottom: 3rem; }
+    .relation-list { display: flex; flex-direction: column; gap: 1rem; }
+    .relation-item { padding: 1rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-gold); border-radius: 4px; }
+    .warning-section { padding: 2rem; background: rgba(239, 68, 68, 0.05) !important; }
+</style>
+
+
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
+</body>
+</html>

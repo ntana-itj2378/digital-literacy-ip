@@ -1,164 +1,237 @@
 {% extends "main.njk" %}
-{% set title = "知的財産権啓蒙ポータル" %}
+{% set title = "Home" %}
+{% set description = "デジタル・リテラシーと知的財産権（IP）を学ぶためのポータルサイト。ファイル共有ソフトのリスクや最新の摘発事例を分かりやすく解説。" %}
 
 {# 記事カード用のマクロ定義 #}
 {% macro articleCard(url, fileId, tag, title, description) %}
-    <a href="{{ url }}" class="glass article-card">
-        <span class="file-tag">FILE {{ fileId }}: [{{ tag }}]</span>
-        <h3>{{ title }}</h3>
-        <p>{{ description }}</p>
-        <span class="read-link">READ ARTICLE &rarr;</span>
-    </a>
+<a href="{{ url }}" class="glass article-card">
+    <span class="file-tag">FILE {{ fileId }}</span>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+    <span class="read-link">READ ARTICLE &rarr;</span>
+</a>
 {% endmacro %}
 
 {# 記事データの定義 #}
 {% set torrentArticles = [
-    { url: "/articles/torrent/article-01/", id: "01", tag: "ARREST CASE", title: "【逮捕】音楽を共有した大学生", desc: "午前7時の家宅捜索。音楽共有ソフトを利用し、意図せず「加害者」となった若者の代償。" },
-    { url: "/articles/torrent/article-02/", id: "02", tag: "ARREST CASE 02", title: "【損害】映画 1 本が数百万の賠償に", desc: "たった 1 回のクリック。開示請求の通知から始まった、逃げ場のない民事賠償の現実。" },
-    { url: "/articles/torrent/article-03/", id: "03", tag: "PC GAME", title: "【逮捕】ゲーム違法配布の果て", desc: "世界初の摘発事例。31歳会社員が「遊び」のつもりのアップロードで失ったもの。" },
-    { url: "/articles/torrent/article-04/", id: "04", tag: "COMMERCIAL", title: "【逮捕】アニメ動画の不正販売", desc: "「小遣い稼ぎ」という一線。14万円の利益のために背負った懲役刑のリスク。" },
-    { url: "/articles/torrent/article-05/", id: "05", tag: "CIVIL TRIAL", title: "【民事】逃げ場のない損害賠償", desc: "17億円、5億円。企業が「本気」で動き出した、個人の預金や給料の差し押さえの実態。" },
-    { url: "/articles/torrent/article-06/", id: "06", tag: "LAW 01", title: "【刑罰】著作権法 第119条の衝撃", desc: "著作権法。万引きよりも遥かに重い「罰金1000万円」という刑罰が突きつける現実。" },
-    { url: "/articles/torrent/article-07/", id: "07", tag: "LAW 02", title: "【解説】改正による規制範囲の拡大", desc: "漫画や書籍も。令和3年の法改正が一般ユーザーの「うっかり」を容赦なく犯罪に変えた理由。" },
-    { url: "/articles/torrent/article-08/", id: "08", tag: "PRACTICE", title: "【実務】開示請求への対応とデマ", desc: "届いた「意見照会書」。ネットのデマを信じて無視した結果、最悪の朝を迎えるまでのカウントダウン。" },
-    { url: "/articles/torrent/article-09/", id: "09", tag: "CORPORATE", title: "【警告】会社回線での利用リスク", desc: "社内LANからの使用。懲戒解雇だけでなく、会社への損害賠償も加わる社会人としての死刑宣告。" },
-    { url: "/articles/torrent/article-10/", id: "10", tag: "SUMMARY", title: "【総括】知的社会を生き抜く新常識", desc: "正規サービスの選択肢。クリエイターを守ることが、巡り巡ってあなた自身の未来を守ることに繋がる。" }
+{ url: "/articles/01_p2p/article-01-01/", id: "01-01", tag: "ARREST CASE", title: "音楽を共有した大学生", desc: "午前7時の家宅捜索。音楽共有ソフトを利用し、意図せず「加害者」となった若者の代償。" },
+{ url: "/articles/01_p2p/article-01-02/", id: "01-02", tag: "ARREST CASE 02", title: "映画 1 本が数百万の賠償に", desc: "たった 1 回のクリック。開示請求の通知から始まった、逃げ場のない民事賠償の現実。" },
+{ url: "/articles/01_p2p/article-01-03/", id: "01-03", tag: "PC GAME", title: "ゲーム違法配布の果て", desc: "世界初の摘発事例。31歳会社員が「遊び」のつもりのアップロードで失ったもの。" },
+{ url: "/articles/01_p2p/article-01-04/", id: "01-04", tag: "COMMERCIAL", title: "アニメ動画の不正販売", desc: "「小遣い稼ぎ」という一線。14万円の利益のために背負った懲役刑のリスク。" },
+{ url: "/articles/01_p2p/article-01-05/", id: "01-05", tag: "CIVIL TRIAL", title: "逃げ場のない損害賠償", desc: "17億円、5億円。企業が「本気」で動き出した、個人の預金や給料の差し押さえの実態。" },
+{ url: "/articles/01_p2p/article-01-06/", id: "01-06", tag: "LAW 01", title: "著作権法 第119条の衝撃", desc: "著作権法。万引きよりも遥かに重い「罰金1000万円」という刑罰が突きつける現実。" },
+{ url: "/articles/01_p2p/article-01-07/", id: "01-07", tag: "LAW 02", title: "改正による規制範囲の拡大", desc: "漫画や書籍も。令和3年の法改正が一般ユーザーの「うっかり」を容赦なく犯罪に変えた理由。" },
+{ url: "/articles/01_p2p/article-01-08/", id: "01-08", tag: "PRACTICE", title: "開示請求への対応とデマ", desc: "届いた「意見照会書」。ネットのデマを信じて無視した結果、最悪の朝を迎えるまでのカウントダウン。" },
+{ url: "/articles/01_p2p/article-01-09/", id: "01-09", tag: "CORPORATE", title: "会社回線での利用リスク", desc: "社内LANからの使用。懲戒解雇だけでなく、会社への損害賠償も加わる社会人としての死刑宣告。" },
+{ url: "/articles/01_p2p/article-01-10/", id: "01-10", tag: "SUMMARY", title: "知的社会を生き抜く新常識", desc: "正規サービスの選択肢。クリエイターを守ることが、巡り巡ってあなた自身の未来を守ることに繋がる。" },
+{ url: "/articles/01_p2p/article-01-11/", id: "01-11", tag: "トレント（P2P）", title: "アダルト動画の大量開示請求事件", desc: "ファイル共有ソフト「BitTorrent（トレント）」を利用してアダルト動画を違法にダウンロードしたユーザーに対し、動画制作会社が..." },
+{ url: "/articles/01_p2p/article-01-12/", id: "01-12", tag: "損害賠償", title: "数千万円の要求も。高額解決金（示談金）の罠", desc: "「逮捕されなければセーフ」「警察が来なければいい」と考えている人が直面する最大の絶望が、権利者からの「損害賠償請求（解決金）」です..." },
+{ url: "/articles/01_p2p/article-01-13/", id: "01-13", tag: "ソフトウェア", title: "8,300万円の賠償も。ビジネスソフトの違法アップロード", desc: "映像や音楽だけでなく、高額なビジネス用ソフトウェア（設計用CADソフト、Adobe製品、Microsoft Officeなど）の「..." },
+{ url: "/articles/01_p2p/article-01-14/", id: "01-14", tag: "開示請求", title: "家族の回線契約者へ迫る危機", desc: "トレントの利用によってIPアドレスが特定され、プロバイダから発信者情報開示請求の「意見照会書」が届く場合、その宛先は「インターネッ..." },
+{ url: "/articles/01_p2p/article-01-15/", id: "01-15", tag: "刑事事件", title: "刑事告訴と逮捕へのカウントダウン", desc: "「トレントでの違法アップロードは民事（お金で解決できる問題）にとどまる」という認識は甘すぎます。権利者側が「特に悪質である」と判断..." },
+{ url: "/articles/01_p2p/article-01-16/", id: "01-16", tag: "監視システム", title: "監視ノードの罠（ハニーポット）", desc: "あなたがダウンロードボタンを押した裏側で、調査会社のサーバーには接続情報が克明に記録されています。サイバーセキュリティの手法を用いた「おとり」の仕組みを解説。" }
+] %}
+
+{% set softwareArticles = [
+{ url: "/articles/02_apps/article-02-01/", id: "02-01", tag: "WinMX", title: "史上初のP2P逮捕事例", desc: "2001年。日本で初めてファイル共有ソフト利用者が逮捕された瞬間。音楽共有の代償を歴史から学ぶ。" },
+{ url: "/articles/02_apps/article-02-02/", id: "02-02", tag: "Winny", title: "Winny 初の利用者逮捕", desc: "2003年。匿名性の幻想が崩れた日。ゲームや映画の違法アップロードで人生が暗転した実録。" },
+{ url: "/articles/02_apps/article-02-03/", id: "02-03", tag: "Perfect Dark", title: "次世代ソフトへの捜査網", desc: "2010年。より高度な匿名性を謳ったPerfect Darkでも、警察のサイバーパトロールからは逃れられなかった。" },
+{ url: "/articles/02_apps/article-02-04/", id: "02-04", tag: "Cabos", title: "音楽一括公開の代償", desc: "2010年。「使いやすい」ソフトの裏側に潜む自動アップロードの罠。音楽ファイル大量公開での摘発例。" },
+{ url: "/articles/02_apps/article-02-05/", id: "02-05", tag: "Share", title: "「君の名は。」不正配信事件", desc: "2016年。大ヒット作に便乗した身勝手な功名心の末路。人気作品を狙った侵害への厳格な対応。" },
+{ url: "/articles/02_apps/article-02-06/", id: "02-06", tag: "LIMEWIRE", title: "海外製ソフトの落とし穴", desc: "2010年頃。世界基準の監視網から逃れる術はない。国境を越える著作権保護の現実を解説。" }
 ] %}
 
 {% set fastVideoArticles = [
-    { url: "/articles/fast-video/incident/", id: "01", tag: "MAJOR CASE", title: "【実録】ファスト動画で 5 億円の賠償", desc: "国内最大級の賠償判決。物語を要約して配信する行為が、なぜこれほどまでに重い責任を伴うのか。" },
-    { url: "/articles/fast-video/anime-clips/", id: "02", tag: "CLIPS RISK", title: "【警告】アニメ切り抜きの危うい境界", desc: "宣伝のつもりが犯罪に。公式の「黙認」を「許可」と誤解したことで始まる法的措置の恐怖。" }
+{ url: "/articles/03_clips/article-03-01/", id: "03-01", tag: "MAJOR CASE", title: "ファスト動画で 5 億円の賠償", desc: "国内最大級の賠償判決。物語を要約して配信する行為が、なぜこれほどまでに重い責任を伴うのか。" },
+{ url: "/articles/03_clips/article-03-02/", id: "03-02", tag: "CLIPS RISK", title: "アニメ切り抜きの危うい境界", desc: "宣伝のつもりが犯罪に。公式の「黙認」を「許可」と誤解したことで始まる法的措置の恐怖。" },
+{ url: "/articles/03_clips/article-03-03/", id: "03-03", tag: "ネタバレ・翻案権侵害", title: "映画の「文字抜き出し」ネタバレサイトに有罪判決", desc: "映画やアニメのストーリー展開を克明に文章でまとめ、関連画像とともに公開する「ネタバレサイト」が翻案権侵害で有罪判決を受けた事例。" },
+{ url: "/articles/03_clips/article-03-04/", id: "03-04", tag: "雑誌流出・先行配信", title: "漫画雑誌の「早バレ」摘発事件", desc: "発売前の漫画雑誌を不正に入手し、発売日前にネット上に公開する「早バレ」行為。国際的な拡散と大規模な摘発へと発展した事件。" },
+{ url: "/articles/03_clips/article-03-05/", id: "03-05", tag: "音楽", title: "音楽アルバムのフライング公開", desc: "CDの発売日前日やフラゲ日（フライングゲット日）に、音楽データを入手して即座にトレントで公開する行為。これは権利者やレコード会社に..." }
 ] %}
 
 {% set piracyArticles = [
-    { url: "/articles/piracy/manga-mura/", id: "01", tag: "INFAMOUS CASE", title: "【実録】漫画村事件・海賊版サイトの終焉", desc: "史上最大の海賊版サイト。運営者の逮捕と17億円の賠償判決が示した、業界の「本気」の対抗策。" },
-    { url: "/articles/piracy/others/", id: "02", tag: "DIVERSIFIED", title: "【多層】ネタバレサイト・不正アプリの罠", desc: "画像がなくても。文字だけの「ネタバレ」すらも権利侵害となる、現代の高度な著作権保護の現実。" }
+{ url: "/articles/04_web/article-04-01/", id: "04-01", tag: "INFAMOUS CASE", title: "漫画村事件・海賊版サイトの終焉", desc: "史上最大の海賊版サイト。運営者の逮捕と17億円の賠償判決が示した、業界の「本気」の対抗策。" },
+{ url: "/articles/04_web/article-04-02/", id: "04-02", tag: "DIVERSIFIED", title: "ネタバレサイト・不正アプリの罠", desc: "画像がなくても。文字だけの「ネタバレ」すらも権利侵害となる、現代の高度な著作権保護の現実。" },
+{ url: "/articles/04_web/article-04-06/", id: "04-06", tag: "ゲーム", title: "海賊版ゲーム（ROM）の共有", desc: "PCやスマートフォンで過去のゲーム機を動かす「エミュレーター」自体の使用は合法でも、その中で動かすゲームソフトのデータ（ROM）を..." },
+{ url: "/articles/04_web/article-04-03/", id: "04-03", tag: "生成AI・法的論争", title: "ディズニー・ユニバーサルがAI「Midjourney」を提訴", desc: "ハリウッドメジャーが画像生成AIを提訴。AIの学習と出力が既存キャラに類似しているとして、著作権侵害の根幹を問う歴史的裁判。" },
+{ url: "/articles/04_web/article-04-04/", id: "04-04", tag: "プラットフォーム責任", title: "Telegram運営トップの逮捕と「秘匿性」の終焉", desc: "匿名性を盾にした著作権侵害や犯罪行為への規制が、ついに巨大プラットフォーム運営トップの責任追及・逮捕へと発展した事件。" },
+{ url: "/articles/04_web/article-04-05/", id: "04-05", tag: "ゲーム・非公式サーバー", title: "ソーシャルゲームの非公式サーバーと「保存」の罠", desc: "サービス終了したソシャゲを遊ぶために有志が勝手に立ち上げた「エミュレーターサーバー」。保存目的であっても明らかな著作権法違反となる罠。" }
 ] %}
 
 {% block content %}
 
-    <!-- View 01: Category Selection (Home) -->
-    <div id="home-view" class="view-container">
-        <section class="hero">
-            <span class="series-badge">Intellectual Property Awareness</span>
-            <h1>Digital Literacy Project</h1>
-            <p>正しい知識を身につけ、自分と未来を守るために</p>
-        </section>
+<!-- View 01: Category Selection (Home) -->
+<div id="home-view" class="view-container">
+    <section class="hero">
+        <span class="series-badge">Intellectual Property Awareness</span>
+        <h1>Digital Literacy Project</h1>
+        <p>正しい知識を身につけ、自分と未来を守るために</p>
+    </section>
 
-        <div class="panel-grid">
-            <div class="glass category-panel" onclick="showCategory('torrent')">
-                <span class="cat-label">CATEGORY 01: [P2P]</span>
-                <h3>トレント</h3>
-                <p>ファイル共有ソフトに潜む<br>自動アップロードの罠</p>
-            </div>
-            <div class="glass category-panel" onclick="showCategory('fast-video')">
-                <span class="cat-label">CATEGORY 02: [CLIPS]</span>
-                <h3>ファスト動画</h3>
-                <p>「要約」や「切り抜き」が招く<br>莫大な損害賠償判決</p>
-            </div>
-            <div class="glass category-panel" onclick="showCategory('piracy')">
-                <span class="cat-label">CATEGORY 03: [WEB]</span>
-                <h3>海賊版</h3>
-                <p>漫画村事件に学ぶ<br>史上最大級の著作権侵害</p>
-            </div>
+    <div class="panel-grid">
+        <div class="glass category-panel" onclick="showCategory('torrent')">
+            <span class="cat-label">CATEGORY 01: [P2P]</span>
+            <h3>トレント</h3>
+            <p>ファイル共有ソフトに潜む<br>自動アップロードの罠</p>
         </div>
-
-        <div class="wiki-nav-container">
-            <a href="/wiki/" class="wiki-btn">
-                <span>📘</span> 知財Wiki を見る &rarr;
-            </a>
+        <div class="glass category-panel" onclick="showCategory('software')">
+            <span class="cat-label">CATEGORY 02: [APPS]</span>
+            <h3>ファイル共有ソフト</h3>
+            <p>WinnyやShareなど<br>歴史的ツールの摘発事例</p>
+        </div>
+        <div class="glass category-panel" onclick="showCategory('fast-video')">
+            <span class="cat-label">CATEGORY 03: [CLIPS]</span>
+            <h3>ファスト動画</h3>
+            <p>「要約」や「切り抜き」が招く<br>莫大な損害賠償判決</p>
+        </div>
+        <div class="glass category-panel" onclick="showCategory('piracy')">
+            <span class="cat-label">CATEGORY 04: [WEB]</span>
+            <h3>海賊版</h3>
+            <p>漫画村事件に学ぶ<br>史上最大級の著作権侵害</p>
         </div>
     </div>
 
-    <!-- View 02: Article Listing -->
-    <div id="listing-view" class="view-container view-hidden">
-        <div class="back-nav">
-            <a href="javascript:void(0)" class="back-btn" onclick="showHome()">&larr; BACK TO CATEGORIES</a>
+    <div class="wiki-nav-container">
+        <a href="/wiki/" class="wiki-btn">
+            <span>📘</span> 知財Wiki を見る &rarr;
+        </a>
+    </div>
+</div>
+
+<!-- View 02: Article Listing -->
+<div id="listing-view" class="view-container view-hidden">
+    <div class="back-nav">
+        <a href="javascript:void(0)" class="back-btn" onclick="showHome()">&larr; BACK TO CATEGORIES</a>
+    </div>
+
+    <h2 id="category-title"></h2>
+
+    {# セクションのレンダリング #}
+    <div id="content-torrent" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>⚠️</span> トレント（P2P）の仕組みと落とし穴</h4>
+            <p>
+                トレントはファイルを効率的にダウンロードするための技術ですが、その仕組みには<strong>「自動アップロード」</strong>という重大な落とし穴があります。ダウンロードと同時に、あなたのパソコンも『配布元』としてインターネット上の不特定多数へデータを送信し続けます。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                たとえ悪意がなくても、この仕組みによってあなたは<strong>「違法アップロード者（送信者）」</strong>となり、著作権法違反の直接的な摘発対象や、巨額の損害賠償請求の対象となります。
+            </p>
         </div>
-
-        <h2 id="category-title"></h2>
-
-        {# セクションのレンダリング #}
-        <div id="content-torrent" class="content-group view-hidden">
-            <div class="grid">
-                {% for art in torrentArticles %}
-                    {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
-                {% endfor %}
-            </div>
+        <div class="grid">
+            {% for art in torrentArticles %}
+            {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+            {% endfor %}
         </div>
-
-        <div id="content-fast-video" class="content-group view-hidden">
-            <div class="grid">
-                {% for art in fastVideoArticles %}
-                    {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
-                {% endfor %}
-            </div>
+    </div>
+    <br>
+    <div id="content-fast-video" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>🎬</span> ファスト動画の罪と社会的代償</h4>
+            <p>
+                ファスト動画は、映画やアニメ等の映像を無断で短く編集し、ストーリーを要約して公開する行為です。『宣伝になる』といった安易な正当化は通用しません。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                近年では、たった数人の投稿者に対して<strong>5億円を超える巨額の損害賠償</strong>が命じられるなど、司法の判断は極めて厳格です。作品の価値を根底から破壊する重大な権利侵害です。
+            </p>
         </div>
-
-        <div id="content-piracy" class="content-group view-hidden">
-            <div class="grid">
-                {% for art in piracyArticles %}
-                    {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
-                {% endfor %}
-            </div>
+        <div class="grid">
+            {% for art in fastVideoArticles %}
+            {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+            {% endfor %}
         </div>
     </div>
 
-    <script>
-        const VIEWS = {
-            home: document.getElementById('home-view'),
-            listing: document.getElementById('listing-view'),
-            title: document.getElementById('category-title')
-        };
+    <div id="content-software" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>📂</span> ファイル共有ソフトの歴史と法的リスク</h4>
+            <p>
+                WinMX、Winny、Share、Perfect Dark、Cabosなど、かつて日本で猛威を振るったファイル共有ソフトの数々。これらは匿名性を謳っていましたが、いずれも警察の捜査網によって利用者が逮捕されています。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                ツールの名称が変わっても、権利者の許諾なくコンテンツを共有する行為は<strong>「著作権法違反」</strong>であり、重い刑罰と損害賠償が課される事実は変わりません。歴史的な摘発事例から、そのリスクを学びましょう。
+            </p>
+        </div>
+        <div class="grid">
+            {% for art in softwareArticles %}
+            {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+            {% endfor %}
+        </div>
+    </div>
 
-        const CATEGORY_NAMES = {
-            'torrent': 'トレント',
-            'fast-video': 'ファスト動画',
-            'piracy': '海賊版'
-        };
+    <div id="content-piracy" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>📖</span> 海賊版サイトの終焉と利用リスク</h4>
+            <p>
+                海賊版サイトは、漫画や書籍のデータを許可なく無料公開しているサイトです。2021年の法改正により、<strong>漫画や書籍の違法ダウンロードも刑事罰の対象</strong>となりました。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                『漫画村』運営者の逮捕と巨額賠償が示した通り、権利者側の監視体制はかつてないほど強固です。ウイルス感染や個人情報の流出など、単なる「タダ読み」では済まされない代償を伴います。
+            </p>
+        </div>
+        <div class="grid">
+            {% for art in piracyArticles %}
+            {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+            {% endfor %}
+        </div>
+    </div>
+</div>
 
-        // UI表示を切り替える共通関数
-        function updateUI(cat) {
-            if (cat && CATEGORY_NAMES[cat]) {
-                // 記事一覧を表示
-                VIEWS.home.classList.add('view-hidden');
-                VIEWS.title.innerText = CATEGORY_NAMES[cat];
-                document.querySelectorAll('.content-group').forEach(el => el.classList.add('view-hidden'));
-                const target = document.getElementById(`content-${cat}`);
-                if (target) target.classList.remove('view-hidden');
-                setTimeout(() => VIEWS.listing.classList.remove('view-hidden'), 50);
-            } else {
-                // トップページを表示
-                VIEWS.listing.classList.add('view-hidden');
-                setTimeout(() => VIEWS.home.classList.remove('view-hidden'), 50);
-            }
+<script>
+    const VIEWS = {
+        home: document.getElementById('home-view'),
+        listing: document.getElementById('listing-view'),
+        title: document.getElementById('category-title')
+    };
+
+    const CATEGORY_NAMES = {
+        'torrent': 'トレント',
+        'software': 'ファイル共有ソフト',
+        'fast-video': 'ファスト動画',
+        'piracy': '海賊版'
+    };
+
+    // UI表示を切り替える共通関数
+    function updateUI(cat) {
+        if (cat && CATEGORY_NAMES[cat]) {
+            // 記事一覧を表示
+            VIEWS.home.classList.add('view-hidden');
+            VIEWS.title.innerText = CATEGORY_NAMES[cat];
+            document.querySelectorAll('.content-group').forEach(el => el.classList.add('view-hidden'));
+            const target = document.getElementById(`content-${cat}`);
+            if (target) target.classList.remove('view-hidden');
+            setTimeout(() => VIEWS.listing.classList.remove('view-hidden'), 50);
+        } else {
+            // トップページを表示
+            VIEWS.listing.classList.add('view-hidden');
+            setTimeout(() => VIEWS.home.classList.remove('view-hidden'), 50);
         }
+    }
 
-        // カテゴリ選択（履歴追加あり）
-        function showCategory(cat) {
-            history.pushState({ category: cat }, '', '#' + cat);
-            updateUI(cat);
+    // カテゴリ選択（履歴追加あり）
+    function showCategory(cat) {
+        history.pushState({ category: cat }, '', '#' + cat);
+        updateUI(cat);
+    }
+
+    // ホームに戻る（履歴追加あり）
+    function showHome() {
+        history.pushState({ category: null }, '', window.location.pathname);
+        updateUI(null);
+    }
+
+    // ブラウザの戻る・進むを検知
+    window.addEventListener('popstate', (event) => {
+        const cat = (event.state && event.state.category) || null;
+        updateUI(cat);
+    });
+
+    // 初回読み込み時のハッシュ処理
+    window.addEventListener('DOMContentLoaded', () => {
+        const hash = window.location.hash.substring(1);
+        if (hash && CATEGORY_NAMES[hash]) {
+            updateUI(hash);
         }
+    });
+</script>
 
-        // ホームに戻る（履歴追加あり）
-        function showHome() {
-            history.pushState({ category: null }, '', window.location.pathname);
-            updateUI(null);
-        }
-
-        // ブラウザの戻る・進むを検知
-        window.addEventListener('popstate', (event) => {
-            const cat = (event.state && event.state.category) || null;
-            updateUI(cat);
-        });
-
-        // 初回読み込み時のハッシュ処理
-        window.addEventListener('DOMContentLoaded', () => {
-            const hash = window.location.hash.substring(1);
-            if (hash && CATEGORY_NAMES[hash]) {
-                updateUI(hash);
-            }
-        });
-    </script>
-    
 {% endblock %}

@@ -1,0 +1,110 @@
+{% extends "main.njk" %}
+{% set title = "知財Wiki：BitTorrent（ビットトレント）の詳細" %}
+{% set description = "BitTorrent（ビットトレント）の仕組みと知財リスク。スウォーム方式による効率的な共有と、無自覚な送信者となる危険性について詳しく解説します。" %}
+{% block content %}
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">BitTorrent（ビットトレント）</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">効率と公開性を両立した「スウォーム型」共有プロトコル</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">スウォーム（群れ）による分散共有の仕組み</h2>
+        <p>
+            BitTorrentは、大容量ファイルを効率的に配布するために設計されたプロトコルです。Winnyのような「バケツリレー型」とは異なり、同じファイルを欲しがるユーザー同士で「スウォーム（群れ）」を作り、互いに持っていない断片をパズルを埋めるように送り合います。
+        </p>
+
+        <div class="mechanism-diagram"
+            style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 12px; text-align: center;">
+            <img src="https://xtech.nikkei.com/it/article/COLUMN/20080226/294799/zu6-1.jpg" alt="BitTorrentの仕組み図"
+                style="max-width: 100%; height: auto; border-radius: 8px; filter: brightness(0.9) contrast(1.1);">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem;">
+                図：BitTorrentを使ったファイル共有の仕組み（出典：日経クロステック）
+            </p>
+        </div>
+
+        <p>
+            利用者はまず、ファイルのメタ情報や「トラッカー」のアドレスが記された「.torrent」ファイルを入手します。トラッカーは、現在そのファイルをダウンロード・アップロードしているユーザー（ピア）のリストを管理しており、参加者同士を仲介します。
+        </p>
+
+        <p>
+            BitTorrentの最大の特徴は、「ダウンロードを行っている間、同時に自分のPCにあるデータの一部を他人にアップロードする」という点にあります。この仕組みにより、参加者が増えるほど配布速度が向上するという効率性を実現しています。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">トラッカー (Tracker)</strong>:
+                「誰がどの断片を持っているか」を管理するサーバー。ユーザー同士を繋ぐ案内役です。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">シーダー (Seeder)</strong>:
+                完全なファイルを保持、提供しているコンピュータ。ダウンロードが完了した、最初のファイル提供者も該当します。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">ピア / リーチャー (Peer / Leecher)</strong>:
+                ファイルをダウンロード中のコンピュータ。同時に、自分が持っている断片を他のピアに提供（アップロード）します。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">監視ノード (Monitoring Node)</strong>:
+                権利者団体などが設置。トレントを共有しているすべての「ピア」（「シーダー」を含む）の集合に参加し、違法アップロードを行っているユーザーのIPアドレスを記録します。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">知らぬ間に「送信者」になるリスク</h2>
+        <p>
+            BitTorrentを利用する場合、<b>「ダウンロードするだけ」という設定は原則として存在しません。</b>
+            人気のアニメや映画をダウンロードしている最中、あなたのPCは同時にそのファイルを世界中に「アップロード」しています。これは著作権法上の「公衆送信権（送信可能化権）」の侵害に直結し、警察の捜査対象や損害賠償請求の対象となります。
+        </p>
+    </section>
+
+    <section class="references" style="margin-top: 3rem;">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://xtech.nikkei.com/it/article/COLUMN/20080226/294799/"
+                    target="_blank">個別対策:BitTorrent（日経クロステック）</a></li>
+            <li><a href="https://www.coda-cj.jp/pj/torrent/" target="_blank">CODA：BitTorrent等による侵害対策</a></li>
+        </ul>
+    </section>
+</article>
+
+<style>
+    .wiki-detail h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .detail-header {
+        margin-bottom: 3rem;
+    }
+
+    .relation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .relation-item {
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 3px solid var(--accent-gold);
+        border-radius: 4px;
+    }
+
+    .warning-section {
+        padding: 2rem;
+        background: rgba(239, 68, 68, 0.05) !important;
+    }
+</style>
+
+{% endblock %}

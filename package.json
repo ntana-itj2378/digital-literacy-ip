@@ -19,6 +19,7 @@
     "vite-plugin-nunjucks": "^0.2.0"
   },
   "dependencies": {
-    "fs-extra": "^11.3.4"
+    "fs-extra": "^11.3.4",
+    "marked": "^18.0.2"
   }
 }

@@ -1,0 +1,106 @@
+{% extends "main.njk" %}
+{% set title = "知財Wiki：VPN（仮想専用線）の詳細" %}
+{% set description = "VPN（仮想専用線）の仕組みと知財リスク。トンネリングや暗号化技術による安全な通信の仕組みと、匿名性に関する誤解や法的リスクについて解説します。" %}
+{% block content %}
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">VPN（仮想専用線）</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">公衆網に「仮想のトンネル」を築くセキュアな通信技術</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">仮想的な専用線を構築する仕組み</h2>
+        <p>
+            VPN（Virtual Private Network）は、インターネットなどの不特定多数が利用する公衆網を利用しながら、あたかも自分たちだけの専用線（仮想専用線）を通っているかのような安全な通信環境を実現する技術です。
+        </p>
+
+        <div class="mechanism-diagram"
+            style="margin: 2rem 0; padding: 1.5rem; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-glass); border-radius: 12px; text-align: center;">
+            <img src="https://www.nttpc.co.jp/column/img/entry/network/whats_vpn/img_01.png" alt="VPNの仕組み図"
+                style="max-width: 100%; height: auto; border-radius: 8px; filter: brightness(0.9) contrast(1.1);">
+            <p style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 1rem;">
+                図：VPN接続のイメージ（出典：NTTPCコミュニケーションズ）
+            </p>
+        </div>
+
+        <p>
+            リモートワークの普及により、自宅や外出先の公衆Wi-Fiから社内システムに安全にアクセスする手段として不可欠なものとなっています。通信内容は「暗号化」され、万が一盗聴されても中身を解読されるリスクを極限まで低減します。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">トンネリング (Tunneling)</strong>:
+                公衆回線の中に、2拠点間を結ぶ仮想的な「トンネル（専用線）」を作る技術です。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">カプセル化 (Encapsulation)</strong>:
+                データをカプセルのように包み込み、外部から中身を見られないように保護する技術です。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">暗号化 (Encryption)</strong>:
+                万が一データが漏洩しても、鍵を持つ正当な受信者以外には内容を解読不能な形式に変換します。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">ログ (Logs)</strong>:
+                VPNサーバー側で記録される通信の履歴。多くの商用VPNサービスでは、捜査機関からの協力要請に応じてこれらの記録を提供することがあります。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">「完全な匿名性」という誤解</h2>
+        <p>
+            VPNを利用すれば「警察に特定されない」というのは大きな誤解です。
+            <b>商用VPNサービスを利用して著作権侵害などの違法行為を行った場合、プロバイダ責任制限法に基づき、VPN事業者に対して発信者情報の開示請求が行われます。</b> 
+            特に「ノーログ」を謳う海外事業者であっても、司法当局の国際協力によって通信記録が精査され、最終的に個人が特定・逮捕される事例が後を絶ちません。
+        </p>
+    </section>
+
+    <section class="references" style="margin-top: 3rem;">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://www.nttpc.co.jp/column/network/whats_vpn.html"
+                    target="_blank">【図解あり】VPNとは？（NTTPCコミュニケーションズ）</a></li>
+        </ul>
+    </section>
+</article>
+
+<style>
+    .wiki-detail h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .detail-header {
+        margin-bottom: 3rem;
+    }
+
+    .relation-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .relation-item {
+        padding: 1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border-left: 3px solid var(--accent-gold);
+        border-radius: 4px;
+    }
+
+    .warning-section {
+        padding: 2rem;
+        background: rgba(239, 68, 68, 0.05) !important;
+    }
+</style>
+
+{% endblock %}

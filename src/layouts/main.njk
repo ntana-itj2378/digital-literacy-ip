@@ -4,7 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{ description or '知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。' }}">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="{{ title }} | digital-literacy-ip">
+    <meta property="og:description" content="{{ description or '知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。' }}">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="{{ title }} | digital-literacy-ip">
+    <meta property="twitter:description" content="{{ description or '知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。' }}">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
     <title>{{ title }} | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
     <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
     <link rel="stylesheet" href="/css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,5 +44,22 @@
         <p>&copy; 2026 Intellectual Property Education Project.</p>
         <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
     </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
 </body>
 </html>

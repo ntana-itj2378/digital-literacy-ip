@@ -15,9 +15,26 @@ async function build() {
     // 1. Clean and Prepare dist directory
     await fs.emptyDir(distDir);
     
-    // 2. Copy static assets (CSS)
+    // 2. Copy static assets (CSS and Public)
     // We'll put CSS in dist/css
     await fs.copy('src/css', path.join(distDir, 'css'));
+    
+    // Copy public folder contents to dist root (favicons, og-images, etc.)
+    if (await fs.pathExists('src/public')) {
+        await fs.copy('src/public', distDir);
+        console.log('Copied public assets.');
+    }
+    
+    // Copy images folder
+    if (await fs.pathExists('src/img')) {
+        await fs.copy('src/img', path.join(distDir, 'img'));
+        console.log('Copied img assets.');
+    }
+    
+    // Copy vercel.json to dist to ensure headers are applied if deploying from dist
+    if (await fs.pathExists('vercel.json')) {
+        await fs.copy('vercel.json', path.join(distDir, 'vercel.json'));
+    }
     console.log('Copied assets.');
 
     // 3. Process all template files in src

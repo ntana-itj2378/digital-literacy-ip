@@ -1,0 +1,49 @@
+{% extends "main.njk" %}
+{% set title = "FILE 01-17: 意見照会書の「放置」が招く悲劇" %}
+{% block content %}
+
+<article>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 01-17: 意見照会書の「放置」が招く悲劇</h1>
+<h2 style="color: var(--accent-gold); margin-bottom: 1rem; margin-top: 3rem;">基本ステータス</h2>
+<ul>
+<li><strong>FILE ID</strong>: FILE 30</li>
+<li><strong>カテゴリ</strong>: 開示請求</li>
+<li><strong>重要度</strong>: ⚠️ 最高（無視による致命的な状況悪化）</li>
+<li><strong>タグ</strong>: <code>#プロバイダ責任制限法</code>, <code>#無視</code>, <code>#民事訴訟</code></li>
+</ul>
+<hr>
+<h2 style="color: var(--accent-gold); margin-bottom: 1rem; margin-top: 3rem;">概要</h2>
+<p>ある日、契約しているインターネットプロバイダから「発信者情報開示に係る意見照会書」が簡易書留で届く。心当たりがあるにもかかわらず、これを「架空請求だ」「無視すれば諦めるだろう」と放置することは、最悪の悪手です。</p>
+<h2 style="color: var(--accent-gold); margin-bottom: 1rem; margin-top: 3rem;">トラブルの構造と法的リスク</h2>
+<h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">1. 放置＝「開示されても構わない」</h3>
+<p>プロバイダ責任制限法に基づくこの照会書は、「あなたの情報を権利者に開示してよいか」を問うものです。期限内（通常14日以内）に「開示に同意しない」という正当な理由（自身の行為ではない等）を返答しない場合、プロバイダは「異議なし」として権利者へ氏名や住所を開示する可能性が極めて高くなります。</p>
+<h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">2. 突然の訴訟と差し押さえ</h3>
+<p>情報が開示されると、権利者側の弁護士から直接、損害賠償を求める内容証明が届きます。これすらも無視し続けた場合、民事訴訟を起こされます。裁判に出廷しなければ敗訴が確定し、ある日突然、会社の給料や銀行口座が強制的に差し押さえられることになります。</p>
+<hr>
+<h2 style="color: var(--accent-gold); margin-bottom: 1rem; margin-top: 3rem;">警戒ポイント</h2>
+<blockquote>
+<p>[!CAUTION]
+意見照会書が届いた時点で、あなたが著作権侵害を行ったログは相手に握られています。無視して逃げ切れる段階はすでに過ぎています。書類が届いたら、絶対に放置せず、速やかに弁護士などの専門家に相談してください。</p>
+</blockquote>
+<hr>
+<section class="references">
+  <h4>Sources & References</h4>
+  <ul>
+<li><a href="https://itlawyer.jp/torrent_ignore/">トレントの意見照会書を無視した末路（IT法律相談）</a></li>
+<li>準拠法：<a href="https://elaws.e-gov.go.jp/document?lawid=413AC0000000137#Mp-At_5">プロバイダ責任制限法 第5条</a></li>
+</ul>
+</section>
+
+
+    
+<div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="/articles/01_p2p/article-01-16/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：監視ノードの罠（ハニーポット）</a>
+    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+</div>
+</article>
+
+{% endblock %}

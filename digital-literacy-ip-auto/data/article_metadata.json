@@ -1,0 +1,34 @@
+{
+  "articles": [
+    {
+      "article_id": "05-01",
+      "category_id": "05_risk-awareness",
+      "article_number": 1,
+      "title": "アニメキャラ自作ステッカーで書類送検──フリマ・オークションの著作権リスクを知る",
+      "subtitle": "著作権法・商標法の両面から見る無許諾グッズ販売のリスク",
+      "url_path": "/articles/05_risk-awareness/anime-sticker-copyright-arrest-2026/",
+      "published_at": "2026-06-29T12:00:00+09:00",
+      "self_score": 8.6
+    },
+    {
+      "article_id": "05-02",
+      "category_id": "05_risk-awareness",
+      "article_number": 2,
+      "title": "映画「文字起こしサイト」運営者に日本初の有罪判決──ストーリー無断掲載が問われた著作権リスク",
+      "subtitle": "映像をコピーしなくても著作権侵害──「表現の複製」が問われた東京地裁判決",
+      "url_path": "/articles/05_risk-awareness/movie-transcription-site-guilty-verdict-2026/",
+      "published_at": "2026-06-29T12:01:00+09:00",
+      "self_score": 8.9
+    },
+    {
+      "article_id": "05-03",
+      "category_id": "05_risk-awareness",
+      "article_number": 3,
+      "title": "中国当局が日本アニメ海賊版「ZzzFun」運営者を逮捕──越境する著作権保護の時代",
+      "subtitle": "日中連携による初の刑事摘発と、国際著作権保護の現実",
+      "url_path": "/articles/05_risk-awareness/zzzfun-piracy-arrest-china-2025/",
+      "published_at": "2026-06-29T12:02:00+09:00",
+      "self_score": 8.8
+    }
+  ]
+}

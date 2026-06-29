@@ -1,0 +1,61 @@
+{% extends "main.njk" %}
+{% set title = "知財Wiki：Shareの詳細" %}
+{% set description = "Shareの仕組みと法的リスク。Winnyの後継として登場したソフトの末路と、大ヒット作の不正配信に伴う即座の摘発事例を解説します。" %}
+{% block content %}
+
+<article class="wiki-detail">
+    <nav style="margin-bottom: 2rem;">
+        <a href="/wiki/" style="color: var(--accent-gold); text-decoration: none;">&larr; Wikiトップへ戻る</a>
+    </nav>
+
+    <header class="detail-header" style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 3rem;">
+        <div><span class="tag tech-tag" style="margin: 0;">Technology</span></div>
+        <h1 style="margin: 0; line-height: 1.2;">Share（シェア）</h1>
+        <p class="subtitle" style="margin: 0; font-size: 1.1rem; opacity: 0.8;">大ヒット作への便乗と功名心が招く厳格な処罰</p>
+    </header>
+
+    <section style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">Winnyの「弱点」を克服しようとした後継ソフト</h2>
+        <p>
+            Share（シェア）は、Winnyの開発者が逮捕されたことを受け、そのアーキテクチャを引き継ぎつつさらに匿名性を高める目的で開発されたファイル共有ソフトです。キャッシュの完全な暗号化や、「クラスタ」と呼ばれる趣味嗜好の合うユーザー同士を細かくグルーピングする機能によって、ファイル転送の効率と身元秘匿の両立を図っていました。
+        </p>
+        <p>
+            一時期はWinnyに代わる主力ソフトウェアとして、アニメや映画、ビジネスソフトなどの違法共有の温床となりました。
+        </p>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">用語・関連事項</h2>
+        <div class="relation-list">
+            <div class="relation-item">
+                <strong style="color: #fff;">クラスタ (Cluster)</strong>:
+                「アニメ」「映画」など特定のキーワードを設定したユーザー同士を優先的に接続させ、ネットワーク内でのファイル検索や転送効率を上げる仕組み。
+            </div>
+            <div class="relation-item">
+                <strong style="color: #fff;">監視ノード</strong>:
+                警察や著作権保護団体がネットワーク内に設置したダミーのパソコン。Shareの暗号化された通信であっても、ネットワークに参加している以上、誰が最初の発信元であるかを逆探知する技術が確立されています。
+            </div>
+        </div>
+    </section>
+
+    <section class="warning-section glass" style="margin-top: 3rem; border-color: var(--accent-danger);">
+        <h2 style="color: var(--accent-danger); margin-bottom: 1rem;">重大なリスク：「君の名は。」不正配信事件</h2>
+        <p>
+            2016年、歴史的大ヒットを記録していたアニメーション映画「君の名は。」の動画ファイルが、Shareを通じてインターネット上に違法公開される事件が発生しました。この事態に対し、警察は即座に捜査に乗り出し、公開からわずか数ヶ月で54歳の男が著作権法違反で逮捕されました。
+        </p>
+        <p>
+            逮捕された男は「多くの人に見てほしかった」と供述しました。<b>社会的関心の高い大ヒット作品や最新作を狙った著作権侵害は、権利者側に甚大な経済的損失を与えるため、警察や権利者団体による監視と法的措置が極めて迅速かつ厳格に行われます。</b>身勝手な功名心が引き起こす代償は計り知れません。
+        </p>
+    </section>
+
+</article>
+
+<style>
+    .wiki-detail h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+    .detail-header { margin-bottom: 3rem; }
+    .relation-list { display: flex; flex-direction: column; gap: 1rem; }
+    .relation-item { padding: 1rem; background: rgba(255, 255, 255, 0.05); border-left: 3px solid var(--accent-gold); border-radius: 4px; }
+    .warning-section { padding: 2rem; background: rgba(239, 68, 68, 0.05) !important; }
+</style>
+
+{% endblock %}

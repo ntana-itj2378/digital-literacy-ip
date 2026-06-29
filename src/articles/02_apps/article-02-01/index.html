@@ -1,0 +1,66 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-01: WinMX 史上初のP2P逮捕事例" %}
+{% block content %}
+
+<article>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-01: WinMX 史上初のP2P逮捕事例</h1>
+    <p class="subtitle">～国内初のファイル共有ソフトによる摘発～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <p>
+            2001年11月、日本において「ファイル共有ソフト」を利用した著作権侵害で初の逮捕者が出ました。京都府警は、当時普及し始めていた「WinMX」というソフトを使用して、J-POPの音楽データやアニメ画像を無断で公開していた大学生2人を逮捕しました。
+        </p>
+        <p>
+            当時は「P2P」という技術自体が新しく、多くのユーザーが「匿名だ」「個人で楽しむ分には問題ない」と誤解していました。しかし、警察は通信記録を丹念に辿り、容疑者を特定。これが国内におけるネット著作権侵害の本格的な取締りの号砲となりました。
+        </p>
+    </section>
+
+    <section class="glass article-card">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">P2Pの原点と法的責任</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3 style="color: #fff; margin-bottom: 1rem;">送信可能化権（著作権法 第23条）</h3>
+            <p>
+                WinMXは、特定のサーバーを介さずPC同士で直接データをやり取りする「P2P」方式を採用していました。自分が持っているファイルを「共有フォルダ」に入れるだけで、世界中からアクセス可能な状態になります。
+            </p>
+            <p>
+                法的には、この「誰でもダウンロードできる状態にすること」自体が「送信可能化権」の侵害にあたります。WinMXから始まったこの法解釈は、その後のWinnyやBitTorrentといった全てのP2Pツールにおける摘発の基礎となりました。
+            </p>
+        </div>
+
+        <div style="text-align: center; padding: 1.5rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">2001年の衝撃</p>
+            <p style="font-size: 2.2rem; font-weight: bold; color: var(--accent-danger); margin: 0;">国内初のP2P逮捕</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">（※日本におけるネット著作権保護の転換点）</p>
+        </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <p>
+            「WinMXならバレない」という初期の幻想は、20年以上も前に警察の捜査能力によって打ち砕かれています。技術が進化しても、法律の網から逃れることはできません。
+        </p>
+        <p style="font-weight: bold; color: #fff;">
+            歴史は繰り返されます。過去の事例を学び、今の自分の行動を再考しましょう。
+        </p>
+    </section>
+
+    <section class="references">
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://www.itmedia.co.jp/news/0111/28/kyoto.html" target="_blank">ITmedia：WinMXで音楽を公開、著作権法違反で初の逮捕者</a></li>
+            <li><a href="https://www.accsjp.or.jp/activities/protection/cases/winmx.html" target="_blank">ACCS：ファイル共有ソフト「WinMX」悪用事案</a></li>
+        </ul>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+    <a href="/articles/02_apps/article-02-02/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：Winny 初の利用者逮捕事件 &rarr;</a>
+</div>
+</article>
+
+{% endblock %}
