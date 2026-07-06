@@ -58,6 +58,12 @@
 { url: "/articles/04_web/article-04-05/", id: "04-05", tag: "ゲーム・非公式サーバー", title: "ソーシャルゲームの非公式サーバーと「保存」の罠", desc: "サービス終了したソシャゲを遊ぶために有志が勝手に立ち上げた「エミュレーターサーバー」。保存目的であっても明らかな著作権法違反となる罠。" }
 ] %}
 
+{% set riskArticles = [
+{ url: "/articles/05_risk-awareness/article-05-01/", id: "05-01", tag: "フリマ・オークション", title: "アニメキャラ自作ステッカーで書類送検──フリマ・オークションの著作権リスクを知る", desc: "著作権法・商標法の両面から見る無許諾グッズ販売のリスク" },
+{ url: "/articles/05_risk-awareness/article-05-02/", id: "05-02", tag: "文字起こしサイト", title: "映画「文字起こしサイト」運営者に日本初の有罪判決──ストーリー無断掲載が問われた著作権リスク", desc: "映像をコピーしなくても著作権侵害──「表現の複製」が問われた東京地裁判決" },
+{ url: "/articles/05_risk-awareness/article-05-03/", id: "05-03", tag: "国際摘発", title: "中国当局が日本アニメ海賊版「ZzzFun」運営者を逮捕──越境する著作権保護の時代", desc: "日中連携による初の刑事摘発と、国際著作権保護の現実" }
+] %}
+
 {% block content %}
 
 <!-- View 01: Category Selection (Home) -->
@@ -89,9 +95,17 @@
             <h3>海賊版</h3>
             <p>漫画村事件に学ぶ<br>史上最大級の著作権侵害</p>
         </div>
+        <div class="glass category-panel" onclick="showCategory('risk')">
+            <span class="cat-label">CATEGORY 05: [RISK AWARENESS]</span>
+            <h3>知的財産権リスク</h3>
+            <p>著作権侵害の逮捕事例と<br>正しい知識を学ぶ</p>
+        </div>
     </div>
 
-    <div class="wiki-nav-container">
+    <div class="wiki-nav-container" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="/check/" class="wiki-btn" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.4); color: #fff;">
+            <span>⚠️</span> 危険度チェックテスト &rarr;
+        </a>
         <a href="/wiki/" class="wiki-btn">
             <span>📘</span> 知財Wiki を見る &rarr;
         </a>
@@ -174,6 +188,23 @@
             {% endfor %}
         </div>
     </div>
+
+    <div id="content-risk" class="content-group view-hidden">
+        <div class="category-intro">
+            <h4><span>⚖️</span> 知的財産権リスクを正しく知る</h4>
+            <p>
+                フリマアプリでの無許諾グッズ販売、ネタバレ・文字起こしサイトの運営、海外サイトでの海賊版配信など、著作権侵害の手口は多様化し続けています。「知らなかった」では済まされないケースも少なくありません。
+            </p>
+            <p style="margin-top: 0.5rem;">
+                実際の逮捕・摘発事例から、どのような行為がどのような法的リスクを伴うのかを学び、<strong>正しい知識</strong>を身につけましょう。
+            </p>
+        </div>
+        <div class="grid">
+            {% for art in riskArticles %}
+            {{ articleCard(art.url, art.id, art.tag, art.title, art.desc) }}
+            {% endfor %}
+        </div>
+    </div>
 </div>
 
 <script>
@@ -187,7 +218,8 @@
         'torrent': 'トレント',
         'software': 'ファイル共有ソフト',
         'fast-video': 'ファスト動画',
-        'piracy': '海賊版'
+        'piracy': '海賊版',
+        'risk': '知的財産権リスク啓蒙'
     };
 
     // UI表示を切り替える共通関数
