@@ -1,0 +1,46 @@
+{% extends "main.njk" %}
+{% set title = "FILE 01-17: 示談拒否が招く刑事告訴のリスク" %}
+{% block content %}
+
+<article>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 01-17: 示談拒否が招く刑事告訴のリスク</h1>
+<section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <p>2026年3月4日、赤れんが法律事務所（代表弁護士・杉山央、札幌弁護士会所属）は、ビットトレント（BitTorrent）を通じてAV（アダルトビデオ）著作物を無断でアップロードした複数の人物について、都内警察署へ刑事告訴を提起し、正式に受理されました。同事務所は2022年からビットトレント経由の著作権侵害への対応を続けており、発信者情報開示請求ではほぼ全件で開示決定を獲得してきた実績を持ちます。</p>
+    </section>
+
+<section class="glass article-card">
+    <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">トラブルの構造と法的リスク</h2>
+    <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">1. 「示談拒否」が刑事事件化の引き金に</h3>
+<p>杉山弁護士は、和解に応じない加害者側の代理人について「法律上合理性のないアドバイスをする」ケースがあると指摘し、特にそうした非協力的な対応を取った加害者を今回の告訴対象に選んだと説明しています。示談を拒否すること自体が「反省がない」「悪質性が高い」と判断される材料となり、民事の話し合いで終わるはずだった問題が刑事事件へとエスカレートする引き金になり得るのです。</p>
+    <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">2. トレントの「アップロード」が重罪となる理由</h3>
+<p>トレントは技術構造上、ファイルをダウンロードすると同時にその一部を他のユーザーへ自動的に送信する仕組みになっています。この「送信可能な状態に置く行為」は著作権法上の公衆送信権の侵害にあたり、違法アップロードには10年以下の拘禁刑もしくは1,000万円以下の罰金（またはその両方）という重い罰則が定められています。</p>
+    <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">3. 全国摘発へと拡大する方針</h3>
+<p>同事務所は2025年2月にも同様の刑事告訴が都内警察署に受理され、捜索差押が実施された前例があります。発信者情報開示請求での実績を土台に、全国の警察と連携しながら刑事告訴を継続・拡大する方針を明らかにしており、今後同様の告訴事例は他地域にも広がるとみられます。</p>
+
+    <blockquote>
+<p>[!CAUTION]
+意見照会書や損害賠償請求の通知が届いた際、無視したり強気に拒否したりすることが必ずしも安全な選択とは限りません。対応の姿勢そのものが、事件が刑事手続きへ進むかどうかを左右する要素になり得ます。</p>
+</blockquote>
+</section>
+<section class="references">
+  <h4>Sources & References</h4>
+  <ul>
+<li><a href="https://ascii.jp/elem/000/004/385/4385717/">ビットトレントによるAV著作権侵害で新たに刑事告訴が複数件受理（ASCII.jp）</a></li>
+<li>準拠法：<a href="https://elaws.e-gov.go.jp/document?lawid=345AC0000000048#Mp-At_119">著作権法 第119条（懲役10年以下または罰金1000万円以下）</a></li>
+</ul>
+</section>
+
+
+
+    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+    <a href="/articles/01_p2p/article-01-16/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：監視ノードの罠（ハニーポット）</a>
+    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+</div>
+</article>
+
+{% endblock %}
