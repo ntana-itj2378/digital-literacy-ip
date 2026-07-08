@@ -1,2 +1,3 @@
 .vercel
 .env*.local
+digital-literacy-ip-auto/logs/*.log
