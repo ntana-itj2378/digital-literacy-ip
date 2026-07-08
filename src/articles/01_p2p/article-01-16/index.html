@@ -10,12 +10,14 @@
     <h1>FILE 01-16: 監視ノードの罠（ハニーポット）</h1>
 
     <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-        <img src="/img/img_article-01/img_article-01-16.png" alt="挿絵画像" style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
+        <img src="/img/img_article-01/img_article-01-16.png" alt="挿絵画像"
+            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
     </div>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
         <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">概要</h2>
-        <p>「VPNを使えばバレない」「匿名性が高いから大丈夫」という思い込みは、現代の高度な監視技術の前では通用しません。権利者や調査機関は、サイバーセキュリティの最前線で培われた「ハニーポット（おとり）」技術を駆使して、違法アップロード者をリアルタイムで特定しています。</p>
+        <p>「VPNを使えばバレない」「匿名性が高いから大丈夫」という思い込みは、現代の高度な監視技術の前では通用しません。権利者や調査機関は、サイバーセキュリティの最前線で培われた「ハニーポット（おとり）」技術を駆使して、違法アップロード者をリアルタイムで特定しています。
+        </p>
     </section>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
@@ -23,39 +25,52 @@
         <p>ハニーポット（監視ノード）は、もともと国家レベルのインフラや高度なサイバー攻撃を分析するために開発された技術です。</p>
 
         <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">1. 産業制御システムへの攻撃（2013年）</h3>
-        <p>2013年、セキュリティ機関（トレンドマイクロ等）が実施した調査では、水道設備や電力プラントを模した「おとりシステム」をインターネット上に設置したところ、わずか<strong>18時間</strong>で最初の攻撃が確認されました。これは、攻撃者が常に脆弱なターゲットを探してネット上をスキャンしている実態を証明しました。現在、この「常に網を張って待ち構える」手法がトレント監視にも応用されています。</p>
+        <p>2013年、セキュリティ機関（トレンドマイクロ等）が実施した調査では、水道設備や電力プラントを模した「おとりシステム」をインターネット上に設置したところ、わずか<strong>18時間</strong>で最初の攻撃が確認されました。これは、攻撃者が常に脆弱なターゲットを探してネット上をスキャンしている実態を証明しました。現在、この「常に網を張って待ち構える」手法がトレント監視にも応用されています。
+        </p>
 
         <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">2. IoT機器への最新攻撃分析（2024年）</h3>
-        <p>2024年のNICT（情報通信研究機構）のレポートによると、サイバー攻撃関連の通信は年間<strong>6,800億回</strong>を超え、その多くがIoT機器の脆弱性を狙ったスキャンです。ハニーポットを用いた分析により、10年以上前の古い脆弱性ですら現在進行形で悪用され続けていることが判明しています。トレントのネットワークも同様に、こうした「常に監視ノードによってスキャンされ続けている」環境なのです。</p>
+        <p>2024年のNICT（情報通信研究機構）のレポートによると、サイバー攻撃関連の通信は年間<strong>6,800億回</strong>を超え、その多くがIoT機器の脆弱性を狙ったスキャンです。ハニーポットを用いた分析により、10年以上前の古い脆弱性ですら現在進行形で悪用され続けていることが判明しています。トレントのネットワークも同様に、こうした「常に監視ノードによってスキャンされ続けている」環境なのです。
+        </p>
     </section>
 
     <section class="glass article-card">
         <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">トレントにおける「罠」の仕組み</h2>
         <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">1. 監視ノードの潜伏</h3>
-        <p>権利者側は、トレントのスウォーム（接続グループ）内に、一般ユーザーを装った「監視ノード」を潜伏させています。あなたがファイルをダウンロードしようと接続した瞬間、あなたのIPアドレス、日時、使用したクライアント情報が即座に記録されます。</p>
+        <p>権利者側は、トレントのスウォーム（接続グループ）内に、一般ユーザーを装った「監視ノード」を潜伏させています。あなたがファイルをダウンロードしようと接続した瞬間、あなたのIPアドレス、日時、使用したクライアント情報が即座に記録されます。
+        </p>
 
         <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">2. 逃げられない証拠</h3>
         <p>この仕組みは自動化されており、1分間に数万人規模の特定が可能です。取得されたログは、プロバイダへの開示請求や裁判において「動かぬ証拠」として採用されます。</p>
 
         <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem; margin-top: 3rem;">警戒ポイント</h2>
-        <blockquote style="border-left: 3px solid var(--accent-gold); padding-left: 1rem; margin: 1.5rem 0; color: rgba(255,255,255,0.8); font-style: italic;">
-            <p>[!CAUTION]<br>「見つかっていない」のではなく、監視システムによって「すでに記録され、順番待ちをしている」だけかもしれません。サイバーインフラを監視するレベルの高度な技術が、あなたの身近な著作権侵害の特定にも使われているという現実を直視してください。</p>
+        <blockquote style="border-left: 3px solid var(--accent-gold); padding-left: 1rem; margin: 1.5rem 0; color: rgba(255,255,255,0.8);">
+            <p>「見つかっていない」のではなく、監視システムによって「すでに記録され、順番待ちをしている」だけかもしれません。サイバーインフラを監視するレベルの高度な技術が、あなたの身近な著作権侵害の特定にも使われているという現実を直視してください。
+            </p>
         </blockquote>
     </section>
 
-    <section class="references">
-        <h4>Sources &amp; References</h4>
-        <ul>
-            <li><a href="https://www.nict.go.jp/cyber/report/NICTER_report_2024.pdf" target="_blank" rel="noopener">NICTER観測レポート2024（情報通信研究機構）</a></li>
-            <li><a href="https://lawfirm-lapin.com/p2p-monitoring-system/" target="_blank" rel="noopener">P2P監視システムによるトレント利用者の特定（弁護士法人ラパン）</a></li>
-            <li><a href="https://www.trendmicro.com/vinfo/jp/security/news/cyber-attacks/honeypots-for-industrial-control-systems" target="_blank" rel="noopener">産業制御システムに対するハニーポット調査レポート（トレンドマイクロ）</a></li>
-        </ul>
+    <section class=" references">
+            <h4>Sources &amp; References</h4>
+            <ul>
+                <li><a href="https://www.nict.go.jp/cyber/report/NICTER_report_2024.pdf" target="_blank"
+                        rel="noopener">NICTER観測レポート2024（情報通信研究機構）</a></li>
+                <li><a href="https://lawfirm-lapin.com/p2p-monitoring-system/" target="_blank"
+                        rel="noopener">P2P監視システムによるトレント利用者の特定（弁護士法人ラパン）</a></li>
+                <li><a href="https://www.trendmicro.com/vinfo/jp/security/news/cyber-attacks/honeypots-for-industrial-control-systems"
+                        target="_blank" rel="noopener">産業制御システムに対するハニーポット調査レポート（トレンドマイクロ）</a></li>
+            </ul>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/articles/01_p2p/article-01-15/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：刑事告訴と逮捕へのカウントダウン</a>
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
-        <a href="/articles/01_p2p/article-01-17/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：意見照会書の「放置」が招く悲劇 &rarr;</a>
+    <div
+        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/articles/01_p2p/article-01-15/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+            前へ：刑事告訴と逮捕へのカウントダウン</a>
+        <a href="/" class="glass"
+            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+        <a href="/articles/01_p2p/article-01-17/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：意見照会書の「放置」が招く悲劇
+            &rarr;</a>
     </div>
 </article>
 
