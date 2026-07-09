@@ -1,0 +1,35 @@
+{% extends "main.njk" %}
+{% set title = "__ARTICLE_TITLE__" %}
+{% set description = "__SEO_DESCRIPTION__" %}
+{% block content %}
+
+<article>
+    <nav class="back-nav">
+        <a href="/" class="back-btn">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+        <span style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.4); color: #FF6B6B; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.1em;">&#9888; RISK AWARENESS</span>
+        <span style="color: var(--text-secondary); font-size: 0.85rem; font-family: 'Outfit', monospace;">__FILE_ID__</span>
+    </div>
+
+    <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem;">__ARTICLE_TITLE__</h1>
+    <p class="subtitle" style="font-size: 1.1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">__ARTICLE_SUBTITLE__</p>
+
+    __SECTIONS_HTML__
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            __REFERENCES_HTML__
+        </ul>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s; border-radius: 8px;">ポータルへ戻る</a>
+        __PREV_LINK_HTML__
+        __NEXT_LINK_HTML__
+    </div>
+</article>
+
+{% endblock %}
