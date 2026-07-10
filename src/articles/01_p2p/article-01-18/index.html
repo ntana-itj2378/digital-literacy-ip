@@ -1,34 +1,40 @@
 {% extends "main.njk" %}
-{% set title = "__ARTICLE_TITLE__" %}
-{% set description = "__SEO_DESCRIPTION__" %}
+{% set title = "FILE 01-18: 2026年のP2P監視網" %}
 {% block content %}
 
 <article>
-    <nav class="back-nav">
-        <a href="/" class="back-btn">&larr; ポータルへ戻る</a>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
     </nav>
 
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <span style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.4); color: #FF6B6B; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.1em;">&#9888; RISK AWARENESS</span>
-        <span style="color: var(--text-secondary); font-size: 0.85rem; font-family: 'Outfit', monospace;">__FILE_ID__</span>
+    <h1>FILE 01-18: 2026年のP2P監視網</h1>
+    <p>匿名性は完全に失われた──高度化する監視システム</p>
+
+    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
+        <img src="/img/placeholder.png" alt="挿絵画像"
+            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
     </div>
 
-    <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem;">__ARTICLE_TITLE__</h1>
-    <p class="subtitle" style="font-size: 1.1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">__ARTICLE_SUBTITLE__</p>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">2026年のP2P監視網──トレント利用者の特定</h2>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">高度化する監視ノード</h3>
+        <p>BitTorrentをはじめとするP2Pファイル共有ソフトのネットワークには、現在、権利者や調査会社が運用する多数の「監視ノード」が潜伏している。これらのノードはファイルの送受信を行わず、違法ファイルをアップロード・ダウンロードしている利用者のIPアドレスとタイムスタンプを機械的に記録し続けている。2026年現在、主要な人気コンテンツのネットワーク（スウォーム）において、この監視の目を逃れることは事実上不可能となっている。</p>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">自動化される開示請求プロセス</h3>
+        <p>記録されたIPアドレスのリストは、プロバイダ（ISP）に対する発信者情報開示請求へと直接つながる。近年、このプロセスは大幅に効率化・自動化されており、権利者側は極めて迅速に利用者の氏名・住所を特定できるようになった。「昔は大丈夫だった」「ごく少数ならバレない」という古い知識は、現在の技術と法的枠組みの前では通用しない。</p>
 
-    __SECTIONS_HTML__
-
-    <section class="references">
-        <h4>Sources &amp; References</h4>
-        <ul>
-            __REFERENCES_HTML__
-        </ul>
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">突然届く「意見照会書」の恐怖</h3>
+        <p>ある日突然、プロバイダから「発信者情報開示に係る意見照会書」が内容証明郵便で届く。そこには、あなたがいつ、どのコンテンツをトレントで共有したかが正確に記されている。これを無視すれば自動的に開示され、損害賠償請求や刑事告訴へと進む。VPNを使用していたとしても、ノーログポリシーを謳う悪質な業者が摘発され、顧客リストが押収されるケースも増えている。違法ダウンロードにおける匿名性は、すでに完全に失われていると認識すべきである。</p>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s; border-radius: 8px;">ポータルへ戻る</a>
-        __PREV_LINK_HTML__
-        __NEXT_LINK_HTML__
+    <div
+        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/articles/01_p2p/article-01-17/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+            前へ：示談拒否が招く刑事告訴のリスク</a>
+        <a href="/" class="glass"
+            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
     </div>
 </article>
 

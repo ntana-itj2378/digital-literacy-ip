@@ -1,34 +1,40 @@
 {% extends "main.njk" %}
-{% set title = "__ARTICLE_TITLE__" %}
-{% set description = "__SEO_DESCRIPTION__" %}
+{% set title = "FILE 05-05: 生成AIによる「人気キャラ風」グッズ販売のリスクと著作権侵害" %}
 {% block content %}
 
 <article>
-    <nav class="back-nav">
-        <a href="/" class="back-btn">&larr; ポータルへ戻る</a>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
     </nav>
 
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <span style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.4); color: #FF6B6B; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.1em;">&#9888; RISK AWARENESS</span>
-        <span style="color: var(--text-secondary); font-size: 0.85rem; font-family: 'Outfit', monospace;">__FILE_ID__</span>
+    <h1>FILE 05-05: 生成AIによる「人気キャラ風」グッズ販売のリスクと著作権侵害</h1>
+    <p>AIを使っても「依拠性」は消えない──無許諾販売の危険性</p>
+
+    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
+        <img src="/img/placeholder.png" alt="挿絵画像"
+            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
     </div>
 
-    <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem;">__ARTICLE_TITLE__</h1>
-    <p class="subtitle" style="font-size: 1.1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">__ARTICLE_SUBTITLE__</p>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">生成AIによる「人気キャラ風」グッズ販売のリスク</h2>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">事件の概要</h3>
+        <p>画像生成AIを利用して、既存の有名アニメキャラクターに極めて似たイラストを生成し、それをアクリルスタンドやスマホケースにしてネットショップで販売していた業者が、著作権法違反で摘発された。業者は「AIが自動生成したものであり、自分が描いたわけでも既存画像をコピーしたわけでもない」と主張したが、法的な免罪符にはならなかった。</p>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">AI生成物と「依拠性」の法解釈</h3>
+        <p>著作権侵害が成立するための重要な要件の一つに「依拠性（元の著作物を知っていて、それをもとに作成したか）」がある。AIのプロンプトに具体的なキャラクター名や作品名を入力して生成した場合、明確な依拠性が認められる。たとえピクセル単位で既存のイラストと一致しなくても、キャラクターの主要な特徴を再現していれば翻案権や複製権の侵害にあたる。</p>
 
-    __SECTIONS_HTML__
-
-    <section class="references">
-        <h4>Sources &amp; References</h4>
-        <ul>
-            __REFERENCES_HTML__
-        </ul>
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">モラルと法律の境界線</h3>
+        <p>AI技術の発展により、誰でもプロ並みのイラストを簡単に生成できるようになった。しかし、その手軽さが権利侵害のハードルを下げている現状がある。「ちょっと似ているだけ」「AIが作った」という言い訳は、ビジネスとして販売・収益化している時点で通用しない。新技術を使う際こそ、既存の権利に対する高いリテラシーが求められる。</p>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s; border-radius: 8px;">ポータルへ戻る</a>
-        __PREV_LINK_HTML__
-        __NEXT_LINK_HTML__
+    <div
+        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/articles/05_risk-awareness/article-05-04/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+            前へ：ゲームのセーブデータ改造・販売で逮捕</a>
+        <a href="/" class="glass"
+            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
     </div>
 </article>
 

@@ -1,34 +1,40 @@
 {% extends "main.njk" %}
-{% set title = "__ARTICLE_TITLE__" %}
-{% set description = "__SEO_DESCRIPTION__" %}
+{% set title = "FILE 03-06: ファスト動画投稿者に5億円の賠償命令" %}
 {% block content %}
 
 <article>
-    <nav class="back-nav">
-        <a href="/" class="back-btn">&larr; ポータルへ戻る</a>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
     </nav>
 
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <span style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.4); color: #FF6B6B; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.1em;">&#9888; RISK AWARENESS</span>
-        <span style="color: var(--text-secondary); font-size: 0.85rem; font-family: 'Outfit', monospace;">__FILE_ID__</span>
+    <h1>FILE 03-06: ファスト動画投稿者に5億円の賠償命令</h1>
+    <p>著作権法違反の代償──民事訴訟で問われる巨額のリスク</p>
+
+    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
+        <img src="/img/placeholder.png" alt="挿絵画像"
+            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
     </div>
 
-    <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem;">__ARTICLE_TITLE__</h1>
-    <p class="subtitle" style="font-size: 1.1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">__ARTICLE_SUBTITLE__</p>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">ファスト動画投稿者に5億円の賠償命令</h2>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">事件の概要</h3>
+        <p>映画の映像を無断で短く編集し、結末までのあらすじを解説する「ファスト動画」。2026年、大手映画会社複数社が合同で提起した民事訴訟において、東京地裁は投稿者に対して総額5億円の損害賠償を命じる判決を下した。すでに刑事罰として有罪判決を受けていた投稿者に対する民事上の責任追及であり、被害額の算定において厳しい基準が採用された画期的な判決となった。</p>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">巨額賠償の算定根拠</h3>
+        <p>これまでの著作権侵害訴訟では、被害額の立証が困難とされてきた。しかし今回は「1再生あたりの逸失利益（本来であれば正規のレンタルや配信で得られたはずの利益）」を基に算定された。数百万再生という巨大なトラフィックを集めていたアカウントであったため、賠償額も天文学的な数字となった。「広告収入で稼げる」という軽い気持ちが、一生かけても払い切れない負債へと変わった瞬間である。</p>
 
-    __SECTIONS_HTML__
-
-    <section class="references">
-        <h4>Sources &amp; References</h4>
-        <ul>
-            __REFERENCES_HTML__
-        </ul>
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">自己破産が免責されないケースも</h3>
+        <p>「払えないなら自己破産すればいい」という考えは通用しない。破産法において「悪意で加えた不法行為に基づく損害賠償請求権」は非免責債権とされ、破産しても支払い義務が残る可能性が高い。意図的かつ反復的に著作権侵害を繰り返していた場合、この「悪意」に該当すると判断される公算が大きい。</p>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s; border-radius: 8px;">ポータルへ戻る</a>
-        __PREV_LINK_HTML__
-        __NEXT_LINK_HTML__
+    <div
+        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/articles/03_clips/article-03-05/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+            前へ：音楽アルバムのフライング公開</a>
+        <a href="/" class="glass"
+            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
     </div>
 </article>
 

@@ -1,34 +1,43 @@
 {% extends "main.njk" %}
-{% set title = "__ARTICLE_TITLE__" %}
-{% set description = "__SEO_DESCRIPTION__" %}
+{% set title = "FILE 05-04: ゲームのセーブデータ改造・販売で逮捕" %}
 {% block content %}
 
 <article>
-    <nav class="back-nav">
-        <a href="/" class="back-btn">&larr; ポータルへ戻る</a>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
     </nav>
 
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <span style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.4); color: #FF6B6B; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.1em;">&#9888; RISK AWARENESS</span>
-        <span style="color: var(--text-secondary); font-size: 0.85rem; font-family: 'Outfit', monospace;">__FILE_ID__</span>
+    <h1>FILE 05-04: ゲームのセーブデータ改造・販売で逮捕</h1>
+    <p>安易な「チート」ビジネスが招く重い代償</p>
+
+    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
+        <img src="/img/placeholder.png" alt="挿絵画像"
+            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
     </div>
 
-    <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem;">__ARTICLE_TITLE__</h1>
-    <p class="subtitle" style="font-size: 1.1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">__ARTICLE_SUBTITLE__</p>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">ゲームのセーブデータ改造・販売で逮捕</h2>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">事件の概要</h3>
+        <p>人気の家庭用ゲームにおいて、キャラクターのレベルを最大にしたり、レアアイテムを無限に増やしたりした「改造セーブデータ」をフリマアプリ等で販売していた人物が、不正競争防止法違反の疑いで逮捕された。「自分で遊ぶゲームのデータを書き換えただけ」「買う人がいるから売っただけ」という軽い認識が、深刻な刑事事件へと発展したケースである。</p>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">なぜ不正競争防止法違反なのか</h3>
+        <p>ゲームソフトには、セーブデータの改ざんを防ぐための「技術的制限手段（暗号化など）」が施されている。この技術的制限手段を回避してセーブデータを改造し、それを第三者に提供する行為は、不正競争防止法において明確に禁止されている（技術的制限手段回避効力提供行為）。</p>
 
-    __SECTIONS_HTML__
-
-    <section class="references">
-        <h4>Sources &amp; References</h4>
-        <ul>
-            __REFERENCES_HTML__
-        </ul>
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">経済的被害とアカウント停止リスク</h3>
+        <p>改造データの販売は、ゲーム会社が想定するゲームバランスを破壊し、特にオンラインゲームにおいては他のプレイヤーの体験を著しく損なう。さらに、改造データを購入した側も、オンライン利用規約違反としてアカウントの永久停止（BAN）処分を受けるリスクが極めて高い。「少しゲームを楽に進めたい」という出来心で手を出すべきではない。</p>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s; border-radius: 8px;">ポータルへ戻る</a>
-        __PREV_LINK_HTML__
-        __NEXT_LINK_HTML__
+    <div
+        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/articles/05_risk-awareness/article-05-03/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+            前へ：中国当局が日本アニメ海賊版「ZzzFun」運営者を逮捕</a>
+        <a href="/" class="glass"
+            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+        <a href="/articles/05_risk-awareness/article-05-05/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：生成AIによる「人気キャラ風」グッズ販売のリスク
+            &rarr;</a>
     </div>
 </article>
 

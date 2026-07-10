@@ -1,34 +1,40 @@
 {% extends "main.njk" %}
-{% set title = "__ARTICLE_TITLE__" %}
-{% set description = "__SEO_DESCRIPTION__" %}
+{% set title = "FILE 04-07: 海外拠点の海賊版リーチサイト、国際連携で一斉摘発" %}
 {% block content %}
 
 <article>
-    <nav class="back-nav">
-        <a href="/" class="back-btn">&larr; ポータルへ戻る</a>
+    <nav style="margin-bottom: 2rem;">
+        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
     </nav>
 
-    <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-        <span style="background: rgba(255, 107, 107, 0.15); border: 1px solid rgba(255, 107, 107, 0.4); color: #FF6B6B; padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: bold; letter-spacing: 0.1em;">&#9888; RISK AWARENESS</span>
-        <span style="color: var(--text-secondary); font-size: 0.85rem; font-family: 'Outfit', monospace;">__FILE_ID__</span>
+    <h1>FILE 04-07: 海外拠点の海賊版リーチサイト、国際連携で一斉摘発</h1>
+    <p>「海外サーバーなら安全」という神話の崩壊</p>
+
+    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
+        <img src="/img/placeholder.png" alt="挿絵画像"
+            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
     </div>
 
-    <h1 style="font-size: 2.2rem; font-weight: 800; line-height: 1.3; margin-bottom: 1rem;">__ARTICLE_TITLE__</h1>
-    <p class="subtitle" style="font-size: 1.1rem; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid rgba(255,255,255,0.1);">__ARTICLE_SUBTITLE__</p>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">海外拠点の海賊版リーチサイト、国際連携で一斉摘発</h2>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">事件の概要</h3>
+        <p>2026年6月、東南アジアの複数の国にサーバーを置き、日本の漫画やアニメへのリンクを集約していた巨大リーチサイト群が、現地警察と日本の捜査機関の連携により一斉摘発された。運営メンバーの多くは日本国籍であり、「海外サーバーを使えば日本の著作権法は及ばない」とタカを括っていたが、CODA（コンテンツ海外流通促進機構）を通じた国際法務ネットワークの網を逃れることはできなかった。</p>
+        
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">リーチサイト規制の現状</h3>
+        <p>日本国内では2020年の著作権法改正により、侵害コンテンツへ誘導する「リーチサイト」の運営や、そこへリンクを張る行為自体が明確に違法化された。これを受けて、悪質な運営者は海外の防弾ホスティング（Bulletproof hosting）へと拠点を移していたが、各国のサイバー犯罪対策が強化される中、隠れ蓑としての機能は失われつつある。</p>
 
-    __SECTIONS_HTML__
-
-    <section class="references">
-        <h4>Sources &amp; References</h4>
-        <ul>
-            __REFERENCES_HTML__
-        </ul>
+        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">国際的摘発のメカニズム</h3>
+        <p>現在の摘発は、単純なサーバーの差し押さえにとどまらない。広告ネットワークの資金流出経路（マネーロンダリング）の追跡や、CloudflareなどのCDNサービスに対する米国裁判所での開示請求を組み合わせることで、運営者の実態を丸裸にする。サイバー空間における国境は、もはや犯罪者を守る壁ではなくなっている。</p>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s; border-radius: 8px;">ポータルへ戻る</a>
-        __PREV_LINK_HTML__
-        __NEXT_LINK_HTML__
+    <div
+        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="/articles/04_web/article-04-06/" class="glass"
+            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+            前へ：海賊版ゲーム（ROM）の共有</a>
+        <a href="/" class="glass"
+            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
     </div>
 </article>
 
