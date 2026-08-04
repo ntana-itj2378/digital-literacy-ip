@@ -1,0 +1,29 @@
+# タスクリスト
+
+- [x] 挿絵画像の準備（不足画像の生成）
+  - [x] `img_article-01-17.png` の生成・保存
+  - [x] `img_article-03-04.png` の生成・保存
+  - [x] `img_article-03-05.png` の生成・保存
+  - [x] `img_article-04-01.png` の生成・保存
+  - [x] `img_article-04-02.png` の生成・保存
+  - [x] `img_article-04-03.png` の生成・保存
+  - [x] `img_article-04-04.png` の生成・保存
+  - [x] `img_article-04-05.png` の生成・保存
+  - [x] `img_article-04-06.png` の生成・保存
+- [x] 記事の修正とフォーマット統一
+  - [x] `01_p2p/article-01-17`
+  - [x] `03_clips/article-03-01`
+  - [x] `03_clips/article-03-02`
+  - [x] `03_clips/article-03-03`
+  - [x] `03_clips/article-03-04`
+  - [x] `03_clips/article-03-05`
+  - [x] `04_web/article-04-01`
+  - [x] `04_web/article-04-02`
+  - [x] `04_web/article-04-03`
+  - [x] `04_web/article-04-04`
+  - [x] `04_web/article-04-05`
+  - [x] `04_web/article-04-06`
+  - [x] `archive/article-01-17`
+- [x] 検証
+  - [x] 各記事のHTML構造、表示確認、エラーチェック
+- [x] 完了ドキュメントの作成 (`walkthrough.md`)
