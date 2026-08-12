@@ -3,18 +3,18 @@
 {% block content %}
 
 <article>
-    <nav style="margin-bottom: 2rem;">
-        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
     <h1>FILE 01-02: 損害：映画1本が数百万の賠償に</h1>
     <p class="subtitle">～たった1回の「無料」への好奇心が、一生を左右する負債に～</p>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
-        <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-            <img src="/img/img_article-01/img_article-01-02.png" alt="挿絵画像" style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-        </div>
-        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <div class="article-hero-img">
+        <img src="/img/img_article-01/img_article-01-02.png" alt="挿絵画像">
+    </div>
+        <h2>事件概要</h2>
         <p>
             「家でゆっくり映画が見たかっただけなんです」。ある30代の会社員男性は、軽い気持ちでトレントサイトから最新のアクション映画をダウンロードしました。その数ヶ月後、自宅にプロバイダから「発信者情報開示に関する意見照会書」が届きました。
         </p>
@@ -24,10 +24,10 @@
     </section>
 
     <section class="glass article-card">
-        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">法規と摘発の現実</h2>
+        <h2>法規と摘発の現実</h2>
 
         <div style="margin-bottom: 2rem;">
-            <h3 style="color: #fff; margin-bottom: 1rem;">民法 第709条（不法行為による損害賠償）</h3>
+            <h3>民法 第709条（不法行為による損害賠償）</h3>
             <p>
                 故意、または過失によって他人の権利や利益を侵害した者は、これによって生じた損害を賠償する責任を負います。
             </p>
@@ -65,10 +65,10 @@
         </ul>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-    <a href="/articles/01_p2p/article-01-01/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：逮捕事例：音楽を共有した大学生</a>
-    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
-    <a href="/articles/01_p2p/article-01-03/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：逮捕事例：ゲーム違法配布の果て &rarr;</a>
+    <div class="bottom-nav">
+    <a href="/articles/01_p2p/article-01-01/" class="glass nav-btn accent">&larr; 前へ：逮捕事例：音楽を共有した大学生</a>
+    <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+    <a href="/articles/01_p2p/article-01-03/" class="glass nav-btn accent">次へ：逮捕事例：ゲーム違法配布の果て &rarr;</a>
 </div>
 </article>
 

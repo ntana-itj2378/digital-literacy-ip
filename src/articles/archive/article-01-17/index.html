@@ -3,33 +3,33 @@
 {% block content %}
 
 <article>
-    <nav style="margin-bottom: 2rem;">
-        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
     <h1>FILE 01-17: 意見照会書の「放置」が招く悲劇</h1>
     <p class="subtitle">～「架空請求」と誤解して無視する致命的ミス。法的手続きによる個人情報の開示と財産差し押さえ～</p>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
-        <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-            <img src="/img/img_article-01/img_article-01-17.png" alt="挿絵画像" style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-        </div>
-        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <div class="article-hero-img">
+        <img src="/img/img_article-01/img_article-01-17.png" alt="挿絵画像">
+    </div>
+        <h2>事件概要</h2>
         <p>
             ある日、契約しているインターネットプロバイダから「発信者情報開示に係る意見照会書」が簡易書留で届くことがあります。心当たりがあるにもかかわらず、これを「架空請求だ」「無視すれば諦めるだろう」と放置することは、事態を致命的に悪化させる最悪の選択肢です。
         </p>
     </section>
 
     <section class="glass article-card">
-        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">法規と摘発の現実</h2>
+        <h2>法規と摘発の現実</h2>
         
         <div style="margin-bottom: 2rem;">
-            <h3 style="color: #fff; margin-bottom: 1rem;">1. 放置＝「開示されても構わない」</h3>
+            <h3>1. 放置＝「開示されても構わない」</h3>
             <p>
                 プロバイダ責任制限法に基づくこの照会書は、「あなたの情報を権利者に開示してよいか」を加害者に問いかけるものです。期限内（通常14日以内）に「開示に同意しない」という正当な理由（自身の行為ではないなど）を返答しない場合、プロバイダは「異議なし」として権利者へ氏名や住所を開示する可能性が極めて高くなります。
             </p>
             
-            <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">2. 突然の訴訟と差し押さえ</h3>
+            <h3>2. 突然の訴訟と差し押さえ</h3>
             <p>
                 情報が開示されると、権利者側の弁護士から直接、損害賠償を求める内容証明が届きます。これすらも無視し続けた場合、最終的に民事訴訟を起こされます。裁判に出廷しなければ敗訴が確定し、ある日突然、会社の給料や銀行口座が強制的に差し押さえられることになります。
             </p>
@@ -49,9 +49,9 @@
         </ul>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/articles/01_p2p/article-01-16/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：監視ノードの罠（ハニーポット）</a>
-        <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+    <div class="bottom-nav">
+        <a href="/articles/01_p2p/article-01-16/" class="glass nav-btn accent">&larr; 前へ：監視ノードの罠（ハニーポット）</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
     </div>
 </article>
 

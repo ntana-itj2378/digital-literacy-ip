@@ -40,29 +40,30 @@
         
 
 <article>
-    <nav style="margin-bottom: 2rem;">
-        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
     <h1>FILE 01-18: 2026年のP2P監視網</h1>
-    <p>匿名性は完全に失われた──高度化する監視システム</p>
-
-    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-        <img src="/img/img_article-01/img_article-01-18.png" alt="挿絵画像"
-            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-    </div>
-
     <section class="glass article-card" style="margin-bottom: 3rem;">
-        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">2026年のP2P監視網──トレント利用者の特定</h2>
-        
-        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">高度化する監視ノード</h3>
+        <div class="article-hero-img">
+            <img src="/img/img_article-01/img_article-01-18.png" alt="挿絵画像">
+        </div>
+        <h2>事件概要</h2>
         <p>BitTorrentをはじめとするP2Pファイル共有ソフトのネットワークには、現在、権利者や調査会社が運用する多数の「監視ノード」が潜伏しています。これらのノードはファイルの送受信を行わず、違法ファイルをアップロード・ダウンロードしている利用者のIPアドレスとタイムスタンプを機械的に記録し続けています。2026年現在、主要な人気コンテンツのネットワーク（スウォーム）において、この監視の目を逃れることは事実上不可能となっています。</p>
+    </section>
 
-        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">自動化される開示請求プロセス</h3>
+    <section class="glass article-card">
+        <h2>トラブルの構造と法的リスク</h2>
+        <h3>1. 自動化される開示請求プロセス</h3>
         <p>記録されたIPアドレスのリストは、プロバイダ（ISP）に対する発信者情報開示請求へと直接つながります。近年、このプロセスは大幅に効率化・自動化されており、権利者側は極めて迅速に利用者の氏名・住所を特定できるようになりました。「昔は大丈夫だった」「ごく少数ならバレない」という古い知識は、現在の技術と法的枠組みの前では通用しません。</p>
+        <h3>2. 突然届く「意見照会書」の恐怖</h3>
+        <p>ある日突然、プロバイダから「発信者情報開示に係る意見照会書」が内容証明郵便で届きます。そこには、あなたがいつ、どのコンテンツをトレントで共有したかが正確に記されています。これを無視すれば自動的に開示され、損害賠償請求や刑事告訴へと進みます。VPNを使用していたとしても、ノーログポリシーを謳う悪質な業者が摘発され、顧客リストが押収されるケースも増えています。</p>
 
-        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">突然届く「意見照会書」の恐怖</h3>
-        <p>ある日突然、プロバイダから「発信者情報開示に係る意見照会書」が内容証明郵便で届きます。そこには、あなたがいつ、どのコンテンツをトレントで共有したかが正確に記されています。これを無視すれば自動的に開示され、損害賠償請求や刑事告訴へと進みます。VPNを使用していたとしても、ノーログポリシーを謳う悪質な業者が摘発され、顧客リストが押収されるケースも増えています。違法ダウンロードにおける匿名性は、すでに完全に失われていると認識すべきです。</p>
+        <blockquote>
+            <p>[!CAUTION]
+            「今まで大丈夫だったから」は何の保証にもなりません。違法ダウンロードにおける匿名性はすでに完全に失われており、次に意見照会書が届くのはあなたかもしれません。</p>
+        </blockquote>
     </section>
 
     <section class="references">
@@ -73,13 +74,10 @@
         </ul>
     </section>
 
-    <div
-        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/articles/01_p2p/article-01-17/" class="glass"
-            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+    <div class="bottom-nav">
+        <a href="/articles/01_p2p/article-01-17/" class="glass nav-btn accent">&larr;
             前へ：示談拒否が招く刑事告訴のリスク</a>
-        <a href="/" class="glass"
-            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
     </div>
 </article>
 

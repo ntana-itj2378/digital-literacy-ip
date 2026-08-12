@@ -3,18 +3,18 @@
 {% block content %}
 
 <article>
-    <nav style="margin-bottom: 2rem;">
-        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
     <h1>FILE 02-01: WinMX 史上初のP2P逮捕事例</h1>
     <p class="subtitle">～国内初のファイル共有ソフトによる摘発～</p>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
-        <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-            <img src="/img/img_article-02/img_article-02-01.png" alt="挿絵画像" style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-        </div>
-        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <div class="article-hero-img">
+        <img src="/img/img_article-02/img_article-02-01.png" alt="挿絵画像">
+    </div>
+        <h2>事件概要</h2>
         <p>
             2001年11月、日本において「ファイル共有ソフト」を利用した著作権侵害で初の逮捕者が出ました。京都府警は、当時普及し始めていた「WinMX」というソフトを使用して、J-POPの音楽データやアニメ画像を無断で公開していた大学生2人を逮捕しました。
         </p>
@@ -24,10 +24,10 @@
     </section>
 
     <section class="glass article-card">
-        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">P2Pの原点と法的責任</h2>
+        <h2>P2Pの原点と法的責任</h2>
 
         <div style="margin-bottom: 2rem;">
-            <h3 style="color: #fff; margin-bottom: 1rem;">送信可能化権（著作権法 第23条）</h3>
+            <h3>送信可能化権（著作権法 第23条）</h3>
             <p>
                 WinMXは、特定のサーバーを介さずPC同士で直接データをやり取りする「P2P」方式を採用していました。自分が持っているファイルを「共有フォルダ」に入れるだけで、世界中からアクセス可能な状態になります。
             </p>
@@ -60,9 +60,9 @@
         </ul>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
-    <a href="/articles/02_apps/article-02-02/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：Winny 初の利用者逮捕事件 &rarr;</a>
+    <div class="bottom-nav">
+    <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+    <a href="/articles/02_apps/article-02-02/" class="glass nav-btn accent">次へ：Winny 初の利用者逮捕事件 &rarr;</a>
 </div>
 </article>
 

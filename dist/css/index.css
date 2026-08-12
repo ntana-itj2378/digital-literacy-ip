@@ -382,6 +382,67 @@ header {
   }
 }
 
+/* Article Body - shared patterns (replaces repeated inline styles) */
+.top-back-link {
+  margin-bottom: 2rem;
+}
+
+.top-back-link a {
+  color: var(--accent-gold);
+  text-decoration: none;
+}
+
+.article-card h2 {
+  color: var(--accent-gold);
+  margin-bottom: 1.5rem;
+}
+
+.article-card h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+}
+
+.article-hero-img {
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+
+.article-hero-img img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.bottom-nav {
+  margin-top: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav-btn {
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.nav-btn.portal {
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-btn.accent {
+  color: var(--accent-gold);
+  border: 1px solid var(--accent-gold);
+}
+
 /* Article References */
 .references {
   margin-top: 5rem;

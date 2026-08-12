@@ -3,18 +3,18 @@
 {% block content %}
 
 <article>
-    <nav style="margin-bottom: 2rem;">
-        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
     <h1>FILE 02-02: Winny 初の利用者逮捕事件</h1>
     <p class="subtitle">～匿名性の幻想が崩れた日～</p>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
-        <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-            <img src="/img/img_article-02/img_article-02-02.png" alt="挿絵画像" style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-        </div>
-        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">事件概要</h2>
+        <div class="article-hero-img">
+        <img src="/img/img_article-02/img_article-02-02.png" alt="挿絵画像">
+    </div>
+        <h2>事件概要</h2>
         <p>
             2003年11月、日本中で爆発的に普及していたファイル共有ソフト「Winny（ウィニー）」において、初の逮捕者が発表されました。逮捕されたのは、市販のゲームソフトやアニメ映画を無断でアップロードしていた愛媛県と群馬県の男性2人でした。
         </p>
@@ -24,10 +24,10 @@
     </section>
 
     <section class="glass article-card">
-        <h2 style="color: var(--accent-gold); margin-bottom: 1.5rem;">技術と法の対峙</h2>
+        <h2>技術と法の対峙</h2>
 
         <div style="margin-bottom: 2rem;">
-            <h3 style="color: #fff; margin-bottom: 1rem;">「アップロード」の法的意味</h3>
+            <h3>「アップロード」の法的意味</h3>
             <p>
                 Winnyはデータの断片をバケツリレーのように転送する仕組みでした。利用者は「ただ持っているだけ」のつもりでも、PCが起動している間に自動的に他者のリクエストに応答し、データを送信し続けます。
             </p>
@@ -60,10 +60,10 @@
         </ul>
     </section>
 
-    <div style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-    <a href="/articles/02_apps/article-02-01/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr; 前へ：WinMX 史上初のP2P逮捕事例</a>
-    <a href="/" class="glass" style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
-    <a href="/articles/02_apps/article-02-03/" class="glass" style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">次へ：Perfect Dark 初の利用者逮捕事件 &rarr;</a>
+    <div class="bottom-nav">
+    <a href="/articles/02_apps/article-02-01/" class="glass nav-btn accent">&larr; 前へ：WinMX 史上初のP2P逮捕事例</a>
+    <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+    <a href="/articles/02_apps/article-02-03/" class="glass nav-btn accent">次へ：Perfect Dark 初の利用者逮捕事件 &rarr;</a>
 </div>
 </article>
 

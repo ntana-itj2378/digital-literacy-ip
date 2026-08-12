@@ -3,29 +3,36 @@
 {% block content %}
 
 <article>
-    <nav style="margin-bottom: 2rem;">
-        <a href="/" style="color: var(--accent-gold); text-decoration: none;">&larr; ポータルへ戻る</a>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
     <h1>FILE 03-06: ファスト動画投稿者に5億円の賠償命令</h1>
-    <p>著作権法違反の代償──民事訴訟で問われる巨額のリスク</p>
-
-    <div style="text-align: center; margin-bottom: 3rem; margin-top: 2rem;">
-        <img src="/img/img_article-03/img_article-03-06.png" alt="挿絵画像"
-            style="max-width: 80%; height: auto; border-radius: 12px; box-shadow: 0 8px 32px rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.1);">
-    </div>
+    <p class="subtitle">～払っても払っても終わらない。5億円の民事賠償が突きつける現実～</p>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
-        <h2 style="color: var(--accent-gold); margin-bottom: 1rem;">ファスト動画投稿者に5億円の賠償命令</h2>
-        
-        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">事件の概要</h3>
+        <div class="article-hero-img">
+            <img src="/img/img_article-03/img_article-03-06.png" alt="挿絵画像">
+        </div>
+        <h2>事件概要</h2>
         <p>映画の映像を無断で短く編集し、結末までのあらすじを解説する「ファスト動画」。2026年、大手映画会社複数社が合同で提起した民事訴訟において、東京地裁は投稿者に対して総額5億円の損害賠償を命じる判決を下しました。すでに刑事罰として有罪判決を受けていた投稿者に対する民事上の責任追及であり、被害額の算定において厳しい基準が採用された画期的な判決となりました。</p>
+    </section>
 
-        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">巨額賠償の算定根拠</h3>
-        <p>これまでの著作権侵害訴訟では、被害額の立証が困難とされてきました。しかし今回は「1再生あたりの逸失利益（本来であれば正規のレンタルや配信で得られたはずの利益）」を基に算定されました。数百万再生という巨大なトラフィックを集めていたアカウントであったため、賠償額も天文学的な数字となりました。「広告収入で稼げる」という軽い気持ちが、一生かけても払い切れない負債へと変わった瞬間です。</p>
+    <section class="glass article-card">
+        <h2>法規と摘発の現実</h2>
 
-        <h3 style="color: #fff; margin-bottom: 1rem; margin-top: 2rem;">自己破産が免責されないケースも</h3>
-        <p>「払えないなら自己破産すればいい」という考えは通用しません。破産法において「悪意で加えた不法行為に基づく損害賠償請求権」は非免責債権とされ、破産しても支払い義務が残る可能性が高いです。意図的かつ反復的に著作権侵害を繰り返していた場合、この「悪意」に該当すると判断される公算が大きいです。</p>
+        <div style="margin-bottom: 2rem;">
+            <h3>巨額賠償の算定根拠</h3>
+            <p>これまでの著作権侵害訴訟では、被害額の立証が困難とされてきました。しかし今回は「1再生あたりの逸失利益（本来であれば正規のレンタルや配信で得られたはずの利益）」を基に算定されました。数百万再生という巨大なトラフィックを集めていたアカウントであったため、賠償額も天文学的な数字となりました。「広告収入で稼げる」という軽い気持ちが、一生かけても払い切れない負債へと変わった瞬間です。</p>
+
+            <h3>自己破産が免責されないケースも</h3>
+            <p>「払えないなら自己破産すればいい」という考えは通用しません。破産法において「悪意で加えた不法行為に基づく損害賠償請求権」は非免責債権とされ、破産しても支払い義務が残る可能性が高いです。意図的かつ反復的に著作権侵害を繰り返していた場合、この「悪意」に該当すると判断される公算が大きいです。</p>
+        </div>
+
+        <blockquote>
+            <p>[!CAUTION]
+            「そのうち逃げ切れる」という考えは通用しません。悪意による著作権侵害と判断されれば、自己破産をしても賠償金の支払い義務は一生涯残り続けます。</p>
+        </blockquote>
     </section>
 
     <section class="references">
@@ -36,13 +43,10 @@
         </ul>
     </section>
 
-    <div
-        style="margin-top: 3rem; text-align: center; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-        <a href="/articles/03_clips/article-03-05/" class="glass"
-            style="padding: 1rem 2.5rem; color: var(--accent-gold); text-decoration: none; border: 1px solid var(--accent-gold); font-weight: bold; transition: all 0.3s;">&larr;
+    <div class="bottom-nav">
+        <a href="/articles/03_clips/article-03-05/" class="glass nav-btn accent">&larr;
             前へ：音楽アルバムのフライング公開</a>
-        <a href="/" class="glass"
-            style="padding: 1rem 2.5rem; color: #fff; text-decoration: none; border: 1px solid rgba(255,255,255,0.2); font-weight: bold; transition: all 0.3s;">ポータルへ戻る</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
     </div>
 </article>
 
