@@ -371,6 +371,9 @@ header {
 
 /* Responsive */
 @media (max-width: 900px) {
+  .container {
+    padding: 0.5rem 2rem;
+  }
 
   .panel-grid,
   .grid {
@@ -378,7 +381,39 @@ header {
   }
 
   .hero h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+
+  #category-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem 1.25rem;
+  }
+
+  body::before,
+  body::after {
+    width: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .article-card {
+    padding: 1.5rem;
+  }
+
+  .nav-btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  #category-title {
+    font-size: 1.6rem;
   }
 }
 

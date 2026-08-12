@@ -39,7 +39,7 @@ async function build() {
 
     // 3. Process all template files in src
     // Find all index.html or *.html files in src (excluding layouts)
-    const files = await glob('src/**/*.html', { ignore: 'src/layouts/**' });
+    const files = await glob('src/**/*.html', { ignore: ['src/layouts/**', 'src/articles/archive/**'] });
 
     for (const file of files) {
         const relativePath = path.relative('src', file);
