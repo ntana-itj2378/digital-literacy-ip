@@ -70,6 +70,26 @@ async function build() {
     // We can generate index.html for /articles/ if needed
     // For now, it's just the files we migrated.
 
+    // 5. Generate sitemap.xml and robots.txt
+    const SITE_URL = 'https://digital-literacy-ip.vercel.app';
+    const EXCLUDED_PATTERNS = [/^articles[\\/]archive[\\/]/, /^test\.html$/, /^404\.html$/];
+
+    const routes = files
+        .map((file) => path.relative('src', file).replace(/\\/g, '/'))
+        .filter((rel) => !EXCLUDED_PATTERNS.some((pattern) => pattern.test(rel)))
+        .map((rel) => (rel === 'index.html' ? '/' : '/' + rel.replace(/index\.html$/, '')))
+        .sort();
+
+    const sitemapEntries = routes
+        .map((route) => `  <url>\n    <loc>${SITE_URL}${route}</loc>\n  </url>`)
+        .join('\n');
+    const sitemap = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${sitemapEntries}\n</urlset>\n`;
+    await fs.writeFile(path.join(distDir, 'sitemap.xml'), sitemap, 'utf8');
+
+    const robots = `User-agent: *\nAllow: /\n\nSitemap: ${SITE_URL}/sitemap.xml\n`;
+    await fs.writeFile(path.join(distDir, 'robots.txt'), robots, 'utf8');
+
+    console.log(`Generated sitemap.xml with ${routes.length} routes.`);
     console.log('Build complete!');
 }
 

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://digital-literacy-ip.vercel.app/sitemap.xml
