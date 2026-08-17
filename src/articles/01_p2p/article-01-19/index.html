@@ -1,0 +1,44 @@
+{% extends "main.njk" %}
+{% set title = "FILE 01-19: トレント「初出品者」の摘発――Nyaaでの深夜ドラマ無断配信" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 01-19: トレント「初出品者」の摘発――Nyaaでの深夜ドラマ無断配信</h1>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>2026年7月28日、京都府警察（伏見警察署サイバー犯罪対策課）は、トレントサイト「Nyaa」においてNHKドラマ「ミッドナイトタクシー」など複数の番組を最初にアップロードした男を著作権法違反（公衆送信権侵害）の疑いで、相模原市内の自宅にて逮捕しました。捜査には日本ハッカー協会が開発した解析ツールが活用されたとされます。同サイトをめぐっては2025年にも二次配布者3名が起訴されています。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>トラブルの構造と法的リスク</h2>
+        <h3>1. 「初出品者（ファーストシーダー）」の重い責任</h3>
+        <p>初めてファイルをアップロードする「初出品者」は、その後の拡散すべての起点となるため、二次的にダウンロード・再共有した利用者よりも著しく悪質性が高いと判断されます。トレントは技術上、最初の1人がいなければスウォーム（共有網）自体が成立しないため、捜査機関は当然この「起点」を最優先で特定しようとします。</p>
+        <h3>2. 匿名化技術の限界</h3>
+        <p>Nyaaのようなトラッカーサイトを介した配信であっても、捜査機関は民間の解析ツールと連携し、IPアドレスやアップロード履歴から利用者を特定する技術力を高めています。「大手ではないマイナーなサイトだから安全」という思い込みは通用しません。</p>
+
+        <blockquote>
+            <p>[!CAUTION]
+            一度でも「最初のアップロード者」になれば、その後何百人が同じファイルを共有しても、責任の重さは別格です。深夜番組の録画データであっても、公衆送信権侵害という重大犯罪であることに変わりはありません。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://coda-cj.jp/news/2850/" target="_blank" rel="noopener">Nyaa初出品者の逮捕について（CODA）</a></li>
+            <li><a href="https://news.yahoo.co.jp/articles/6baf37a568b81fc0bdce41b0d7574f104325cddc" target="_blank" rel="noopener">NHKドラマ無断配信で男逮捕（Yahoo!ニュース）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/01_p2p/article-01-18/" class="glass nav-btn accent">&larr;
+            前へ：2026年のP2P監視網</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+    </div>
+</article>
+
+{% endblock %}
