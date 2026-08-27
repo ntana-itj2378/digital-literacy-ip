@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="FILE 01-14: 監視ノードの罠（ハニーポット） | digital-literacy-ip">
+    <meta property="og:description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="FILE 01-14: 監視ノードの罠（ハニーポット） | digital-literacy-ip">
+    <meta property="twitter:description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <title>FILE 01-14: 監視ノードの罠（ハニーポット） | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 01-14: 監視ノードの罠（ハニーポット）</h1>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <div class="article-hero-img">
+            <img src="/img/img_article-01/img_article-01-14.webp" alt="挿絵画像" loading="lazy" decoding="async">
+        </div>
+        <h2>事件概要</h2>
+        <p>「VPNを使えばバレない」「匿名性が高いから大丈夫」という思い込みは、現代の高度な監視技術の前では通用しません。権利者や調査機関は、サイバーセキュリティの最前線で培われた「ハニーポット（おとり）」技術を駆使して、違法アップロード者をリアルタイムで特定しています。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>トラブルの構造と法的リスク</h2>
+        <h3>1. おとり調査の実績</h3>
+        <p>2013年、セキュリティ機関（トレンドマイクロ等）が実施した調査では、水道設備や電力プラントを模した「おとりシステム」をインターネット上に設置したところ、わずか<strong>18時間</strong>で最初の攻撃が確認されました。2024年のNICT（情報通信研究機構）のレポートによると、サイバー攻撃関連の通信は年間<strong>6,800億回</strong>を超え、10年以上前の古い脆弱性ですら現在進行形で悪用され続けていることが判明しています。この「常に網を張って待ち構える」手法が、現在ではトレント監視にも応用されています。</p>
+        <h3>2. 監視ノードの潜伏</h3>
+        <p>権利者側は、トレントのスウォーム（接続グループ）内に、一般ユーザーを装った「監視ノード」を潜伏させています。あなたがファイルをダウンロードしようと接続した瞬間、あなたのIPアドレス、日時、使用したクライアント情報が即座に記録されます。</p>
+        <h3>3. 逃げられない証拠</h3>
+        <p>この仕組みは自動化されており、1分間に数万人規模の特定が可能です。取得されたログは、プロバイダへの開示請求や裁判において「動かぬ証拠」として採用されます。</p>
+
+        <blockquote>
+            <p>[!CAUTION]
+            「見つかっていない」のではなく、監視システムによって「すでに記録され、順番待ちをしている」だけかもしれません。サイバーインフラを監視するレベルの高度な技術が、あなたの身近な著作権侵害の特定にも使われているという現実を直視してください。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+            <h4>Sources &amp; References</h4>
+            <ul>
+                <li><a href="https://www.nict.go.jp/cyber/report/NICTER_report_2024.pdf" target="_blank"
+                        rel="noopener">NICTER観測レポート2024（情報通信研究機構）</a></li>
+                <li><a href="https://lawfirm-lapin.com/p2p-monitoring-system/" target="_blank"
+                        rel="noopener">P2P監視システムによるトレント利用者の特定（弁護士法人ラパン）</a></li>
+                <li><a href="https://www.trendmicro.com/vinfo/jp/security/news/cyber-attacks/honeypots-for-industrial-control-systems"
+                        target="_blank" rel="noopener">産業制御システムに対するハニーポット調査レポート（トレンドマイクロ）</a></li>
+            </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-13/" class="glass nav-btn accent">&larr;
+            前へ：刑事告訴と逮捕へのカウントダウン</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-15/" class="glass nav-btn accent">次へ：示談拒否が招く刑事告訴のリスク
+            &rarr;</a>
+    </div>
+</article>
+
+
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
+</body>
+</html>
