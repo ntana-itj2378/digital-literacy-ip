@@ -1,18 +1,55 @@
-{% extends "main.njk" %}
-{% set title = "FILE 01-06: 刑罰：著作権法 第119条の衝撃" %}
-{% block content %}
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。">
+    
+    <!-- Open Graph / SNS -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="og:title" content="FILE 03-01: 刑罰：著作権法 第119条の衝撃 | digital-literacy-ip">
+    <meta property="og:description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。">
+    <meta property="og:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://digital-literacy-ip.vercel.app/">
+    <meta property="twitter:title" content="FILE 03-01: 刑罰：著作権法 第119条の衝撃 | digital-literacy-ip">
+    <meta property="twitter:description" content="知的財産権のリスクを体系的に学ぶ啓蒙ポータル。実例に基づいた正しい知識を身につけましょう。">
+    <meta property="twitter:image" content="https://digital-literacy-ip.vercel.app/og-image.png">
+
+    <title>FILE 03-01: 刑罰：著作権法 第119条の衝撃 | digital-literacy-ip</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <!-- Use root-relative path for CSS. Vite will handle the resolution from src/css/index.css -->
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    
+</head>
+<body class="fade-in">
+    <header class="container">
+        <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
+    </header>
+
+    <main class="container">
+        
 
 <article>
     <nav class="top-back-link">
         <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
-    <h1>FILE 01-06: 刑罰：著作権法 第119条の衝撃</h1>
+    <h1>FILE 03-01: 刑罰：著作権法 第119条の衝撃</h1>
     <p class="subtitle">～万引きよりも重い罰。法が突きつける「犯罪者」の刻印～</p>
 
     <section class="glass article-card" style="margin-bottom: 3rem;">
         <div class="article-hero-img">
-        <img src="/img/img_article-01/img_article-01-06.webp" alt="挿絵画像" loading="lazy" decoding="async">
+        <img src="/img/img_article-03/img_article-03-01.webp" alt="挿絵画像" loading="lazy" decoding="async">
     </div>
 <h2>事件概要</h2>
         <p>
@@ -67,10 +104,35 @@
     </section>
 
     <div class="bottom-nav">
-    <a href="/articles/01_p2p/article-01-05/" class="glass nav-btn accent">&larr; 前へ：民事事例：逃げ場のない損害賠償</a>
-    <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
-    <a href="/articles/01_p2p/article-01-07/" class="glass nav-btn accent">次へ：解説：改正による規制範囲の拡大 &rarr;</a>
-</div>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-02/" class="glass nav-btn accent">次へ：解説：改正による規制範囲の拡大
+            &rarr;</a>
+    </div>
 </article>
 
-{% endblock %}
+
+    </main>
+
+    <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid rgba(255,255,255,0.05); color: #ffffff;">
+        <p>&copy; 2026 Intellectual Property Education Project.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
+    </footer>
+
+    <script>
+        // Production Log Suppression
+        if (window.location.hostname !== 'localhost' && !window.location.hostname.includes('127.0.0.1')) {
+            const noop = () => {};
+            console.log = noop;
+            console.info = noop;
+            console.warn = noop;
+            console.debug = noop;
+            
+            // Error logging override to prevent detail leakage
+            const originalError = console.error;
+            console.error = (...args) => {
+                originalError("[System Error] An unexpected error occurred. Detail leakage is suppressed for security.");
+            };
+        }
+    </script>
+</body>
+</html>

@@ -1,5 +1,307 @@
 {
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/articles/01_p2p/article-01-01/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-01/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-02/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-02/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-03/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-03/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-04/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-04/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-05/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-05/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-08/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-06/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-09/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-07/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-10/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-08/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-11/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-09/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-12/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-10/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-13/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-11/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-14/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-12/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-15/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-13/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-16/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-14/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-17/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-15/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-18/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-16/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-19/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-17/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_apps/article-02-01/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-18/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_apps/article-02-02/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-19/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_apps/article-02-03/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-20/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_apps/article-02-04/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-21/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_apps/article-02-05/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-22/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_apps/article-02-06/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-23/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-01/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-24/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-02/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-25/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-04/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-26/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-05/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-27/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-06/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-28/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-06/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-29/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-14/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-30/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-01/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-31/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-04/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-32/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-05/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-33/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-06/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-34/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-08/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-35/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-09/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-36/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-20/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-01/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-21/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-02/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-22/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-03/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-03/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-04/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/03_clips/article-03-07/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-05/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-01/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-06/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-02/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-07/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-03/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-08/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-04/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-09/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-05/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-10/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-07/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-11/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-08/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-12/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-09/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-13/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-10/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-14/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-11/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-15/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-12/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-16/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/04_web/article-04-13/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-17/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-02/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-18/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-03/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-19/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-07/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-20/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-11/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-21/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-06/",
+      "destination": "/articles/03_copyright-law-著作権法制度・改正解説/article-03-01/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_p2p/article-01-07/",
+      "destination": "/articles/03_copyright-law-著作権法制度・改正解説/article-03-02/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/05_risk-awareness/article-05-10/",
+      "destination": "/articles/03_copyright-law-著作権法制度・改正解説/article-03-03/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/:path*",
