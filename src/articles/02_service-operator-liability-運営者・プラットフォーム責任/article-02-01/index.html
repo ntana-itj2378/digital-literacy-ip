@@ -1,0 +1,43 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-01: ファイルローグ事件――日本初のP2Pサービス閉鎖命令" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-01: ファイルローグ事件――日本初のP2Pサービス閉鎖命令</h1>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>2001年11月、日本初の本格的なP2Pファイル共有サービス「ファイルローグ（File Rogue）」に対し、日本音楽著作権協会（JASRAC）と日本レコード協会（RIAJ）が、サービスの停止と損害賠償を求めて東京地方裁判所に提訴しました。ファイルローグは中央サーバーを介して利用者同士がファイルを検索・交換する仕組みで、運営会社は「あくまで利用者間の通信を仲介しているだけ」と主張していましたが、裁判所はこれを退けました。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>トラブルの構造と法的リスク</h2>
+        <h3>1. 「複製の主体」は誰かという争点</h3>
+        <p>2003年1月、東京地裁は仮処分でサービスの停止を命令しました。2005年3月31日には東京高裁が、運営会社を著作権侵害の主体と認定し、JASRAC・RIAJに対し合計約7,100万円の損害賠償を支払うよう命じる判決を確定させました。「技術的にはユーザー同士がやり取りしているだけ」という主張は、サービス全体を設計・管理し収益を得ている運営者の責任を免れる理由にはならないと判断されたのです。</p>
+        <h3>2. 後のWinny裁判にも影響を与えた先例</h3>
+        <p>この判決は、日本国内で初めてP2Pファイル共有サービスに司法が閉鎖を命じた事例として、後のWinny裁判や動画配信サービスをめぐる裁判における「運営者の法的責任」の議論の土台となりました。</p>
+
+        <blockquote>
+            <p>[!CAUTION]
+            「技術は中立だから運営者は責任を負わない」という主張は、サービスの構造・収益モデル・運営実態次第で通用しません。P2Pサービスを提供する側の法的責任は、日本の裁判所によって20年以上前から明確に示されています。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://www.itmedia.co.jp/news/articles/0503/31/news076.html" target="_blank" rel="noopener">ファイルローグ、東京高裁も著作権侵害と認定（ITmedia）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-02/" class="glass nav-btn accent">次へ：Napster――世界のP2P訴訟の原点
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}
