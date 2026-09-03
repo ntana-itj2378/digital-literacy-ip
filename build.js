@@ -9,6 +9,23 @@ const env = new nunjucks.Environment(
     { autoescape: true }
 );
 
+// hasImage("01-05") -> true/false, based on whether
+// src/img/img_article-{catNum}/img_article-{id}.webp exists on disk.
+// catNum is the leading 2-digit category number of the article id.
+function hasImage(id) {
+    const catNum = String(id).slice(0, 2);
+    const imgFsPath = path.join('src', 'img', `img_article-${catNum}`, `img_article-${id}.webp`);
+    return fs.existsSync(imgFsPath);
+}
+env.addGlobal('hasImage', hasImage);
+
+// imgUrl("01-05") -> "/img/img_article-01/img_article-01-05.webp" if it exists, else "".
+env.addGlobal('imgUrl', function (id) {
+    if (!hasImage(id)) return '';
+    const catNum = String(id).slice(0, 2);
+    return `/img/img_article-${catNum}/img_article-${id}.webp`;
+});
+
 async function build() {
     const distDir = 'dist';
     

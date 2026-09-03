@@ -4,7 +4,7 @@
 
 {# 記事カード用のマクロ定義 #}
 {% macro articleCard(url, fileId, tag, title, description) %}
-<a href="{{ url }}" class="glass article-card">
+<a href="{{ url }}" class="glass article-card" data-img="{{ imgUrl(fileId) }}" data-title="{{ title }}" data-id="{{ fileId }}">
     <span class="file-tag">FILE {{ fileId }}</span>
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
@@ -120,6 +120,9 @@
     </div>
 </div>
 
+<!-- Quick Access Rail: populated by JS from the active category's .article-card elements -->
+<nav id="quick-access-rail" aria-label="記事クイックアクセス"></nav>
+
 <!-- View 02: Article Listing -->
 <div id="listing-view" class="view-container view-hidden">
     <div class="back-nav">
@@ -194,6 +197,30 @@
         'legal': '法制度・重要判例'
     };
 
+    // クイックアクセスレール：現在表示中のカテゴリの .article-card から
+    // 正方形タイルを生成する。新しいカテゴリ配列が増えても、
+    // content-{cat} 内のカードを読むだけなので個別対応は不要。
+    const railEl = document.getElementById('quick-access-rail');
+
+    function renderQuickAccessRail(cat) {
+        if (!cat || !CATEGORY_NAMES[cat]) {
+            railEl.innerHTML = '';
+            return;
+        }
+        const cards = document.querySelectorAll(`#content-${cat} .article-card`);
+        railEl.innerHTML = Array.from(cards).map(card => {
+            const img = card.dataset.img;
+            const title = card.dataset.title;
+            const id = card.dataset.id;
+            const style = img ? ` style="background-image: url('${img}')"` : '';
+            const noImageClass = img ? '' : ' no-image';
+            return `<a href="${card.getAttribute('href')}" class="qa-tile${noImageClass}"${style}>` +
+                (img ? '' : `<span class="qa-tile-id">${id}</span>`) +
+                `<span class="qa-tile-tooltip">FILE ${id}<br>${title}</span>` +
+                `</a>`;
+        }).join('');
+    }
+
     // UI表示を切り替える共通関数
     function updateUI(cat) {
         if (cat && CATEGORY_NAMES[cat]) {
@@ -204,10 +231,14 @@
             const target = document.getElementById(`content-${cat}`);
             if (target) target.classList.remove('view-hidden');
             setTimeout(() => VIEWS.listing.classList.remove('view-hidden'), 50);
+            document.body.classList.add('listing-active');
+            renderQuickAccessRail(cat);
         } else {
             // トップページを表示
             VIEWS.listing.classList.add('view-hidden');
             setTimeout(() => VIEWS.home.classList.remove('view-hidden'), 50);
+            document.body.classList.remove('listing-active');
+            renderQuickAccessRail(null);
         }
     }
 
