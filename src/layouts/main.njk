@@ -31,10 +31,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
     {% block head %}{% endblock %}
 </head>
-<body class="fade-in">
+<body class="fade-in{% if currentCategory %} listing-active{% endif %}">
     <header class="container">
         <a href="/" style="text-decoration: none;"><div class="logo">digital-literacy-<span>ip</span></div></a>
     </header>
+
+    {% if currentCategory %}
+    {% import "_qa_macros.njk" as qa %}
+    <nav id="quick-access-rail" aria-label="同カテゴリの記事一覧">
+        {{ qa.qaRailItems(currentCategory.articles, currentCategory, currentArticleId) }}
+    </nav>
+    {% endif %}
 
     <main class="container">
         {% block content %}{% endblock %}

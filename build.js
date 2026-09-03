@@ -20,11 +20,38 @@ function hasImage(id) {
 env.addGlobal('hasImage', hasImage);
 
 // imgUrl("01-05") -> "/img/img_article-01/img_article-01-05.webp" if it exists, else "".
-env.addGlobal('imgUrl', function (id) {
+function imgUrl(id) {
     if (!hasImage(id)) return '';
     const catNum = String(id).slice(0, 2);
     return `/img/img_article-${catNum}/img_article-${id}.webp`;
-});
+}
+env.addGlobal('imgUrl', imgUrl);
+
+// Single source of truth for category/article listing data, shared by the
+// homepage (src/index.html) and the per-article quick-access rail
+// (src/layouts/main.njk). Adding a 4th+ category only requires editing
+// this JSON file.
+const CATEGORIES = fs.readJsonSync('data/categories.json');
+env.addGlobal('CATEGORIES', CATEGORIES);
+
+function articleUrl(category, id) {
+    return `/articles/${category.slug}/article-${id}/`;
+}
+env.addGlobal('articleUrl', articleUrl);
+
+// Given an src-relative path like
+// "articles/01_individual-.../article-01-05/index.html", find which
+// category it belongs to and which article id it is. Returns
+// { category, articleId } or null (e.g. for non-article pages).
+function findArticleContext(relativePath) {
+    const normalized = relativePath.replace(/\\/g, '/');
+    const match = normalized.match(/^articles\/([^/]+)\/article-([\d-]+)\/index\.html$/);
+    if (!match) return null;
+    const [, slug, articleId] = match;
+    const category = CATEGORIES.find((c) => c.slug === slug);
+    if (!category) return null;
+    return { category, articleId };
+}
 
 async function build() {
     const distDir = 'dist';
@@ -73,9 +100,14 @@ async function build() {
         
         try {
             // Render the file using Nunjucks
-            // This treats the file as a template that extends layouts/main.njk
-            const rendered = env.render(relativePath);
-            
+            // This treats the file as a template that extends layouts/main.njk.
+            // Article pages additionally get their category/article context so
+            // main.njk can render the same-category quick-access rail.
+            const articleContext = findArticleContext(relativePath);
+            const rendered = env.render(relativePath, articleContext
+                ? { currentCategory: articleContext.category, currentArticleId: articleContext.articleId }
+                : {});
+
             // UTF-8 without BOM is default in Node.js fs
             await fs.writeFile(outputPath, rendered, 'utf8');
         } catch (err) {

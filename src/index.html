@@ -2,9 +2,11 @@
 {% set title = "Home" %}
 {% set description = "デジタル・リテラシーと知的財産権（IP）を学ぶためのポータルサイト。ファイル共有ソフトのリスクや最新の摘発事例を分かりやすく解説。" %}
 
+{% import "_qa_macros.njk" as qa %}
+
 {# 記事カード用のマクロ定義 #}
 {% macro articleCard(url, fileId, tag, title, description) %}
-<a href="{{ url }}" class="glass article-card" data-img="{{ imgUrl(fileId) }}" data-title="{{ title }}" data-id="{{ fileId }}">
+<a href="{{ url }}" class="glass article-card">
     <span class="file-tag">FILE {{ fileId }}</span>
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>
@@ -120,8 +122,14 @@
     </div>
 </div>
 
-<!-- Quick Access Rail: populated by JS from the active category's .article-card elements -->
-<nav id="quick-access-rail" aria-label="記事クイックアクセス"></nav>
+<!-- Quick Access Rail: one panel per category, pre-rendered at build time; JS just toggles which one is visible -->
+<nav id="quick-access-rail" aria-label="記事クイックアクセス">
+    {% for cat in CATEGORIES %}
+    <div class="qa-rail-panel view-hidden" data-cat="{{ cat.key }}">
+        {{ qa.qaRailItems(cat.articles, cat, null) }}
+    </div>
+    {% endfor %}
+</nav>
 
 <!-- View 02: Article Listing -->
 <div id="listing-view" class="view-container view-hidden">
@@ -192,33 +200,18 @@
     };
 
     const CATEGORY_NAMES = {
-        'individual': '個人利用者の摘発事例',
-        'operators': 'サービス運営者の責任',
-        'legal': '法制度・重要判例'
+        {% for cat in CATEGORIES %}'{{ cat.key }}': {{ cat.listTitle | dump | safe }}{% if not loop.last %},{% endif %}
+        {% endfor %}
     };
 
-    // クイックアクセスレール：現在表示中のカテゴリの .article-card から
-    // 正方形タイルを生成する。新しいカテゴリ配列が増えても、
-    // content-{cat} 内のカードを読むだけなので個別対応は不要。
-    const railEl = document.getElementById('quick-access-rail');
-
+    // クイックアクセスレール：各カテゴリのタイルはビルド時に事前生成済み。
+    // JSは表示するカテゴリのパネルを切り替えるだけ。
     function renderQuickAccessRail(cat) {
-        if (!cat || !CATEGORY_NAMES[cat]) {
-            railEl.innerHTML = '';
-            return;
+        document.querySelectorAll('.qa-rail-panel').forEach(el => el.classList.add('view-hidden'));
+        if (cat) {
+            const panel = document.querySelector(`.qa-rail-panel[data-cat="${cat}"]`);
+            if (panel) panel.classList.remove('view-hidden');
         }
-        const cards = document.querySelectorAll(`#content-${cat} .article-card`);
-        railEl.innerHTML = Array.from(cards).map(card => {
-            const img = card.dataset.img;
-            const title = card.dataset.title;
-            const id = card.dataset.id;
-            const style = img ? ` style="background-image: url('${img}')"` : '';
-            const noImageClass = img ? '' : ' no-image';
-            return `<a href="${card.getAttribute('href')}" class="qa-tile${noImageClass}"${style}>` +
-                (img ? '' : `<span class="qa-tile-id">${id}</span>`) +
-                `<span class="qa-tile-tooltip">FILE ${id}<br>${title}</span>` +
-                `</a>`;
-        }).join('');
     }
 
     // UI表示を切り替える共通関数

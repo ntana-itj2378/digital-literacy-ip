@@ -19,6 +19,11 @@
   /* Typography */
   --font-main: 'Outfit', 'Noto Sans JP', sans-serif;
   --letter-spacing: 0.05em;
+
+  /* Quick Access Rail sizing (kept as variables so the rail's own offset/width
+     and the .container padding that makes room for it never drift apart) */
+  --tape-width: 2.2rem;
+  --qa-rail-width: 100px;
 }
 
 * {
@@ -52,7 +57,7 @@ body::after {
   content: "";
   position: fixed;
   top: 0;
-  width: 2.2rem;
+  width: var(--tape-width);
   /* さらに太く */
   height: 100%;
   background: repeating-linear-gradient(-45deg,
@@ -325,6 +330,35 @@ header {
   letter-spacing: 0.1em;
 }
 
+/* Home listing cards only (an <a class="article-card">, never the
+   <section class="article-card"> used for article-body content blocks):
+   clamp the title to 2 lines and the description to 4, so every card in a
+   row ends up the same height with READ ARTICLE flush at the bottom. */
+a.article-card {
+  display: flex;
+  flex-direction: column;
+}
+
+a.article-card h3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: calc(1.3em * 2);
+}
+
+a.article-card p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  min-height: calc(1.7em * 4);
+}
+
+a.article-card .read-link {
+  margin-top: auto;
+}
+
 /* View Control */
 .view-container {
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -369,14 +403,16 @@ header {
   color: var(--accent-gold);
 }
 
-/* Quick Access Rail (left-edge tile navigation for the article listing view) */
+/* Quick Access Rail (tile navigation for the article listing view, and for
+   individual article pages showing the same-category rail). Positioned to
+   the right of the diagonal warning tape (never on top of it). */
 #quick-access-rail {
   display: none;
   position: fixed;
-  left: 0;
+  left: var(--tape-width);
   top: 4rem;
   bottom: 0;
-  width: 100px;
+  width: var(--qa-rail-width);
   overflow-y: auto;
   z-index: 1001;
   padding: 0.75rem 0.5rem;
@@ -392,8 +428,16 @@ body.listing-active #quick-access-rail {
   gap: 0.5rem;
 }
 
+/* On the homepage the rail holds one panel per category; only the active
+   one's tiles should join the flex layout above. display:contents makes the
+   wrapper itself invisible to layout, while .view-hidden (display:none
+   !important, defined globally) still wins for inactive panels. */
+.qa-rail-panel {
+  display: contents;
+}
+
 body.listing-active .container {
-  padding-left: calc(5rem + 100px + 1rem);
+  padding-left: calc(5rem + var(--tape-width) + var(--qa-rail-width) + 1rem);
 }
 
 .qa-tile {
@@ -466,7 +510,7 @@ body.listing-active .container {
   }
 
   body.listing-active .container {
-    padding-left: calc(2rem + 100px + 1rem);
+    padding-left: calc(2rem + var(--tape-width) + var(--qa-rail-width) + 1rem);
   }
 
   .panel-grid,
@@ -484,13 +528,13 @@ body.listing-active .container {
 }
 
 @media (max-width: 600px) {
-  .container {
-    padding: 0.5rem 1.25rem;
+  :root {
+    --tape-width: 1rem;
+    --qa-rail-width: 64px;
   }
 
-  body::before,
-  body::after {
-    width: 1rem;
+  .container {
+    padding: 0.5rem 1.25rem;
   }
 
   .hero h1 {
@@ -511,14 +555,13 @@ body.listing-active .container {
   }
 
   #quick-access-rail {
-    width: 64px;
     top: 3.5rem;
     padding: 0.5rem 0.375rem;
     gap: 0.4rem;
   }
 
   body.listing-active .container {
-    padding-left: calc(1.25rem + 64px + 0.75rem);
+    padding-left: calc(1.25rem + var(--tape-width) + var(--qa-rail-width) + 0.75rem);
   }
 
   .qa-tile-tooltip {

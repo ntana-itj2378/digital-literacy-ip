@@ -1,0 +1,12 @@
+{# Quick-access rail tile macros — shared by src/index.html (all categories,
+   JS-toggled) and src/layouts/main.njk (single category, current article page).
+   Adding a category to data/categories.json is enough for both to pick it up. #}
+
+{% macro qaTile(article, category, activeId) %}
+{% set img = imgUrl(article.id) %}
+<a href="{{ articleUrl(category, article.id) }}" class="qa-tile{% if not img %} no-image{% endif %}{% if article.id == activeId %} active{% endif %}"{% if img %} style="background-image: url('{{ img }}')"{% endif %}>{% if not img %}<span class="qa-tile-id">{{ article.id }}</span>{% endif %}<span class="qa-tile-tooltip">FILE {{ article.id }}<br>{{ article.title }}</span></a>
+{% endmacro %}
+
+{% macro qaRailItems(articles, category, activeId) %}
+{% for art in articles %}{{ qaTile(art, category, activeId) }}{% endfor %}
+{% endmacro %}
