@@ -4,7 +4,7 @@
 
 {% macro qaTile(article, category, activeId) %}
 {% set img = imgUrl(article.id) %}
-<a href="{{ articleUrl(category, article.id) }}" class="qa-tile{% if not img %} no-image{% endif %}{% if article.id == activeId %} active{% endif %}"{% if img %} style="background-image: url('{{ img }}')"{% endif %}>{% if not img %}<span class="qa-tile-id">{{ article.id }}</span>{% endif %}<span class="qa-tile-tooltip">FILE {{ article.id }}<br>{{ article.title }}</span></a>
+<a href="{{ articleUrl(category, article.id) }}" class="qa-tile{% if not img %} no-image{% endif %}{% if article.id == activeId %} active{% endif %}"{% if img %} style="background-image: url('{{ img }}')"{% endif %} data-file="{{ article.id }}" data-title="{{ article.title }}">{% if not img %}<span class="qa-tile-id">{{ article.id }}</span>{% endif %}</a>
 {% endmacro %}
 
 {% macro qaRailItems(articles, category, activeId) %}

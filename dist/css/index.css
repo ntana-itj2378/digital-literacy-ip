@@ -473,10 +473,12 @@ body.listing-active .container {
   pointer-events: none;
 }
 
+/* Single shared tooltip (see main.njk), positioned via JS with
+   getBoundingClientRect() so it's never clipped by #quick-access-rail's
+   overflow-y:auto (which forces overflow-x:auto too) and never inherits a
+   hovered tile's transform:scale as a new containing block. */
 .qa-tile-tooltip {
-  position: absolute;
-  left: calc(100% + 0.75rem);
-  top: 50%;
+  position: fixed;
   transform: translateY(-50%);
   background: var(--bg-card);
   border: 1px solid var(--accent-gold);
@@ -488,19 +490,19 @@ body.listing-active .container {
   width: 180px;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s ease;
-  z-index: 5;
+  transition: opacity 0.15s ease;
+  z-index: 2000;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.qa-tile-tooltip.visible {
+  opacity: 1;
 }
 
 .qa-tile:hover {
   transform: scale(1.15);
   z-index: 2;
   border-color: var(--accent-gold);
-}
-
-.qa-tile:hover .qa-tile-tooltip {
-  opacity: 1;
 }
 
 /* Responsive */
@@ -565,7 +567,6 @@ body.listing-active .container {
   }
 
   .qa-tile-tooltip {
-    left: calc(100% + 0.5rem);
     width: 140px;
     font-size: 0.7rem;
     padding: 0.4rem 0.5rem;

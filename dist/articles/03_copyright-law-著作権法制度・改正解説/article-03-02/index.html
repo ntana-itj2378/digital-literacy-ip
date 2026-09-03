@@ -42,13 +42,13 @@
         
 
 
-<a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-01/" class="qa-tile" style="background-image: url('/img/img_article-03/img_article-03-01.webp')"><span class="qa-tile-tooltip">FILE 03-01<br>著作権法 第119条の衝撃</span></a>
+<a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-01/" class="qa-tile" style="background-image: url('/img/img_article-03/img_article-03-01.webp')" data-file="03-01" data-title="著作権法 第119条の衝撃"></a>
 
 
-<a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-02/" class="qa-tile active" style="background-image: url('/img/img_article-03/img_article-03-02.webp')"><span class="qa-tile-tooltip">FILE 03-02<br>改正による規制範囲の拡大</span></a>
+<a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-02/" class="qa-tile active" style="background-image: url('/img/img_article-03/img_article-03-02.webp')" data-file="03-02" data-title="改正による規制範囲の拡大"></a>
 
 
-<a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-03/" class="qa-tile no-image"><span class="qa-tile-id">03-03</span><span class="qa-tile-tooltip">FILE 03-03<br>2012年違法ダウンロード刑罰化</span></a>
+<a href="/articles/03_copyright-law-著作権法制度・改正解説/article-03-03/" class="qa-tile no-image" data-file="03-03" data-title="2012年違法ダウンロード刑罰化"><span class="qa-tile-id">03-03</span></a>
 
 
     </nav>
@@ -138,6 +138,43 @@
         <p>&copy; 2026 Intellectual Property Education Project.</p>
         <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.8;">本サービスの情報は知的財産権の理解を深めるためのものであり、個別の事案については法律の専門家にご相談ください。</p>
     </footer>
+
+    <!-- Shared quick-access-rail tooltip. A single fixed-position element,
+         kept outside the scrolling rail, so it's never clipped by
+         #quick-access-rail's overflow-y:auto (which forces overflow-x:auto
+         too) and never inherits a hovered tile's transform:scale. -->
+    <div id="qa-tooltip" class="qa-tile-tooltip" role="tooltip"></div>
+    <script>
+        (function () {
+            const tooltip = document.getElementById('qa-tooltip');
+            if (!tooltip) return;
+
+            function showTooltip(tile) {
+                const file = tile.dataset.file;
+                const title = tile.dataset.title;
+                if (!file || !title) return;
+                tooltip.innerHTML = `FILE ${file}<br>${title.replace(/</g, '&lt;')}`;
+                const rect = tile.getBoundingClientRect();
+                tooltip.style.top = `${rect.top + rect.height / 2}px`;
+                tooltip.style.left = `${rect.right + 12}px`;
+                tooltip.classList.add('visible');
+            }
+
+            function hideTooltip() {
+                tooltip.classList.remove('visible');
+            }
+
+            document.addEventListener('mouseover', (e) => {
+                const tile = e.target.closest('.qa-tile');
+                if (tile) showTooltip(tile);
+            });
+            document.addEventListener('mouseout', (e) => {
+                const tile = e.target.closest('.qa-tile');
+                if (tile && !tile.contains(e.relatedTarget)) hideTooltip();
+            });
+            document.addEventListener('scroll', hideTooltip, true);
+        })();
+    </script>
 
     <script>
         // Production Log Suppression
