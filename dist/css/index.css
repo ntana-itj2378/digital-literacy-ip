@@ -420,6 +420,15 @@ a.article-card .read-link {
   border-right: 1px solid var(--border-glass);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* legacy Edge/IE */
+}
+
+#quick-access-rail::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Edge (Chromium) */
 }
 
 body.listing-active #quick-access-rail {
