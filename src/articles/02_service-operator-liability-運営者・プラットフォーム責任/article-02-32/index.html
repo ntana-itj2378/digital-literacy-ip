@@ -1,0 +1,51 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-32: Getty Images v. Stability AI――生成AI学習を巡る英国の判断" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-32: Getty Images v. Stability AI――生成AI学習を巡る英国の判断</h1>
+    <p class="subtitle">～著作権侵害は認められず、限定的な商標侵害のみを認定～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>画像素材大手のゲッティイメージズは、画像生成AI「Stable Diffusion」を開発するStability AI社が、自社が保有する数百万点の画像を無断でAIの学習データとして使用したとして提訴しました。2025年11月4日、英国高等法院は判決を下し、ゲッティ側の著作権・データベース権侵害の主張は認めず、AIが生成した一部画像に過去のゲッティの透かし（ウォーターマーク）が残っていた点についてのみ、限定的に商標権侵害を認定しました。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>法規と摘発の現実</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3>AIの「学習」行為そのものへの著作権法の適用の難しさ</h3>
+            <p>ゲッティ側は当初、AIモデルの学習データに自社画像が無断で使用されたことを著作権侵害として主張していましたが、訴訟の過程でこの主要な著作権侵害の主張を維持できず、実質的に取り下げる形となりました。AIの学習プロセスにおけるデータ利用が既存の著作権法の枠組みでどう扱われるべきかという問題の難しさを浮き彫りにした事例です。</p>
+
+            <h3>「透かしの再現」という限定的だが象徴的な認定</h3>
+            <p>一方で、AIが生成した画像の一部にゲッティの透かしロゴがそのまま再現されていた点については、商標権侵害が認められました。著作権侵害という本丸では権利者側が敗れつつも、商標という別の角度からの侵害が一部認められたことは、AI生成物と権利保護の関係を考える上で重要な示唆を含んでいます。</p>
+        </div>
+
+        <blockquote>
+            <p>[!CAUTION]
+            生成AIの学習データとしての利用を著作権法だけで規律することには限界があります。一方で、生成物に権利者のロゴ・透かしがそのまま現れるような場合には、商標権など別の権利で問題となりうる点に注意が必要です。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://www.clearygottlieb.com/news-and-insights/publication-listing/uk-high-court-issues-landmark-ruling-in-getty-images-v-stability-ai" target="_blank" rel="noopener">UK High Court Issues Landmark Ruling in Getty Images v. Stability AI（Cleary Gottlieb）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-31/" class="glass nav-btn accent">&larr;
+            前へ：RIAA/UMG et al. v. Tofig Kurbanov（FLVTO/2conv）</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-33/" class="glass nav-btn accent">次へ：Roadshow Films v. iiNet
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}

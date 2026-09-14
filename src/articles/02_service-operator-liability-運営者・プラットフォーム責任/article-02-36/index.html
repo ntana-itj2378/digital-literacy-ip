@@ -1,0 +1,51 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-36: Authors Guild v. Google, Inc.（Google Books）――大規模スキャンはフェアユースと認定" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-36: Authors Guild v. Google, Inc.（Google Books）――大規模スキャンはフェアユースと認定</h1>
+    <p class="subtitle">～数百万冊の書籍をスキャンした「Google Books」プロジェクトの合法性～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>Googleは提携する図書館の蔵書を大規模にスキャンし、書籍内の検索やごく短い抜粋（スニペット）の表示を可能にする「Google Books」プロジェクトを展開しました。全米作家協会（Authors Guild）はこれを著作権侵害として提訴しましたが、2015年10月16日、米第2巡回区控訴裁判所はGoogleの行為をフェアユースと認定し、作家協会側の敗訴が確定しました（2016年に連邦最高裁も上告を受理せず）。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>法規と摘発の現実</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3>「全文複製」であってもフェアユースになりうる理由</h3>
+            <p>Googleは書籍の全文をスキャンしていましたが、一般に公開されるのは検索用のインデックスと、ごく短いスニペット表示にとどまります。裁判所は、書籍の市場価値を代替するものではなく、むしろ書籍の発見可能性を高め検索という新たな機能（transformative purpose）を提供していると判断し、複製の規模の大きさそのものは侵害の決め手にはならないとしました。</p>
+
+            <h3>「検索のための複製」という新しい利用形態の承認</h3>
+            <p>この判決は、AI開発などその後の様々な大規模データ利用の議論においても頻繁に参照される先例となっています。「元の著作物をそのまま提供するのではなく、新しい目的のための中間的な複製である」という考え方が、フェアユース判断における重要な要素として確立されました。</p>
+        </div>
+
+        <blockquote>
+            <p>[!CAUTION]
+            大量の著作物を複製する行為であっても、最終的に提供される形態が原著作物の市場を代替せず、検索など新たな価値を生む目的にとどまる場合には、フェアユースと認定されることがあります。ただし、この判断は個別の事情に強く左右されます。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://law.justia.com/cases/federal/appellate-courts/ca2/13-4829/13-4829-2015-10-16.html" target="_blank" rel="noopener">Authors Guild v. Google, Inc.（米第2巡回区控訴裁判所 判決文・Justia）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-35/" class="glass nav-btn accent">&larr;
+            前へ：ABC, Inc. v. Aereo, Inc.</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-37/" class="glass nav-btn accent">次へ：Dallas Buyers Club LLC v. iiNet Ltd
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}

@@ -1,0 +1,51 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-27: In re Aimster Copyright Litigation" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-27: In re Aimster Copyright Litigation</h1>
+    <p class="subtitle">～「見て見ぬふり」も責任のうち。暗号化を理由にした抗弁は通らず～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>メッセンジャー機能を組み合わせたファイル共有サービス「Aimster（後のMadster）」の運営者に対し、レコード会社らが著作権の寄与侵害で提訴しました。2003年6月30日、米第7巡回区控訴裁判所は、サービスへの予備的差し止め命令を維持し、Aimsterはサービスを終了しました。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>法規と摘発の現実</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3>「暗号化しているから侵害を知らない」は通らない</h3>
+            <p>Aimster側は、通信内容を暗号化しているため運営者自身は利用者が何を共有しているか把握できない、と主張しました。しかし裁判所は、運営者があえて「知らない状態」を作り出していたに過ぎず、実質的に侵害を助長していたと判断しました。意図的に目を背ける行為（willful blindness）は、免責の理由にはならないとされたのです。</p>
+
+            <h3>チュートリアルが自ら侵害を「実演」していた</h3>
+            <p>Aimsterのサービス説明・チュートリアルでは、著作権で保護された楽曲を共有する具体的な手順が例として示されていました。この点も、サービスが侵害目的での利用を前提として設計・宣伝されていたことを示す証拠として重視されました。</p>
+        </div>
+
+        <blockquote>
+            <p>[!CAUTION]
+            技術的な仕組み（暗号化など）を理由に「運営者は利用実態を知らない」と主張しても、意図的に見ないようにしていたに過ぎないと判断されれば、責任を免れることはできません。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://law.justia.com/cases/federal/appellate-courts/F3/334/643/636193/" target="_blank" rel="noopener">In re Aimster Copyright Litigation（米第7巡回区控訴裁判所 判決文・Justia）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-26/" class="glass nav-btn accent">&larr;
+            前へ：Universal Music Australia v. Sharman（Kazaa）</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-28/" class="glass nav-btn accent">次へ：R. v. Alan Ellis（OiNK's Pink Palace）
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}

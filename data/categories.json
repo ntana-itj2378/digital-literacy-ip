@@ -51,7 +51,15 @@
       { "id": "01-33", "tag": "生成AI", "title": "生成AIによる「人気キャラ風」グッズ販売のリスク", "desc": "AIを使っても「依拠性」は消えない──無許諾販売の危険性" },
       { "id": "01-34", "tag": "商標法", "title": "改造Switch販売グループを書類送検──商標法違反の落とし穴", "desc": "「本体を改造しただけ」でも問われる、ロゴマークをめぐる罪。" },
       { "id": "01-35", "tag": "コピー品", "title": "精巧な海外製コピー品フィギュア660点、フリマアプリで販売", "desc": "「非公式グッズ」ではなく「偽物」。660点という組織的販売の実態。" },
-      { "id": "01-36", "tag": "SNS", "title": "リツイート事件", "desc": "最高裁が示した「拡散だけ」でも侵害になる現実。クリック一つの重み。" }
+      { "id": "01-36", "tag": "SNS", "title": "リツイート事件", "desc": "最高裁が示した「拡散だけ」でも侵害になる現実。クリック一つの重み。" },
+      { "id": "01-37", "tag": "海外事例", "title": "Capitol Records v. Thomas-Rasset", "desc": "陪審が192万ドルを認定。米国での個人ファイル共有訴訟の代表例。" },
+      { "id": "01-38", "tag": "海外事例", "title": "Sony BMG v. Tenenbaum", "desc": "30曲のダウンロードで67.5万ドル。米国の高額賠償判決。" },
+      { "id": "01-39", "tag": "米国最高裁", "title": "ベータマックス事件（Sony v. Universal）", "desc": "家庭での録画はフェアユース。著作権とテクノロジーの原点判例。" },
+      { "id": "01-40", "tag": "フランス", "title": "HADOPI「スリーストライク」法 初の有罪判決", "desc": "回線のセキュリティ確保義務違反という新しい罪状。" },
+      { "id": "01-41", "tag": "ドイツ", "title": "BGH「Tauschbörse」判決", "desc": "IPアドレスと契約者の「二次的説明責任」を確立したドイツの判例。" },
+      { "id": "01-42", "tag": "サンプリング", "title": "VMG Salsoul v. Ciccone（マドンナのサンプリング）", "desc": "0.23秒のホーンサンプルは侵害か。de minimis法理の分水嶺。" },
+      { "id": "01-43", "tag": "サンプリング", "title": "Bridgeport Music v. Dimension Films", "desc": "「ライセンスを取るかサンプリングするな」。2秒のサンプルが招いた判決。" },
+      { "id": "01-44", "tag": "アート", "title": "Cariou v. Prince（アプロプリエーション・アート）", "desc": "他人の写真を作品に取り込む行為とフェアユースの境界線。" }
     ]
   },
   {
@@ -89,7 +97,23 @@
       { "id": "02-18", "tag": "文字起こしサイト", "title": "映画「文字起こしサイト」運営者に日本初の有罪判決──ストーリー無断掲載が問われた著作権リスク", "desc": "映像をコピーしなくても著作権侵害──「表現の複製」が問われた東京地裁判決" },
       { "id": "02-19", "tag": "国際摘発", "title": "中国当局が日本アニメ海賊版「ZzzFun」運営者を逮捕──越境する著作権保護の時代", "desc": "日中連携による初の刑事摘発と、国際著作権保護の現実" },
       { "id": "02-20", "tag": "ゲーム配信", "title": "実機パチスロの映像を無断配信、遠隔操作サービスの摘発", "desc": "ゲームの著作権は「見せ方」にも及ぶ。新型サービスに潜む落とし穴。" },
-      { "id": "02-21", "tag": "集合住宅", "title": "選撮見録事件", "desc": "「みんなで使っているだけ」が私的複製の範囲を超えるとき。" }
+      { "id": "02-21", "tag": "集合住宅", "title": "選撮見録事件", "desc": "「みんなで使っているだけ」が私的複製の範囲を超えるとき。" },
+      { "id": "02-22", "tag": "米国最高裁", "title": "MGM v. Grokster", "desc": "侵害を誘引する目的でのソフト配布は責任を負う。P2P史の転換点。" },
+      { "id": "02-23", "tag": "海外事例", "title": "Arista Records v. Lime Group（LimeWire提訴）", "desc": "1億500万ドルの和解。LimeWire運営会社への本家訴訟。" },
+      { "id": "02-24", "tag": "刑事訴追", "title": "Kickass Torrents（Artem Vaulin）刑事訴追", "desc": "世界最大級のトレントサイト運営者、ポーランドで逮捕。" },
+      { "id": "02-25", "tag": "米国", "title": "Columbia Pictures v. Fung（isoHunt）", "desc": "セーフハーバーは通用せず。1億1000万ドルで和解しサイト閉鎖。" },
+      { "id": "02-26", "tag": "豪州", "title": "Universal Music Australia v. Sharman（Kazaa）", "desc": "運営会社とCEOに侵害のオーソライズ責任を認定。" },
+      { "id": "02-27", "tag": "米国", "title": "In re Aimster Copyright Litigation", "desc": "「見て見ぬふり」も責任のうち。暗号化を理由にした抗弁は通らず。" },
+      { "id": "02-28", "tag": "英国", "title": "R. v. Alan Ellis（OiNK's Pink Palace）", "desc": "プライベートトラッカー運営者が刑事裁判で無罪評決。" },
+      { "id": "02-29", "tag": "学術海賊版", "title": "American Chemical Society v. Sci-Hub", "desc": "480万ドルのデフォルト判決。検索エンジンへの広範な差止命令。" },
+      { "id": "02-30", "tag": "学術海賊版", "title": "Elsevier Inc. v. Sci-Hub", "desc": "1500万ドルの法定損害賠償。それでも止まらない海賊版学術サイト。" },
+      { "id": "02-31", "tag": "ストリームリッピング", "title": "RIAA/UMG et al. v. Tofig Kurbanov（FLVTO/2conv）", "desc": "約8300万ドルの損害賠償請求。YouTube変換サイトの末路。" },
+      { "id": "02-32", "tag": "生成AI", "title": "Getty Images v. Stability AI", "desc": "著作権侵害は認められず。生成AI学習を巡る英国の判断。" },
+      { "id": "02-33", "tag": "豪州", "title": "Roadshow Films v. iiNet", "desc": "不十分な通知への不作為は「オーソライズ」に当たらない。" },
+      { "id": "02-34", "tag": "英国", "title": "Twentieth Century Fox v. British Telecommunications（Newzbin2）", "desc": "英国初のサイトブロッキング命令。ISPに遮断を命じた判決。" },
+      { "id": "02-35", "tag": "米国最高裁", "title": "ABC, Inc. v. Aereo, Inc.", "desc": "アンテナ型ストリーミングは公の実演権侵害。最高裁が下した判断。" },
+      { "id": "02-36", "tag": "フェアユース", "title": "Authors Guild v. Google, Inc.（Google Books）", "desc": "書籍のスキャン・スニペット表示はフェアユースと認定。" },
+      { "id": "02-37", "tag": "豪州", "title": "Dallas Buyers Club LLC v. iiNet Ltd", "desc": "IPアドレスの開示は認めつつ、高額請求の乱用に歯止め。" }
     ]
   },
   {

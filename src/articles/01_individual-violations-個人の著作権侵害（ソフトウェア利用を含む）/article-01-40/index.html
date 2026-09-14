@@ -1,0 +1,45 @@
+{% extends "main.njk" %}
+{% set title = "FILE 01-40: HADOPI「スリーストライク」法 初の有罪判決" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 01-40: HADOPI「スリーストライク」法 初の有罪判決</h1>
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>フランスでは、著作権侵害への段階的な警告制度「HADOPI法（スリーストライク法）」が導入されており、繰り返しの警告に応じない場合には刑事罰の対象となります。2012年9月、フランス・ベルフォールの軽罪裁判所は、この制度に基づく初めての有罪判決を言い渡しました。対象となったのは、自身のインターネット回線を通じて妻が無断ダウンロードを行っていたにもかかわらず、回線のセキュリティを確保する義務を怠ったとされた男性です。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>トラブルの構造と法的リスク</h2>
+        <h3>1. 「自分がやっていない」でも罪に問われる新しい枠組み</h3>
+        <p>HADOPI法が定める罪状は、著作権侵害そのものではなく「インターネット接続を適切に管理するセキュリティ確保義務」の違反です。この事件では、実際にダウンロードを行ったのは被告の妻でしたが、回線契約者である被告本人が処罰の対象となりました。契約者は、自分の回線が誰にどう使われているかについて責任を負うという考え方が採用されています。</p>
+        <h3>2. 罰金と接続停止という制裁</h3>
+        <p>最終的に被告には罰金600ユーロと、インターネット接続の15日間停止が科されました。金額自体は大きくありませんが、「回線契約者としての管理責任」を問う制度が実際に機能し、有罪判決に至った初めての事例として大きく報じられました。</p>
+
+        <blockquote>
+            <p>[!CAUTION]
+            家族や同居人が回線を使って著作権侵害を行った場合でも、契約者自身がその管理責任を問われる可能性があります。「自分は使っていない」という主張だけでは免責されません。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://www.eff.org/deeplinks/2012/09/french-anti-piracy-law-claims-first-victim-convicted-failing-secure-his-internet" target="_blank" rel="noopener">French Anti-Piracy Law Claims First Victim（Electronic Frontier Foundation）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-39/" class="glass nav-btn accent">&larr;
+            前へ：ベータマックス事件</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-41/" class="glass nav-btn accent">次へ：BGH「Tauschbörse」判決
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}

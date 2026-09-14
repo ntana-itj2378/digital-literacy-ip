@@ -1,0 +1,51 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-22: MGM v. Grokster――P2Pソフトの「誘引責任」を確立した最高裁判決" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-22: MGM v. Grokster――P2Pソフトの「誘引責任」を確立した最高裁判決</h1>
+    <p class="subtitle">～「侵害を勧める」目的でソフトを配布すれば、開発者にも責任が及ぶ～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>P2Pファイル共有ソフト「Grokster」「StreamCast（Morpheus）」の配布会社に対し、米国の映画会社・レコード会社らが著作権侵害の責任を問う訴訟を起こしました。2005年6月27日、米連邦最高裁判所は、これらのソフトが著作権侵害目的での利用を積極的に勧める形で配布されていたと認定し、配布者に「誘引責任（inducement liability）」が成立すると全会一致で判断しました。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>法規と摘発の現実</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3>「用途は中立」だけでは免責されない</h3>
+            <p>Grokster・StreamCast側は、ソフト自体には合法的な用途もあると主張しましたが、最高裁は、広告やマーケティングの手法から「侵害目的での利用を積極的に誘引していた」実態を重視しました。単に技術を提供しただけでなく、利用者に侵害行為を促す意図が認められる場合には、ソフト配布者自身が責任を負うという新たな基準が示されました。</p>
+
+            <h3>ベータマックス判決との違い</h3>
+            <p>この判決は、「実質的に非侵害的な用途があれば免責されうる」としたベータマックス事件の枠組みを覆すものではなく、それに加えて「積極的な誘引」があった場合には別途責任が生じるという新たな法理を付け加えるものでした。判決後、Groksterはサービスを停止し、StreamCastも長期の訴訟の末に事業を終えています。</p>
+        </div>
+
+        <blockquote>
+            <p>[!CAUTION]
+            技術やソフトウェアそのものが中立であっても、その普及・宣伝の過程で「著作権侵害に使ってください」という趣旨のメッセージを発信すれば、開発者・配布者自身が法的責任を問われます。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://www.copyright.gov/docs/mgm/opinion.pdf" target="_blank" rel="noopener">MGM Studios, Inc. v. Grokster, Ltd.（米国連邦最高裁判所 判決文・米国著作権局）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-21/" class="glass nav-btn accent">&larr;
+            前へ：選撮見録事件</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-23/" class="glass nav-btn accent">次へ：Arista Records v. Lime Group（LimeWire提訴）
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}

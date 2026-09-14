@@ -1,0 +1,51 @@
+{% extends "main.njk" %}
+{% set title = "FILE 02-35: ABC, Inc. v. Aereo, Inc.――アンテナ型ストリーミングへの最高裁判断" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 02-35: ABC, Inc. v. Aereo, Inc.――アンテナ型ストリーミングへの最高裁判断</h1>
+    <p class="subtitle">～「利用者ごとに割り当てた小型アンテナ」という抜け穴戦略の失敗～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <h2>事件概要</h2>
+        <p>ストリーミングサービス「Aereo」は、利用者一人ひとりに専用の極小アンテナを割り当てて地上波放送を受信させ、インターネット経由で視聴できるようにするサービスを提供していました。放送局らはこれを著作権侵害として提訴し、2014年6月25日、米連邦最高裁判所は6対3の判断でAereoのサービスが放送局の公の実演権を侵害すると認定しました。判決後、Aereoはサービスを停止し、破産を申請しました。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>法規と摘発の現実</h2>
+
+        <div style="margin-bottom: 2rem;">
+            <h3>「個別のアンテナだから私的な視聴」という理屈の破綻</h3>
+            <p>Aereo側は、利用者ごとに専用のアンテナと個別の録画・再生を行う仕組みであるため、法律上は「私的な視聴」の集合体にすぎず、公の実演にはあたらないと主張しました。しかし最高裁は、技術的な仕組みの細部にかかわらず、実質的にはケーブルテレビ事業者と同様の機能を提供しているとして、この主張を退けました。</p>
+
+            <h3>技術的な工夫による「回避策」の限界</h3>
+            <p>Aereoのビジネスモデルは、既存の著作権法の文言を精緻に分析した上で設計された、いわば「法の抜け穴」を狙ったものでした。しかし裁判所は、条文の文言だけでなく実質的な機能・効果を重視する姿勢を示し、技術的な工夫によって法規制を回避しようとする試みに歯止めをかけました。</p>
+        </div>
+
+        <blockquote>
+            <p>[!CAUTION]
+            法律の条文の文言をどれほど精緻に分析してサービスを設計しても、実質的に既存の権利を侵害する機能を提供していると判断されれば、責任を免れることはできません。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://supreme.justia.com/cases/federal/us/573/431/" target="_blank" rel="noopener">American Broadcasting Cos., Inc. v. Aereo, Inc.（米国連邦最高裁判所 判決文・Justia）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-34/" class="glass nav-btn accent">&larr;
+            前へ：Twentieth Century Fox v. British Telecommunications（Newzbin2）</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-36/" class="glass nav-btn accent">次へ：Authors Guild v. Google, Inc.（Google Books）
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}
