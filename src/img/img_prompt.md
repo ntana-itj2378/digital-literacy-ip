@@ -1,103 +1,396 @@
-# 挿絵プロンプト集（新規24記事分）
+# 挿絵プロンプト集
 
-FILE 01-37〜01-44（個人利用者カテゴリ）、FILE 02-22〜02-37（サービス運営者カテゴリ）の挿絵生成用プロンプトをまとめたもの。各見出しの記事番号・事件名で対応する記事ファイルを特定できる。
+個人利用者カテゴリ（FILE 01-XX）、サービス運営者カテゴリ（FILE 02-XX）、著作権法制度カテゴリ（FILE 03-XX）の挿絵生成用プロンプトをまとめたもの。各見出しの記事番号・事件名で対応する記事ファイルを特定できる。挿絵が未挿入の記事すべてを網羅する保証はなく、随時追記していく運用とする。
 
----
-
-## FILE 01-37: Capitol Records v. Thomas-Rasset
-
-A conceptual editorial illustration of a single silhouetted figure standing before a giant courtroom gavel made of glowing digital audio waveforms, scattered music note icons falling around them like debris, a stack of oversized dollar bills looming in the background to suggest a massive statutory damages verdict, muted blue and red color palette, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-38: Sony BMG v. Tenenbaum
-
-A conceptual illustration of a young figure at a laptop with a peer-to-peer network visualized as a spiderweb of glowing lines connecting many small computer icons, one strand of the web turning into a courtroom scale of justice, symbolizing an ordinary file-sharer facing formal litigation, cool blue-green palette, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-39: ベータマックス事件（Sony v. Universal）
-
-A conceptual illustration of a retro videocassette recorder with a cassette tape half-inserted, a television screen behind it split into two halves — one showing a broadcast antenna, the other showing a court building silhouette — suggesting the historic battle between home recording technology and broadcasters, warm nostalgic sepia-and-teal palette, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-40: HADOPI「スリーストライク」法 初の有罪判決
-
-A conceptual illustration of three warning envelope icons stacked like a staircase leading up to a small courthouse silhouette, a French tricolor ribbon subtly woven through the design, symbolizing a graduated three-strikes enforcement system reaching its final step, minimal red-white-blue accent palette on a neutral background, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-41: BGH「Tauschbörse」判決
-
-A conceptual illustration of a household with multiple silhouetted family members standing near a single glowing internet router, one dotted line of responsibility extending from the router to a courthouse silhouette, symbolizing a German court ruling on liability for shared internet connections, cool grey and amber palette, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-42: VMG Salsoul v. Ciccone（マドンナのサンプリング）
-
-A conceptual illustration of a vinyl record split in two, with a tiny fragment of sound waveform flying from one half into a completely different music track represented by another waveform, a magnifying glass hovering over the tiny fragment to represent legal scrutiny of a short sampled sound, vibrant purple and gold palette evoking music culture, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-43: Bridgeport Music v. Dimension Films
-
-A conceptual illustration of a pair of scissors cutting a two-second sliver from a long guitar-riff waveform, that sliver dropping into a completely different song's waveform below, a small courthouse icon watching over the scene to represent a strict zero-tolerance sampling ruling, deep funk-inspired orange and brown palette, flat vector illustration style, no realistic faces, no text.
-
-## FILE 01-44: Cariou v. Prince（アプロプリエーション・アート）
-
-A conceptual illustration of an original photograph frame being torn and layered underneath a bold, colorful painted canvas that transforms it into a new artwork, a subtle debate-scale icon balancing "original photo" against "new art" in the background, symbolizing the fair-use boundary of appropriation art, bold contrasting art-gallery palette, flat vector illustration style, no realistic faces, no text.
+各見出しの末尾に挿絵挿入状況を `[挿入済み]` / `[未挿入]` で表記する。挿絵を生成・配置（`src/img/img_article-0X/img_article-0X-NN.webp` を追加し、該当記事の `index.html` に `<img>` タグを挿入）したら、都度このファイルの該当見出しを `[未挿入]` → `[挿入済み]` に更新すること。
 
 ---
 
-## FILE 02-22: MGM v. Grokster
+## FILE 01-30: YouTube漫画大量アップロード事件（FILE 01-30）の記事挿絵 [挿入済み]
 
-A conceptual illustration of a hand deliberately pushing a swarm of small file-icon arrows toward a crowd of silhouetted users, with a giant magnet labeled implicitly as "inducement" pulling them together, a courthouse silhouette overseeing the scene, symbolizing liability for actively encouraging infringement, dramatic red-on-dark palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-23: Arista Records v. Lime Group（LimeWire）
+#プロンプト
+開かれた漫画本のページが次々とめくれ、その一コマ一コマが動画再生アイコンのフレームへと吸い込まれていくイラスト。画面の隅にある小さな再生ボタンの三角形が、裁判所の木槌へと形を変えつつある。静止画の投稿という古い手口が、動画という新しい摘発の舞台に移ったことを象徴する。
 
-A conceptual illustration of a glowing green download-arrow logo cracking apart under the weight of a giant gavel, countless small music-note particles spilling out from the crack, symbolizing the collapse of a major file-sharing platform after litigation, green-and-grey tech palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+漫画文化を想起させるモノクロ×赤のアクセント配色、フラットベクターイラストスタイル。
 
-## FILE 02-24: Kickass Torrents（Artem Vaulin）刑事訴追
+## FILE 01-36: リツイート事件（最高裁「拡散だけ」でも侵害）（FILE 01-36）の記事挿絵 [挿入済み]
 
-A conceptual illustration of a shadowy hooded figure operating a glowing server tower from behind a curtain, a pair of handcuffs made of chain-link data icons descending from above, a world map faintly visible in the background to suggest international extradition and criminal prosecution, dark noir palette with a single spotlight, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-25: Columbia Pictures v. Fung（isoHunt）
+#プロンプト
+スマートフォン画面に表示された1枚の写真投稿のイラスト。写真の端に小さく記されていた撮影者のクレジット表示が、自動トリミングの枠線によって静かに切り取られ、消えていく。その上には無数の「リツイート」矢印アイコンが連鎖して広がり、軽い気持ちでの拡散行為が氏名表示権の侵害という重い結果につながっていくことを象徴する。
 
-A conceptual illustration of a search-engine magnifying glass hovering over a sea of scattered torrent-file icons, the magnifying glass handle morphing into a judge's gavel, symbolizing a search index site held responsible for the infringing content it indexes, cool cyan and slate palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたスカイブルー×グレーの配色、フラットベクターイラストスタイル。
 
-## FILE 02-26: Universal Music Australia v. Sharman（Kazaa）
+## FILE 01-37: Capitol Records v. Thomas-Rasset（FILE 01-37）の記事挿絵 [挿入済み]
 
-A conceptual illustration of a stylized kangaroo silhouette leaping over a network of interconnected file-sharing nodes, one node glowing red and cracking under a gavel strike, symbolizing an Australian P2P platform found liable, warm outback orange and deep blue palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-27: In re Aimster Copyright Litigation
+#プロンプト
+発光するデジタル音声波形でできた巨大な法廷用木槌の前に立つ、シルエットの人物ひとり。周囲には音符アイコンが瓦礫のように散らばり、背景には巨額の法定損害賠償を示唆する山積みの札束がそびえる。
 
-A conceptual illustration of a padlock made of encrypted data streams sitting on top of a file-sharing network diagram, a judge's gavel breaking through the padlock to reveal the network underneath, symbolizing a court rejecting a "we can't see what users share" defense, dark indigo and silver palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたブルーとレッドの配色、フラットベクターイラストスタイル。
 
-## FILE 02-28: R. v. Alan Ellis（OiNK's Pink Palace）
+## FILE 01-38: Sony BMG v. Tenenbaum（FILE 01-38）の記事挿絵 [挿入済み]
 
-A conceptual illustration of an exclusive members-only door with a small glowing pig-shaped emblem, rows of music album icons stacked like treasure behind the door, police tape stretched across the doorway, symbolizing the shutdown of a private invite-only music-sharing community, moody pink-and-charcoal palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-29: American Chemical Society v. Sci-Hub
+#プロンプト
+ノートパソコンに向かう若い人物のイラスト。P2Pネットワークが多数の小さなコンピューターアイコンをつなぐ発光する糸のクモの巣として可視化され、その一本の糸が法廷の天秤（正義の秤）へと変化していく様子で、ごく普通のファイル共有利用者が正式な訴訟に直面することを象徴する。
 
-A conceptual illustration of a large stack of academic journal papers behind a locked glass wall, a single glowing key icon shaped like a paper unlocking a hidden door beside it, a scale of justice tipped toward the locked wall, symbolizing a scholarly publisher's legal victory against a paywall-bypass platform, cool academic navy and white palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+クールなブルーグリーンの配色、フラットベクターイラストスタイル
 
-## FILE 02-30: Elsevier Inc. v. Sci-Hub
+## FILE 01-39: ベータマックス事件（Sony v. Universal）（FILE 01-39）の記事挿絵 [挿入済み]
 
-A conceptual illustration of an endless library of glowing digital book spines behind a courthouse gate that keeps reopening despite being sealed repeatedly, symbolizing repeated litigation against a persistent piracy platform, deep teal and gold palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-31: RIAA/UMG et al. v. Tofig Kurbanov（FLVTO/2conv）
+#プロンプト
+カセットテープが半分挿入されたレトロなビデオデッキと、その背後にあるテレビ画面が左右2つに分割され、一方は放送用アンテナ、もう一方は裁判所建物のシルエットを映し出している。家庭用録画技術と放送業界との歴史的な対立を示唆する構図。
 
-A conceptual illustration of a video-to-audio conversion funnel icon, a stream of video-frame icons pouring in one side and music-note icons pouring out the other, a world map pin marking a distant server location while a gavel hovers above the funnel, symbolizing jurisdiction over an overseas stream-ripping site, tech-blue and amber palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ノスタルジックな暖色系セピア×ティールの配色、フラットベクターイラストスタイル
 
-## FILE 02-32: Getty Images v. Stability AI
+## FILE 01-40: HADOPI「スリーストライク」法 初の有罪判決（FILE 01-40）の記事挿絵 [挿入済み]
 
-A conceptual illustration of a grid of stock photograph thumbnails being absorbed into a swirling abstract neural-network cloud, one distorted thumbnail emerging on the other side as a slightly warped AI-generated image, symbolizing the copyright dispute over training image-generation models on copyrighted photos, futuristic violet and white palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-33: Roadshow Films v. iiNet
+#プロンプト
+3通の警告封筒アイコンが階段状に積み重なり、小さな裁判所のシルエットへと続いていく。フランス国旗のトリコロールリボンがさりげなくデザインに織り込まれ、段階的な「スリーストライク」制裁システムが最終段階に達したことを象徴する。
 
-A conceptual illustration of a film-reel icon connected by a dotted line to a router icon, a courthouse silhouette standing between them shaking its head, symbolizing a court declining to hold an internet provider liable for its users' infringement, calm cinematic maroon and grey palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ニュートラルな背景に赤白青のアクセントを最小限に配した配色、フラットベクターイラストスタイル。
 
-## FILE 02-34: Twentieth Century Fox v. British Telecommunications（Newzbin2）
+## FILE 01-41: BGH「Tauschbörse」判決（FILE 01-41）の記事挿絵 [挿入済み]
 
-A conceptual illustration of a glowing website icon behind a large digital wall being raised brick by brick by an unseen hand connected to an internet-provider tower, symbolizing an ISP ordered to block access to a piracy site, industrial blue-grey palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-35: ABC, Inc. v. Aereo, Inc.
+#プロンプト
+複数のシルエットの家族が、ひとつの発光するインターネットルーターのそばに立っている家庭のイラスト。ルーターから裁判所のシルエットへと責任の所在を示す点線が延び、共有インターネット回線の責任をめぐるドイツの裁判所判決を象徴する。
 
-A conceptual illustration of a wall of countless tiny individual antenna icons all feeding into one single glowing streaming-cloud icon, a courthouse silhouette pointing at the cloud as if to say "this is really one service," symbolizing the rejection of an antenna-splitting workaround, crisp broadcast-blue and white palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+クールなグレーとアンバーの配色、フラットベクターイラストスタイル。
 
-## FILE 02-36: Authors Guild v. Google, Inc.（Google Books）
+## FILE 01-42: VMG Salsoul v. Ciccone（マドンナのサンプリング）（FILE 01-42）の記事挿絵 [挿入済み]
 
-A conceptual illustration of an enormous wall of book spines being scanned by a beam of light into a small search-bar icon floating in front of it, symbolizing mass digitization ruled as transformative fair use, warm library-brown and soft blue palette, flat vector illustration style, no realistic faces, no text.
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
 
-## FILE 02-37: Dallas Buyers Club LLC v. iiNet Ltd
+#プロンプト
+真っ二つに割れたレコード盤から、小さな音波形の断片が飛び出し、まったく別の楽曲を表す波形の中へ飛び込んでいく。その小さな断片の上には虫眼鏡が浮かび、短いサンプリング音に対する法的精査を表す。
 
-A conceptual illustration of a long list of anonymous silhouette icons behind a translucent curtain, a hand reaching through the curtain holding an oversized, obviously inflated invoice, a scale of justice pushing the hand back, symbolizing a court guarding against abusive mass-litigation demands, cautionary amber and dark grey palette, flat vector illustration style, no realistic faces, no text.
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+音楽文化を想起させる鮮やかなパープル×ゴールドの配色、フラットベクターイラストスタイル。
+
+## FILE 01-43: Bridgeport Music v. Dimension Films（FILE 01-43）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+長いギターリフの波形から、はさみがわずか2秒分の断片を切り取り、その破片が下にある全く別の楽曲の波形へ落ちていくイラスト。厳格なゼロトレランス（一切容赦しない）のサンプリング判決を表すように、小さな裁判所アイコンがその様子を見守っている。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ファンクを想起させる深みのあるオレンジ×ブラウンの配色、フラットベクターイラストスタイル。
+
+## FILE 01-44: Cariou v. Prince（アプロプリエーション・アート）（FILE 01-44）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+オリジナルの写真フレームが破られ、その下に大胆でカラフルな絵画キャンバスが重なり合い、新たな作品へと変貌していくイラスト。背景には「元の写真」と「新しい芸術」を天秤にかける控えめなスケールアイコンがあり、アプロプリエーション・アートにおけるフェアユースの境界線を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+大胆でコントラストの効いたアートギャラリー調の配色、フラットベクターイラストスタイル。
+
+---
+
+## FILE 02-01: ファイルローグ事件（日本初のP2Pサービス閉鎖命令）（FILE 02-01）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+中央の発光するサーバーアイコンから放射状に線が伸び、複数の利用者シルエットとつながっているハブ型ネットワーク図のイラスト。「仲介しているだけ」という言い訳を打ち消すように、そのサーバーの真上に大きな法廷の木槌が振り下ろされる瞬間を描く。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたインディゴ×レッドの配色、フラットベクターイラストスタイル。
+
+## FILE 02-02: Napster（世界のP2P訴訟の原点）（FILE 02-02）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+無数の小さな端末アイコンをつなぐ音符の川のようなネットワーク図のイラスト。その源流に巨大な「停止」の封印スタンプが押されて流れがせき止められる一方、下流にはすでに枝分かれした小さな支流がいくつも伸びており、後続の類似サービスへ引き継がれていくことを暗示する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+レトロなテクノロジー感を醸すグリーン×ブラックの配色、フラットベクターイラストスタイル。
+
+## FILE 02-03: The Pirate Bay創設者裁判（FILE 02-03）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+音楽ディスクとカセットテープを交差させた海賊旗を掲げる帆船のシルエットが、四方から伸びる太い鎖で少しずつ縛られていくイラスト。船の周囲には複数の国の裁判所を示す小さな柱のアイコンが並び、世界的なブロッキング網に包囲されていく様子を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ダークなネイビー×シルバーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-14: まねきTV／ロクラクII最高裁判決（FILE 02-14）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+一台の小型受信・録画機器のアイコンから、雲を越えて遠く離れた場所にいる複数の利用者シルエットへ電波の線が伸びていくイラスト。その機器全体を大きな管理者の手のひらがそっと包み込んでおり、「利用者が操作しているだけ」という主張を裁判所の天秤が退ける様子を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+クラウド時代を想起させるライトブルー×ホワイトの配色、フラットベクターイラストスタイル。
+
+## FILE 02-15: MYUTA事件（音楽ロッカーサービスとカラオケ法理）（FILE 02-15）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+CDから飛び出した音符が、中継地点の発光するサーバーを経由してスマートフォンへ転送されていくイラスト。その中継サーバーの上には小さなカラオケマイクのアイコンが重なり、カラオケ店経営者の責任理論が音楽ロッカーサービスにも適用されたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたパープル×グレーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-16: Megaupload／Kim Dotcom事件（FILE 02-16）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+巨大なクラウドストレージのアイコンに、複数国の旗を模したリボンが結ばれた鎖が四方八方から伸び、一斉に引っ張られているイラスト。背景には世界地図のシルエットが広がり、国際共同捜査による史上最大級の摘発を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+緊迫感のあるダークレッド×ブラックの配色、フラットベクターイラストスタイル。
+
+## FILE 02-17: 2ちゃんねる事件（掲示板運営者の削除義務）（FILE 02-17）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+無数の吹き出しアイコンが並ぶ匿名掲示板の壁のイラスト。その中の一つが赤く点滅し、削除ボタンを構えた手が近づいていく一方で、傍らの砂時計の砂がこぼれ落ちていく様子が、「合理的期間内の削除義務」という運営者責任の分水嶺を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+モノクロベースにアラート性を持たせた赤のアクセント配色、フラットベクターイラストスタイル。
+
+## FILE 02-21: 選撮見録事件（集合住宅の共有レコーダー）（FILE 02-21）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+集合住宅のシルエットの屋上に設置された一台の大きな録画機器アイコンから、各住戸の窓へと配線が枝分かれして伸びていくイラスト。「各自が録画しているだけ」という主張を覆すように、屋上の機器の上に裁判所の木槌が重ねて描かれ、共有設備の管理者責任を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたテラコッタ×スレートグレーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-22: MGM v. Grokster（FILE 02-22）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+1本の手が、小さなファイルアイコンの矢印の群れを、シルエットのユーザーたちの群衆へと意図的に押しやっているイラスト。暗に「誘引」を表す巨大な磁石がそれらを引き寄せ、裁判所のシルエットがその様子を見下ろしており、侵害を積極的に助長する行為に対する責任を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ダークな背景に映えるドラマチックな赤の配色、フラットベクターイラストスタイル。
+
+## FILE 02-23: Arista Records v. Lime Group（LimeWire）（FILE 02-23）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+発光する緑色のダウンロード矢印ロゴが、巨大な木槌の重みでひび割れていくイラスト。そのひびから無数の小さな音符の粒子がこぼれ落ちる様子は、訴訟後に大手ファイル共有プラットフォームが崩壊したことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+グリーン×グレーのテック調配色、フラットベクターイラストスタイル。
+
+## FILE 02-24: Kickass Torrents（Artem Vaulin）刑事訴追（FILE 02-24）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+フードをかぶった影のような人物が、カーテンの陰から発光するサーバータワーを操作しているイラスト。上空からはチェーン状のデータアイコンでできた手錠が降りてきて、背景にはかすかに世界地図が浮かび、国際的な身柄引き渡しと刑事訴追を示唆する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+単一のスポットライトを当てたダークなノワール調配色、フラットベクターイラストスタイル。
+
+## FILE 02-25: Columbia Pictures v. Fung（isoHunt）（FILE 02-25）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+検索エンジンの虫眼鏡が、散乱するトレントファイルアイコンの海の上に浮かんでいるイラスト。虫眼鏡の柄が裁判官の木槌へと変化していく様子は、インデックス化したコンテンツの侵害に責任を問われた検索インデックスサイトを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+クールなシアン×スレートの配色、フラットベクターイラストスタイル。
+
+## FILE 02-26: Universal Music Australia v. Sharman（Kazaa）（FILE 02-26）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+様式化されたカンガルーのシルエットが、相互に接続されたファイル共有ノードのネットワークを飛び越えていくイラスト。1つのノードが赤く発光し、木槌の一撃でひび割れる様子は、責任を認められたオーストラリアのP2Pプラットフォームを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+温かみのあるアウトバック・オレンジ×ディープブルーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-27: In re Aimster Copyright Litigation（FILE 02-27）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+暗号化されたデータストリームでできた南京錠が、ファイル共有ネットワーク図の上に乗っているイラスト。裁判官の木槌がその南京錠を打ち破り、下に隠れていたネットワークをあらわにする様子は、「ユーザーが何を共有しているか把握できない」という抗弁を裁判所が退けたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ダークなインディゴ×シルバーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-28: R. v. Alan Ellis（OiNK's Pink Palace）（FILE 02-28）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+小さく発光するブタ形のエンブレムが付いた、会員限定の扉のイラスト。扉の奥には音楽アルバムのアイコンが宝物のように積み重なり、戸口には警察のテープが張られ、招待制の非公開音楽共有コミュニティが閉鎖されたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+ムーディーなピンク×チャコールの配色、フラットベクターイラストスタイル。
+
+## FILE 02-29: American Chemical Society v. Sci-Hub（FILE 02-29）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+施錠されたガラスの壁の奥に、学術論文が大量に積み重なっているイラスト。論文の形をした発光する鍵アイコンが、傍らの隠し扉を開けようとしており、正義の天秤は施錠された壁の側に傾いている。有料の壁を回避するプラットフォームに対する学術出版社の法的勝利を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたアカデミックなネイビー×ホワイトの配色、フラットベクターイラストスタイル。
+
+## FILE 02-30: Elsevier Inc. v. Sci-Hub（FILE 02-30）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+何度封鎖されても再び開いてしまう裁判所の門の奥に、発光するデジタル書籍の背表紙が無限に連なる図書館が広がっているイラスト。執拗に活動を続ける海賊版プラットフォームに対する繰り返しの訴訟を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+深みのあるティール×ゴールドの配色、フラットベクターイラストスタイル。
+
+## FILE 02-31: RIAA/UMG et al. v. Tofig Kurbanov（FLVTO/2conv）（FILE 02-31）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+動画から音声への変換を表す漏斗（じょうご）アイコンのイラスト。一方からは動画フレームのアイコンの流れが注ぎ込まれ、もう一方からは音符アイコンが流れ出ていく。遠方のサーバー拠点を示す世界地図のピンが表示され、漏斗の上には木槌が浮かび、海外のストリームリッピングサイトに対する司法管轄権を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+テック調のブルー×アンバーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-32: Getty Images v. Stability AI（FILE 02-32）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+ストックフォトのサムネイルが格子状に並び、渦を巻く抽象的なニューラルネットワークの雲に吸い込まれていくイラスト。反対側からは歪んだAI生成画像として1枚のサムネイルが現れる。著作権のある写真で画像生成モデルを学習させたことをめぐる著作権紛争を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+未来的なバイオレット×ホワイトの配色、フラットベクターイラストスタイル。
+
+## FILE 02-33: Roadshow Films v. iiNet（FILE 02-33）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+フィルムリールのアイコンと、ルーターのアイコンが点線でつながっているイラスト。その間に立つ裁判所のシルエットが首を横に振っており、ユーザーの侵害行為についてインターネットプロバイダーの責任を認めなかった裁判所の判断を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+落ち着いたシネマティックなマルーン×グレーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-34: Twentieth Century Fox v. British Telecommunications（Newzbin2）（FILE 02-34）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+発光するウェブサイトアイコンの手前に、大きなデジタルの壁がレンガを一つずつ積み上げるように築かれていくイラスト。その手はインターネットプロバイダーのタワーにつながる見えない手であり、ISPが海賊版サイトへのアクセスをブロックするよう命じられたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+インダストリアルなブルーグレーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-35: ABC, Inc. v. Aereo, Inc.（FILE 02-35）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+無数の小さな個別アンテナアイコンが壁のように並び、すべてがひとつの発光するストリーミングクラウドアイコンへと集約されていくイラスト。裁判所のシルエットがそのクラウドを指差し、「これは実質的に一つのサービスだ」と言わんばかりの様子で、アンテナ分割による回避策が退けられたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+シャープな放送ブルー×ホワイトの配色、フラットベクターイラストスタイル。
+
+## FILE 02-36: Authors Guild v. Google, Inc.（Google Books）（FILE 02-36）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+巨大な書籍の背表紙の壁が光の光線でスキャンされ、その手前に浮かぶ小さな検索バーアイコンへと取り込まれていくイラスト。大規模なデジタル化が「変容的なフェアユース」と認められたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+温かみのある図書館調のブラウン×ソフトブルーの配色、フラットベクターイラストスタイル。
+
+## FILE 02-37: Dallas Buyers Club LLC v. iiNet Ltd（FILE 02-37）の記事挿絵 [未挿入]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+半透明のカーテンの奥に、匿名のシルエットアイコンが長い列を成しているイラスト。カーテン越しに伸びる1本の手が、明らかに水増しされた巨大な請求書を握りしめており、正義の天秤がその手を押し返している。乱用的な大量訴訟の請求から利用者を守る裁判所の姿勢を象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+警戒を促すアンバー×ダークグレーの配色、フラットベクターイラストスタイル。
+
+---
+
+## FILE 03-03: 2012年違法ダウンロード刑罰化（FILE 03-03）の記事挿絵 [挿入済み]
+
+以下の構成と指定した画風で、サイバー犯罪の厳罰化を警告する新聞の社会面・特集記事に使われるような挿絵画像を生成してください。
+
+#プロンプト
+下向きのダウンロード矢印アイコンが、1本の法改正文書を境にして左右で描き分けられているイラスト。文書より手前では矢印は軽やかな灰色の線画だが、文書を越えた先では同じ矢印が鎖と手錠に姿を変えている。「もらうだけなら安全」という認識が刑罰化によって覆されたことを象徴する。
+
+#画風・スタイル指定
+画像のサイズは横長のサイズ比16:9にする。
+制度改正を想起させるネイビー×イエローの配色、フラットベクターイラストスタイル。
