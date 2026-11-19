@@ -1,0 +1,51 @@
+{% extends "main.njk" %}
+{% set title = "FILE 01-47: Voltage Pictures v. Salna――カナダ「逆集団訴訟」の終結" %}
+{% block content %}
+
+<article>
+    <nav class="top-back-link">
+        <a href="/">&larr; ポータルへ戻る</a>
+    </nav>
+
+    <h1>FILE 01-47: Voltage Pictures v. Salna――カナダ「逆集団訴訟」の終結</h1>
+    <p class="subtitle">～IPアドレスのみの証拠と大量通知を退けたカナダ連邦控訴裁判所の判断～</p>
+
+    <section class="glass article-card" style="margin-bottom: 3rem;">
+        <div class="article-hero-img">
+            <img src="/img/img_article-01/img_article-01-47.webp" alt="挿絵画像" loading="lazy" decoding="async">
+        </div>
+        <h2>事件概要</h2>
+        <p>映画会社Voltage Picturesは2016年以降、BitTorrentで自社作品を共有したとされる匿名の侵害者集団に対し、インターネット回線契約者の一人（大家のロバート・サルナ氏）を代表被告に立てて一括提訴する「リバース・クラスアクション（逆集団訴訟）」という手法を用いてきました。2025年7月16日、カナダ連邦控訴裁判所は判決（Voltage Pictures, LLC v. Salna, 2025 FCA 131）で、IPアドレスのみの証拠は侵害の立証として不十分であり、インターネットサービスプロバイダーの「通知・通知」制度を大量通知の手段として利用する計画も不適当であると判断しました。2026年8月、カナダ最高裁判所がVoltage側の上告許可申請を却下したことで、約10年にわたった訴訟は完全に終結しました。</p>
+    </section>
+
+    <section class="glass article-card">
+        <h2>トラブルの構造と法的リスク</h2>
+        <h3>1. 「IPアドレス＝本人」ではないという原則</h3>
+        <p>裁判所は、IPアドレスの特定だけでは、実際に侵害行為を行った人物を一意に特定したとは言えないという立場を明確にしました。同じ回線を複数人が利用するケースや、回線契約者自身が侵害行為者でないケースも想定されるため、IPアドレスはあくまで手がかりの一つに過ぎないという考え方です。</p>
+        <h3>2. 大量提訴という手法そのものへの警戒</h3>
+        <p>この訴訟手法は、多数の匿名被疑者をまとめて一人の代表被告に対する判決という形で処理しようとするもので、裁判所は実質的に大量の個人に対する威嚇的な通知・和解要求の手段として使われる懸念を重視しました。権利行使の正当性と、制度の濫用防止とのバランスが問われた事例です。</p>
+
+        <blockquote>
+            <p>[!CAUTION]
+            IPアドレスの特定だけで著作権侵害の責任を断定することはできず、大量提訴という手法自体が裁判所によって制限される場合があります。</p>
+        </blockquote>
+    </section>
+
+    <section class="references">
+        <h4>Sources &amp; References</h4>
+        <ul>
+            <li><a href="https://torrentfreak.com/canadian-court-rejects-reverse-class-action-lawsuit-against-bittorrent-pirates/" target="_blank" rel="noopener">Canadian Court Rejects Reverse Class Action Lawsuit（TorrentFreak）</a></li>
+            <li><a href="https://www.cippic.ca/news/supreme-court-denies-voltage-leave-to-appeal%2C-ending-the-reverse-class-action" target="_blank" rel="noopener">Supreme Court Denies Voltage Leave to Appeal（CIPPIC）</a></li>
+        </ul>
+    </section>
+
+    <div class="bottom-nav">
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-46/" class="glass nav-btn accent">&larr;
+            前へ：Nyaa経由のアニメ無断配信</a>
+        <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-48/" class="glass nav-btn accent">次へ：Strike 3 Holdings大量訴訟
+            &rarr;</a>
+    </div>
+</article>
+
+{% endblock %}
