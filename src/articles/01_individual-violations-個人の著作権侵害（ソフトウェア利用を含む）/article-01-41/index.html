@@ -1,5 +1,5 @@
 {% extends "main.njk" %}
-{% set title = "FILE 01-41: BGH「Tauschbörse」判決" %}
+{% set title = "FILE 01-41: Nyaa「初配布者」逮捕――NHKドラマ無断共有事件" %}
 {% block content %}
 
 <article>
@@ -7,40 +7,44 @@
         <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
-    <h1>FILE 01-41: BGH「Tauschbörse」判決</h1>
+    <h1>FILE 01-41: Nyaa「初配布者」逮捕――NHKドラマ無断共有事件</h1>
+    <p class="subtitle">～BitTorrentで「ダウンロードと同時にアップロード」していた事実が問われた2026年の摘発～</p>
+
     <section class="glass article-card" style="margin-bottom: 3rem;">
         <div class="article-hero-img">
             <img src="/img/img_article-01/img_article-01-41.webp" alt="挿絵画像" loading="lazy" decoding="async">
         </div>
         <h2>事件概要</h2>
-        <p>2015年6月11日、ドイツ連邦通常裁判所（BGH）は、ファイル共有ネットワーク（Tauschbörse）を通じた著作権侵害をめぐる一連の訴訟（I ZR 19/14、I ZR 7/14、I ZR 75/14）について判決を下しました。これらの訴訟は、IPアドレスから特定されたインターネット回線の契約者に対する損害賠償・警告費用請求の是非を争うもので、ドイツにおけるファイル共有訴訟の立証基準を定める重要な判例となりました。</p>
+        <p>2026年7月28日、京都府警サイバー犯罪対策本部サイバー捜査課と伏見警察署は、海外のトレント検索サイト「Nyaa」にNHKドラマ「ミッドナイトタクシー」の動画ファイルを無断で投稿し、BitTorrentネットワーク上で配布したとして、男性を著作権法違反（公衆送信権侵害）の疑いで逮捕しました。男性は他の複数のNHKドラマ作品についても同様に共有していた疑いが持たれています。</p>
     </section>
 
     <section class="glass article-card">
         <h2>トラブルの構造と法的リスク</h2>
-        <h3>1. IPアドレスは「証拠」になるのか</h3>
-        <p>裁判所は、権利者側がIPアドレスの特定と回線契約者の氏名・住所を示すことで、一応の侵害の推定が成り立つとの立場を示しました。その上で、契約者が「自分ではない」と主張する場合には、誰が実際に回線を使用していたかを具体的に説明する「二次的な説明責任」を負うとする基準を確立しました。</p>
-        <h3>2. 家族の利用実態まで説明を求められる</h3>
-        <p>この基準のもとでは、契約者は単に否認するだけでは足りず、同居家族の利用状況などを具体的に説明しなければ、賠償・警告費用の支払い義務を免れにくくなります。ドイツでは、この判決以降も同種のファイル共有訴訟（いわゆる「Abmahnung」＝警告状ビジネス）が多数展開されており、本判決はその法的な土台の一つとなっています。</p>
+        <h3>1. 「初配布者（シーダー）」だから重い責任</h3>
+        <p>BitTorrentの仕組みでは、最初にファイルを投稿した利用者（シーダー）が存在しなければ、その後の利用者同士の共有は成立しません。今回の摘発は、コンテンツ海外流通促進機構（CODA）が経済産業省の支援を受けて進める「クロスボーダー・エンフォースメント・プロジェクト」の一環として2024年4月頃から続けてきた捜査の成果であり、末端の利用者ではなく「起点」となった人物を特定した点に特徴があります。</p>
+        <h3>2. 「ダウンロードするだけ」のつもりが「配布者」になる</h3>
+        <p>BitTorrentクライアントは、ファイルをダウンロードしている最中にも自動的に他の利用者へアップロード（シーディング）を行う仕組みになっています。CODAはこの事件を公表するにあたり、利用者が意識しないうちに「配布者」としての責任を負いかねないリスクを広く周知する目的があったとしています。なお、本稿執筆時点で起訴・送検・量刑に関する確定情報は明らかにされていません。</p>
 
         <blockquote>
             <p>[!CAUTION]
-            「自分の回線だが、自分はやっていない」という主張は、それだけでは責任を免れる理由になりません。誰が実際に使用していたかを具体的に説明できなければ、契約者自身が責任を問われる可能性があります。</p>
+            BitTorrentでのダウンロードは、仕組み上「同時にアップロードしている」状態になります。「見ているだけ」「保存しているだけ」のつもりでも、公衆送信権侵害の責任を問われる可能性があります。</p>
         </blockquote>
     </section>
 
     <section class="references">
         <h4>Sources &amp; References</h4>
         <ul>
-            <li><a href="https://marken.legal/en/most-important-decisions-bgh-filesharing/" target="_blank" rel="noopener">Most Important BGH Decisions on Filesharing（ドイツ法律事務所による判例解説）</a></li>
+            <li><a href="https://coda-cj.jp/en/news/920/" target="_blank" rel="noopener">CODA公式発表（英語）</a></li>
+            <li><a href="https://internet.watch.impress.co.jp/docs/news/2128771.html" target="_blank" rel="noopener">Nyaa「初配布者」逮捕の詳報（Internet Watch）</a></li>
+            <li><a href="https://torrentfreak.com/japanese-police-arrest-nyaa-first-uploader-but-not-by-watching-the-swarm/" target="_blank" rel="noopener">Japanese Police Arrest Nyaa 'First Uploader'（TorrentFreak）</a></li>
         </ul>
     </section>
 
     <div class="bottom-nav">
         <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-40/" class="glass nav-btn accent">&larr;
-            前へ：HADOPI「スリーストライク」法 初の有罪判決</a>
+            前へ：Cariou v. Prince（アプロプリエーション・アート）</a>
         <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
-        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-42/" class="glass nav-btn accent">次へ：VMG Salsoul v. Ciccone（マドンナのサンプリング）
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-42/" class="glass nav-btn accent">次へ：Nyaa経由のアニメ無断配信
             &rarr;</a>
     </div>
 </article>

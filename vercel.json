@@ -300,6 +300,266 @@
       "source": "/articles/05_risk-awareness/article-05-10/",
       "destination": "/articles/03_copyright-law-著作権法制度・改正解説/article-03-03/",
       "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-02/",
+      "destination": "/#individual",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-05/",
+      "destination": "/#individual",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-06/",
+      "destination": "/#individual",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-16/",
+      "destination": "/#individual",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-40/",
+      "destination": "/#operators",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-03/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-02/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-04/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-03/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-07/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-04/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-08/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-05/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-09/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-06/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-10/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-07/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-11/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-08/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-12/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-09/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-13/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-10/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-14/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-11/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-15/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-12/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-17/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-13/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-18/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-14/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-19/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-15/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-20/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-16/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-21/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-17/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-22/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-18/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-23/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-19/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-24/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-20/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-25/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-21/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-26/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-22/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-27/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-23/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-28/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-24/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-29/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-25/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-30/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-26/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-31/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-27/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-32/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-28/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-33/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-29/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-34/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-30/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-35/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-31/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-36/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-32/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-37/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-33/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-38/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-34/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-39/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-35/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-40/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-36/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-41/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-37/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-42/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-38/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-43/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-39/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-44/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-40/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-45/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-41/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-46/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-42/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-47/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-43/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-48/",
+      "destination": "/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-44/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-41/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-40/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-42/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-41/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-43/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-42/",
+      "permanent": true
+    },
+    {
+      "source": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-44/",
+      "destination": "/articles/02_service-operator-liability-運営者・プラットフォーム責任/article-02-43/",
+      "permanent": true
     }
   ],
   "headers": [

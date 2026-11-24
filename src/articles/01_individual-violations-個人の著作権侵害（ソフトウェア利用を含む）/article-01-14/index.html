@@ -1,5 +1,5 @@
 {% extends "main.njk" %}
-{% set title = "FILE 01-14: 監視ノードの罠（ハニーポット）" %}
+{% set title = "FILE 01-14: WinMX 史上初のP2P逮捕事例" %}
 {% block content %}
 
 <article>
@@ -7,47 +7,64 @@
         <a href="/">&larr; ポータルへ戻る</a>
     </nav>
 
-    <h1>FILE 01-14: 監視ノードの罠（ハニーポット）</h1>
+    <h1>FILE 01-14: WinMX 史上初のP2P逮捕事例</h1>
+    <p class="subtitle">～国内初のファイル共有ソフトによる摘発～</p>
+
     <section class="glass article-card" style="margin-bottom: 3rem;">
         <div class="article-hero-img">
-            <img src="/img/img_article-01/img_article-01-14.webp" alt="挿絵画像" loading="lazy" decoding="async">
-        </div>
+        <img src="/img/img_article-01/img_article-01-14.webp" alt="挿絵画像" loading="lazy" decoding="async">
+    </div>
         <h2>事件概要</h2>
-        <p>「VPNを使えばバレない」「匿名性が高いから大丈夫」という思い込みは、現代の高度な監視技術の前では通用しません。権利者や調査機関は、サイバーセキュリティの最前線で培われた「ハニーポット（おとり）」技術を駆使して、違法アップロード者をリアルタイムで特定しています。</p>
+        <p>
+            2001年11月、日本において「ファイル共有ソフト」を利用した著作権侵害で初の逮捕者が出ました。京都府警は、当時普及し始めていた「WinMX」というソフトを使用して、J-POPの音楽データやアニメ画像を無断で公開していた大学生2人を逮捕しました。
+        </p>
+        <p>
+            当時は「P2P」という技術自体が新しく、多くのユーザーが「匿名だ」「個人で楽しむ分には問題ない」と誤解していました。しかし、警察は通信記録を丹念に辿り、容疑者を特定。これが国内におけるネット著作権侵害の本格的な取締りの号砲となりました。
+        </p>
     </section>
 
     <section class="glass article-card">
-        <h2>トラブルの構造と法的リスク</h2>
-        <h3>1. おとり調査の実績</h3>
-        <p>2013年、セキュリティ機関（トレンドマイクロ等）が実施した調査では、水道設備や電力プラントを模した「おとりシステム」をインターネット上に設置したところ、わずか<strong>18時間</strong>で最初の攻撃が確認されました。2024年のNICT（情報通信研究機構）のレポートによると、サイバー攻撃関連の通信は年間<strong>6,800億回</strong>を超え、10年以上前の古い脆弱性ですら現在進行形で悪用され続けていることが判明しています。この「常に網を張って待ち構える」手法が、現在ではトレント監視にも応用されています。</p>
-        <h3>2. 監視ノードの潜伏</h3>
-        <p>権利者側は、トレントのスウォーム（接続グループ）内に、一般ユーザーを装った「監視ノード」を潜伏させています。あなたがファイルをダウンロードしようと接続した瞬間、あなたのIPアドレス、日時、使用したクライアント情報が即座に記録されます。</p>
-        <h3>3. 逃げられない証拠</h3>
-        <p>この仕組みは自動化されており、1分間に数万人規模の特定が可能です。取得されたログは、プロバイダへの開示請求や裁判において「動かぬ証拠」として採用されます。</p>
+        <h2>P2Pの原点と法的責任</h2>
 
-        <blockquote>
-            <p>[!CAUTION]
-            「見つかっていない」のではなく、監視システムによって「すでに記録され、順番待ちをしている」だけかもしれません。サイバーインフラを監視するレベルの高度な技術が、あなたの身近な著作権侵害の特定にも使われているという現実を直視してください。</p>
-        </blockquote>
+        <div style="margin-bottom: 2rem;">
+            <h3>送信可能化権（著作権法 第23条）</h3>
+            <p>
+                WinMXは、特定のサーバーを介さずPC同士で直接データをやり取りする「P2P」方式を採用していました。自分が持っているファイルを「共有フォルダ」に入れるだけで、世界中からアクセス可能な状態になります。
+            </p>
+            <p>
+                法的には、この「誰でもダウンロードできる状態にすること」自体が「送信可能化権」の侵害にあたります。WinMXから始まったこの法解釈は、その後のWinnyやBitTorrentといった全てのP2Pツールにおける摘発の基礎となりました。
+            </p>
+        </div>
+
+        <div style="text-align: center; padding: 1.5rem; background: rgba(239, 68, 68, 0.05); border-radius: 12px; border: 1px solid rgba(239, 68, 68, 0.2);">
+            <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">2001年の衝撃</p>
+            <p style="font-size: 2.2rem; font-weight: bold; color: var(--accent-danger); margin: 0;">国内初のP2P逮捕</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">（※日本におけるネット著作権保護の転換点）</p>
+        </div>
+    </section>
+
+    <section style="margin-top: 3rem;">
+        <p>
+            「WinMXならバレない」という初期の幻想は、20年以上も前に警察の捜査能力によって打ち砕かれています。技術が進化しても、法律の網から逃れることはできません。
+        </p>
+        <p style="font-weight: bold; color: #fff;">
+            歴史は繰り返されます。過去の事例を学び、今の自分の行動を再考しましょう。
+        </p>
     </section>
 
     <section class="references">
-            <h4>Sources &amp; References</h4>
-            <ul>
-                <li><a href="https://www.nict.go.jp/cyber/report/NICTER_report_2024.pdf" target="_blank"
-                        rel="noopener">NICTER観測レポート2024（情報通信研究機構）</a></li>
-                <li><a href="https://lawfirm-lapin.com/p2p-monitoring-system/" target="_blank"
-                        rel="noopener">P2P監視システムによるトレント利用者の特定（弁護士法人ラパン）</a></li>
-                <li><a href="https://www.trendmicro.com/vinfo/jp/security/news/cyber-attacks/honeypots-for-industrial-control-systems"
-                        target="_blank" rel="noopener">産業制御システムに対するハニーポット調査レポート（トレンドマイクロ）</a></li>
-            </ul>
+        <h4>Sources & References</h4>
+        <ul>
+            <li><a href="https://www.itmedia.co.jp/news/0111/28/kyoto.html" target="_blank">ITmedia：WinMXで音楽を公開、著作権法違反で初の逮捕者</a></li>
+            <li><a href="https://www.accsjp.or.jp/activities/protection/cases/winmx.html" target="_blank">ACCS：ファイル共有ソフト「WinMX」悪用事案</a></li>
+        </ul>
     </section>
 
     <div class="bottom-nav">
         <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-13/" class="glass nav-btn accent">&larr;
-            前へ：刑事告訴と逮捕へのカウントダウン</a>
+            前へ：トレント「初出品者」の摘発──Nyaaでの深夜ドラマ無断配信</a>
         <a href="/" class="glass nav-btn portal">ポータルへ戻る</a>
-        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-15/" class="glass nav-btn accent">次へ：示談拒否が招く刑事告訴のリスク
+        <a href="/articles/01_individual-violations-個人の著作権侵害（ソフトウェア利用を含む）/article-01-15/" class="glass nav-btn accent">次へ：Winny 初の利用者逮捕
             &rarr;</a>
     </div>
 </article>
