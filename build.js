@@ -39,6 +39,13 @@ function articleUrl(category, id) {
 }
 env.addGlobal('articleUrl', articleUrl);
 
+// Unique tag list across every category, sorted for stable rendering of the
+// cross-category tag-browse view on the homepage.
+const ALL_TAGS = Array.from(
+    new Set(CATEGORIES.flatMap((c) => c.articles.map((a) => a.tag)))
+).sort((a, b) => a.localeCompare(b, 'ja'));
+env.addGlobal('ALL_TAGS', ALL_TAGS);
+
 // Given an src-relative path like
 // "articles/01_individual-.../article-01-05/index.html", find which
 // category it belongs to and which article id it is. Returns
