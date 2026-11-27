@@ -154,6 +154,27 @@
          #quick-access-rail's overflow-y:auto (which forces overflow-x:auto
          too) and never inherits a hovered tile's transform:scale. -->
     <div id="qa-tooltip" class="qa-tile-tooltip" role="tooltip"></div>
+
+    <!-- Floating back-to-top button. Fades in once the page has scrolled
+         past one viewport height; clicking scrolls smoothly back to top. -->
+    <button id="back-to-top" class="back-to-top" aria-label="ページのトップに戻る" title="トップに戻る">&uarr;</button>
+    <script>
+        (function () {
+            const btn = document.getElementById('back-to-top');
+            if (!btn) return;
+
+            function updateVisibility() {
+                btn.classList.toggle('visible', window.scrollY > window.innerHeight * 0.6);
+            }
+            window.addEventListener('scroll', updateVisibility, { passive: true });
+            updateVisibility();
+
+            btn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+
     <script>
         (function () {
             const tooltip = document.getElementById('qa-tooltip');

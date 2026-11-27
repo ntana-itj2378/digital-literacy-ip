@@ -461,6 +461,41 @@ a.article-card .read-link {
   color: var(--accent-gold);
 }
 
+/* Floating back-to-top button, shared by every page (added in main.njk).
+   Hidden by default and only faded in via JS once the user has scrolled. */
+.back-to-top {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid var(--border-glass);
+  background: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(6px);
+  color: var(--accent-gold);
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+  z-index: 1200;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: #000;
+}
+
 /* Quick Access Rail (tile navigation for the article listing view, and for
    individual article pages showing the same-category rail). Positioned to
    the right of the diagonal warning tape (never on top of it). */
